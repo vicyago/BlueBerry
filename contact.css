@@ -1,0 +1,217 @@
+  * {
+    box-sizing: border-box;
+    border: none;
+  }
+  body {
+    background: white;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 17%;
+    margin-right: 17%;
+    padding: 10px;
+    list-style-type: none;
+    color: white;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  p {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  li {
+    padding: 10px;
+  }
+  #container {
+    min-height: 100%;
+  }
+  #main {
+    overflow: auto;
+    padding-bottom: 50px;
+  }
+  #footerid {
+    background: linear-gradient(to right,#1F3050,#496898);
+    position: relative;
+    height: 100px;
+    width:100%; 
+    margin-top: -50px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px #233657;
+  }
+  .logo {
+    max-width: 36%;
+    max-height: 36%;
+    margin-left: 35%;
+  }
+  .subimit1 {
+    background-image: url(https://images.pcworld.com/images/article/2012/06/gmaillight-11375196.png);
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 5%;
+    display: block;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px #00000054;
+  }
+  .subimit2 {
+    max-width: 30%;
+    max-height: 30%;
+    margin-left: 25%;
+    object-fit: contain;
+    max-width: 45%;
+    padding: 0 2px;
+    width: 50%;
+    margin-bottom: 10%;
+    display: block;
+    border-radius: 10px;
+  }
+   .topnav {
+    overflow: hidden;
+    background: linear-gradient(to right,#1F3050,#496898);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 1px 1px 1px 1px #233657;
+    margin-bottom: 3%;
+  }
+  .topnav div:first-child{
+    width: 70%;
+  }
+  .topnav h2{
+    text-align: center;
+    font-family: cursive;
+    font-size: large;
+    margin-left: 30%;
+  }
+  .topnav #iconHolder{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    width: 30%;
+  }
+  .topnav a {
+    text-align: center;
+    text-decoration: none;
+  }  
+  .topnav a:hover {
+    background-color: #233657;
+  }
+  .topnav img{
+    height: 100%;
+    width: 40%;
+    object-fit: contain;
+  }
+  .leftcolumn {
+    float: left;
+    width: 70%;
+    padding-right: 15px;
+  } 
+  .rightcolumn {
+    float: left;
+    width: 30%;
+    padding-left: 5px;
+    text-align: center;
+  }  
+  .card2 {
+    background: linear-gradient(to right,#1F3050,#496898);
+    margin-right: 5%;
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px 1px #233657;
+  }
+  .card3 {
+    background: linear-gradient(to right,#1F3050,#496898);
+    margin-right: 5%;
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px 1px #233657;
+    margin-bottom: 5%;
+  }
+  .cardleft {
+    background: linear-gradient(to right,#1F3050,#496898);
+    margin-left: 2%;
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px 1px #233657;
+  }
+  .card3 :hover {
+    background: linear-gradient(#1F3050,#496898);
+    color: #233657;
+  }
+  .row2 img{
+    margin-top: 2%;
+    height: 2%;
+    width: 2%;
+    object-fit: contain;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .h1 {
+    margin-left: 7%;
+    font-size: x-large;
+    font-family: cursive;
+    color: white;
+  }
+  .porc {
+    font-size: large;
+    text-decoration: none;
+    list-style-type: none;
+  } 
+  .inputsorc {
+    max-width: 100%;
+  }
+  .formsubmit {
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    background-color: transparent;
+    padding: 15px;
+    display: block;
+    max-width: 100%;
+    cursor: pointer;
+  }
+  .formsubmit2 {
+    border-radius: 27px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    background-color: transparent;
+    padding: 20px;
+    max-width: 50%;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .topnav{
+        flex-direction: column;
+    }
+    .topnav div:first-child{
+        width: 100%;
+    }
+    .topnav h2{
+        font-size: small;
+        margin-left: 2%;
+    }
+    .topnav #iconHolder{
+          width: 100%;
+    }
+    .topnav a {
+      width: 100%;
+    }
+  }
