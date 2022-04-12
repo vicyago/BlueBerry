@@ -25,6 +25,30 @@
     font-weight: 300;
     text-align: center;
   }
+  #bg{
+    position: absolute;
+    z-index: -1;
+    top: -2%;
+    bottom: 0;
+    left: 75%;
+    right: 0;
+    background: url('https://media2.giphy.com/media/5Xp1WbZSyhWJR3IRwN/giphy.gif?cid=ecf05e47bfq1p86ra6hm67s8htf3jbrl6wslxh50wo1mdle9&rid=giphy.gif&ct=g') no-repeat;
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+  }
+  #bg2{
+    position: absolute;
+    z-index: -1;
+    top: 118%;
+    bottom: 0;
+    left: -16%;
+    right: 0;
+    background: url('https://cdn.dribbble.com/users/155369/screenshots/2375296/tree.gif') no-repeat;
+    opacity: 0.8;
+    width: 67%;
+    height: 76%;
+  }
   .logo {
     max-width: 36%;
     max-height: 36%;
