@@ -41,6 +41,18 @@
   .topnav div:first-child{
       width: 70%;
   }
+  .topnav2 {
+    overflow: hidden;
+    background: linear-gradient(to right,#1F3050,#496898);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 1px 1px 1px 1px #233657;
+    margin-top: 2%;
+  }
+  .topnav2 div:first-child{
+      width: 70%;
+  }
   .topnav h2{
     text-align: center;
     font-family: cursive;
@@ -53,16 +65,16 @@
     justify-content: right;
     width: 30%;
   }
-  .topnav a {
+  .topnav2 a {
     text-align: center;
     text-decoration: none;
   }  
-  .topnav a:hover {
+  .topnav2 a:hover {
     background-color: #233657;
   }
-  .topnav img{
+  .topnav2 img{
     height: 100%;
-    width: 40%;
+    width: 60%;
     object-fit: contain;
   }
   .leftcolumn {
