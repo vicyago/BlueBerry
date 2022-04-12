@@ -19,6 +19,7 @@
     text-align: center;
     padding-top: 1%;
     padding-bottom: 1%;
+    margin-left: 5%;
   }
   h5 {
     font-size: larger;
@@ -102,7 +103,7 @@
   .card {
     background: linear-gradient(to right,#1F3050,#496898);
     padding: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
     border-radius: 25px;
     box-shadow: 1px 1px 1px 1px #233657;
   }
@@ -140,6 +141,16 @@
   }
   .h2 {
     color:white;
+  }
+  .h3 {
+    color:white;
+    margin-left: 75%;
+  }
+  .h4 {
+    color:white;
+    margin-left: 53%;
+    font-size: larger;
+    font-weight: bold;
   }
   @media screen and (max-width: 800px) {
     .leftcolumn, .rightcolumn {
