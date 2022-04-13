@@ -108,13 +108,11 @@
     object-fit: contain;
   }
   .leftcolumn {
-    float: left;
     width: 70%;
     padding-right: 1%;
     padding-top: 1%;
   } 
   .rightcolumn {
-    float: right;
     width: 30%;
     padding-left: 1%;
     text-align: center;
@@ -141,6 +139,10 @@
   .card3 :hover {
     background: linear-gradient(#1F3050,#496898);
     color: #233657;
+  }
+  .row2{
+    display: flex;
+    flex-direction: row;
   }
   .row2 img{
     margin-top: 2%;
