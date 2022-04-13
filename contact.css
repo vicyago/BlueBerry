@@ -192,6 +192,26 @@
     max-width: 50%;
     cursor: pointer;
   }
+  .formsubmit3 {
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    background-color: white;
+    padding: 15px;
+    display: block;
+    max-width: 100%;
+    cursor: pointer;
+  }
+  .formsubmit4 {
+    text-transform: uppercase;
+    background-color: transparent;
+    display: block;
+    max-width: 100%;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+  }
   @media screen and (max-width: 800px) {
     .leftcolumn, .rightcolumn {
       width: 100%;
@@ -210,9 +230,12 @@
         margin-left: 2%;
     }
     .topnav #iconHolder{
-          width: 100%;
+        width: 100%;
     }
     .topnav a {
-      width: 100%;
+        width: 100%;
+    }
+    .formsubmit3 {
+        width: 100%;
     }
   }
