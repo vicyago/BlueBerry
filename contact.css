@@ -122,19 +122,19 @@
   }  
   .card2 {
     background: linear-gradient(to right,#1F3050,#496898);
-    margin-right: 5%;
+    margin-right: 1%;
     border-radius: 25px;
     box-shadow: 1px 1px 1px 1px #233657;
   }
   .card3 {
     background: linear-gradient(to right,#1F3050,#496898);
-    margin-right: 5%;
+    margin-right: 1%;
     border-radius: 25px;
     box-shadow: 1px 1px 1px 1px #233657;
   }
   .cardleft {
     background: linear-gradient(to right,#1F3050,#496898);
-    margin-left: 2%;
+    margin-left: 1%;
     border-radius: 25px;
     box-shadow: 1px 1px 1px 1px #233657;
   }
@@ -196,7 +196,7 @@
     color: white;
     text-transform: uppercase;
     background-color: white;
-    padding: 15px;
+    padding: 8%;
     display: block;
     max-width: 100%;
     cursor: pointer;
