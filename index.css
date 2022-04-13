@@ -194,6 +194,9 @@ h5 {
   .topnav2 a {
     width: 100%;
   }
+  .topnav2 img {
+    width: 30%;
+  }
   .h4 {
     width: 100%;
     font-size: small;
