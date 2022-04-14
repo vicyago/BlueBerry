@@ -91,9 +91,12 @@ h5 {
   padding-top: 5%;
   padding-bottom: 3%;
 }
-#fakeimgHolder{
+.fakeimgHolder{
   display: flex;
   flex-direction: row;
+  box-shadow: 1px 1px 1px 1px #1f3050;
+  background: linear-gradient(to left, #1f30507ergba(73, 105, 152, 0.507)98);
+  border-radius: 20px;
 }
 .fakeimg {
   width: 25%;
