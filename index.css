@@ -17,13 +17,21 @@ a {
 h2 {
   font-family: cursive;
   text-align: center;
-  padding-top: 1%;
-  padding-bottom: 1%;
 }
 h5 {
   font-size: larger;
   font-weight: 300;
   text-align: center;
+}
+button {
+  background-color: transparent;
+  box-shadow: 1px 1px 1px 1px #233657;
+  border-radius: 20px;
+  border-color: transparent;
+  margin-bottom: 10%;
+}
+button:hover {
+  background-color: #233657;
 }
 .logo {
   max-width: 36%;
@@ -50,6 +58,8 @@ h5 {
   box-shadow: 1px 1px 1px 1px #233657;
   margin-top: 2%;
   padding-top: 1%;
+  margin-left: 37%;
+  margin-right: 37%;
 }
 .topnav2 div:first-child {
   width: 70%;
@@ -65,13 +75,6 @@ h5 {
   justify-content: right;
   width: 30%;
 }
-.topnav2 a {
-  text-align: center;
-  text-decoration: none;
-}
-.topnav2 a:hover {
-  background-color: #233657;
-}
 .topnav2 img {
   height: 100%;
   width: 80%;
@@ -81,15 +84,15 @@ h5 {
   float: left;
   width: 75%;
   padding-right: 15px;
-  padding-top: 4%;
-  padding-bottom: 4%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 .rightcolumn {
   width: 25%;
   padding-left: 5px;
   text-align: center;
-  padding-top: 5%;
-  padding-bottom: 3%;
+  padding-top: 1%;
+  padding-bottom: 2%;
 }
 .fakeimgHolder{
   display: flex;
@@ -110,6 +113,11 @@ h5 {
   margin-top: 10px;
   border-radius: 25px;
   box-shadow: 1px 1px 1px 1px #233657;
+}
+.card2 {
+  background-color: transparent;
+  padding: 10px;
+  margin-top: 10px;
 }
 .row{
   display: flex;
@@ -151,10 +159,6 @@ h5 {
 .h2 {
   color: white;
 }
-.h3 {
-  color: white;
-  margin-left: 45%;
-}
 .h4 {
   color: white;
   font-size: larger;
@@ -162,6 +166,8 @@ h5 {
   text-align: center;
   text-align: right;
   margin-right: 16%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 @media screen and (max-width: 800px) {
   .leftcolumn,
