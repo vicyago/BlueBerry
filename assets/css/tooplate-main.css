@@ -253,8 +253,6 @@ a {
 	outline: none;
 }
 
-
-
 /* Subscribe Style */
 .subscribe-form {
 	background-color: #9C6C55;
@@ -319,7 +317,6 @@ a {
 	box-shadow: none;
 	border: none;
 }
-
 
 /* Footer Style */
 .footer {
@@ -486,8 +483,6 @@ a {
 	color: #fff;
 }
 
-
-
 /* Single Product Style */
 .single-product .product-slider {
 	padding: 20px;
@@ -606,8 +601,6 @@ a {
 	font-weight: 400;
 }
 
-
-
 /* About Us Style */
 .about-page {
 	margin-top: 50px;
@@ -652,9 +645,6 @@ a {
 .about-page .right-content span a:hover i {
 	background-color: #9C6C55;
 }
-
-
-
 
 /* Contact Page Style */
 .contact-page {
@@ -724,11 +714,6 @@ a {
 	box-shadow: none;
 	border: none;
 }
-
-
-
-
-
 
 /* Responsive Style */
 @media (max-width: 991px) {
