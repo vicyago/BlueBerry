@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -8,274 +9,445 @@
     />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700"
-      rel="stylesheet"
-    />
 
     <title>SiteBlueBerryCamisetas</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css" />
-    <link rel="stylesheet" href="assets/css/tooplate-main.css" />
-    <link rel="stylesheet" href="assets/css/owl.css" />
-    <!--
-Tooplate 2114 Pixie
-https://www.tooplate.com/view/2114-pixie
--->
   </head>
 
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0px;
+      width: 100%;
+    }
+    header {
+      background-color: #9c6c55;
+      height: 6%;
+      width: 100%;
+      padding-top: 1%;
+      color: white;
+      font-size: large;
+      margin-bottom: 1%;
+      box-shadow: rgba(0, 0, 0, 0.75) 0px 3px 9px -4px;
+      font-family: "Open Sans", sans-serif;
+    }
+    header a {
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      text-decoration: none;
+    }
+    footer {
+      background-color: #9c6c55;
+      width: 100%;
+      height: 10%;
+      margin-top: 1%;
+      padding-top: 1%;
+      box-shadow: rgba(0, 0, 0, 0.411) -1px -2px 5px 0px;
+    }
+    nav {
+      background-color: transparent;
+      width: 100%;
+      height: 8%;
+    }
+    nav a {
+      text-decoration: none;
+      color: black;
+      font-size: large;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #9c6c55;
+      font-size: larger;
+    }
+    .header {
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      font-family: "Open Sans", sans-serif;
+    }
+    .navbar {
+      background-color: transparent;
+      width: 80%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      margin: auto;
+      align-content: center;
+      align-items: center;
+      justify-content: right;
+      font-family: "Open Sans", sans-serif;
+    }
+    .content {
+      flex-basis: 10%;
+      text-align: center;
+      font-family: "Open Sans", sans-serif;
+    }
+    .logoHolder {
+      background-color: rgb(255, 255, 255);
+      width: 80%;
+      height: 12%;
+      display: flex;
+      flex-direction: row;
+      margin: auto;
+      align-content: center;
+      align-items: center;
+      justify-content: left;
+    }
+    .logo {
+      width: 10%;
+      height: 100%;
+    }
+    .logo img {
+      width: 100%;
+      height: 100%;
+    }
+    .banner {
+      background-color: rgb(194, 194, 194);
+      position: absolute;
+    }
+    .footer {
+      margin: auto;
+      text-align: center;
+      color: white;
+      text-decoration: none;
+      font-family: "Open Sans", sans-serif;
+    }
+    .footer a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .holderText {
+      background: url("assets/images/bg.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 40%;
+      width: 50%;
+      position: absolute;
+      top: 5%;
+      left: 5%;
+      z-index: 10;
+      color: black;
+      font-family: "Open Sans", sans-serif;
+      text-align: left;
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+    .main-button {
+      display: block;
+      width: 100%;
+      border: none;
+      background-color: #9c6c55;
+      padding: 1%;
+      cursor: pointer;
+      border-top-left-radius: 0.5em 1em;
+      border-top-right-radius: 0.5em 1em;
+      border-bottom-left-radius: 0.5em 1em;
+      border-bottom-right-radius: 0.5em 1em;
+      text-align: center;
+    }
+    .main-button a {
+      font-family: "Open Sans", sans-serif;
+      text-decoration: none;
+      font-weight: bolder;
+      font-size: larger;
+      color: black;
+    }
+    .main-button:hover {
+      background-color: #e6cabc;
+      color: black;
+      box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    }
+    .carousel {
+      position: relative;
+      box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+      margin-top: 26px;
+    }
+
+    .carousel-inner {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .carousel-open:checked + .carousel-item {
+      position: static;
+      opacity: 100;
+    }
+
+    .carousel-item {
+      position: absolute;
+      opacity: 0;
+      -webkit-transition: opacity 0.6s ease-out;
+      transition: opacity 0.6s ease-out;
+    }
+
+    .carousel-item img {
+      display: block;
+      height: auto;
+      max-width: 100%;
+    }
+
+    .carousel-control {
+      background: rgba(0, 0, 0, 0.28);
+      border-radius: 50%;
+      color: #fff;
+      cursor: pointer;
+      display: none;
+      font-size: 40px;
+      height: 40px;
+      line-height: 35px;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+      cursor: pointer;
+      -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      text-align: center;
+      width: 40px;
+      z-index: 10;
+    }
+
+    .carousel-control.prev {
+      left: 2%;
+    }
+
+    .carousel-control.next {
+      right: 2%;
+    }
+
+    .carousel-control:hover {
+      background: rgba(0, 0, 0, 0.8);
+      color: #aaaaaa;
+    }
+
+    #carousel-1:checked ~ .control-1,
+    #carousel-2:checked ~ .control-2,
+    #carousel-3:checked ~ .control-3 {
+      display: block;
+    }
+
+    .carousel-indicators {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      bottom: 2%;
+      left: 0;
+      right: 0;
+      text-align: center;
+      z-index: 10;
+    }
+
+    .carousel-indicators li {
+      display: inline-block;
+      margin: 0 5px;
+    }
+
+    .carousel-bullet {
+      color: #fff;
+      cursor: pointer;
+      display: block;
+      font-size: 35px;
+    }
+
+    .carousel-bullet:hover {
+      color: #aaaaaa;
+    }
+
+    #carousel-1:checked
+      ~ .control-1
+      ~ .carousel-indicators
+      li:nth-child(1)
+      .carousel-bullet,
+    #carousel-2:checked
+      ~ .control-2
+      ~ .carousel-indicators
+      li:nth-child(2)
+      .carousel-bullet,
+    #carousel-3:checked
+      ~ .control-3
+      ~ .carousel-indicators
+      li:nth-child(3)
+      .carousel-bullet {
+      color: #9c6c55;
+    }
+
+    #title {
+      width: 100%;
+      position: absolute;
+      padding: 0px;
+      margin: 0px auto;
+      text-align: center;
+      font-size: 27px;
+      color: rgba(255, 255, 255, 1);
+      font-family: "Open Sans", sans-serif;
+      z-index: 9999;
+      text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33),
+        -1px 0px 2px rgba(255, 255, 255, 0);
+    }
+  </style>
+
   <body>
-    <!-- Pre Header -->
-    <div id="pre-header">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <span
-              >Entre em contato conosco 📞 (19) 3231-2968 📫
-              <a
-                href="mailto:marildablueberry@uol.com.br"
-                title="email"
-                role="link"
-                tabindex="0"
-                target="blank"
-                >marildablueberry@uol.com.br</a
-              ></span
-            >
-          </div>
+    <header>
+      <div class="header">
+        Entre em contato conosco 📞 (19) 3231-2968 📫
+        <a
+          href="mailto:marildablueberry@uol.com.br"
+          title="email"
+          role="link"
+          tabindex="0"
+          target="blank"
+          >marildablueberry@uol.com.br</a
+        >
+      </div>
+    </header>
+    <div class="pos_header">
+      <div class="logoHolder">
+        <div class="logo">
+          <img src="assets/images/header-logo.png" />
+        </div>
+        <div class="logo">
+          <img src="assets/images/bottom-logo.png" />
         </div>
       </div>
+
+      <nav>
+        <div class="navbar">
+          <div class="content"><a href="index.html">Home</a></div>
+          <div class="content"><a href="orcamento.html">Orçamento</a></div>
+          <div class="content"><a href="about.html">Sobre Nós</a></div>
+        </div>
+      </nav>
     </div>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-      <div class="container">
-        <a class="navbar-brand" href="#"
-          ><img src="assets/images/header-logo.png" alt=""
-        /></a>
-        <a class="navbar-brand" href="#"
-          ><img src="assets/images/bottom-logo.png" alt=""
-        /></a>
-        <a class="navbar-brand" href="#"
-          ><img src="assets/images/header-logo2.png" alt=""
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html"
-                >Home
-                <span class="sr-only">(current)</span>
-              </a>
+    <div class="subFooter">
+      <div class="carousel">
+        <div class="holderText">
+          <h2>Produtos Personalizados 🧶</h2>
+
+          <h3>
+            🔶Confecção de camisetas promocionais 👕 Também trabalhamos com;
+          </h3>
+          <h4>
+            🔸Camisa polo, Blusa de Agasalho, Ecobag, Abadá , Máscara, Bordado e
+            silkscreen.
+          </h4>
+          <h3>🔷Nosso modelo de pedido tem um minimo de 30 peças.</h3>
+          <h4>
+            🔹Para montar a solicitação de orçamento diretamente por e-mail use
+            as seguintes informações em seu pedido: 👇
+          </h4>
+
+          <p>
+            <em>Itens com <strong>(*)</strong> NÂO poderão ficar em branco!</em>
+          </p>
+
+          <ul>
+            <li>Produto * (ex: Camiseta, Gola Polo, Abadá).</li>
+            <li>Quantidade (Numero de peças do pedido).</li>
+            <li>Material da Peça * (ex: Algodão, PV, Piquet).</li>
+            <li>Cor do Produto * (ex: Azul, Verde, Petro).</li>
+            <li>Tipo de Gola * (ex: Gola Redonda, Gola V).</li>
+            <li>Tipo de Bordado (Tamanho e Posicionamento).</li>
+            <li>
+              SilkScreen (Quantidade de Cor em Cada Logo e Seu Posicionamento na
+              Peça).
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="products.html">Orçamento</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">Sobre Nós</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contato</a>
+            <li>
+              Anexar os Arquivos ou Logotipos, se possivel com a arte vetorizada
+              (Caso Já os Tenha).
             </li>
           </ul>
+          <button class="main-button">
+            <a href="orcamento.html">ORÇAMENTO!</a>
+          </button>
         </div>
-      </div>
-    </nav>
 
-    <!-- Page Content -->
-    <!-- Banner Starts Here -->
-    <div class="banner">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="caption">
-              <h2>Produtos Personalizados</h2>
-              <div class="line-dec"></div>
-              <p>
-                <strong>Confecção </strong>de camisetas promocionais, camisas
-                polos, blusas de agasalho, ecobags, abadás, máscaras, bordados e
-                silkscreen, todas as peças são confeccionamos em nossa própria
-                empresa. <br /><br />
-                <strong>Como Trabalhamos</strong>
-                para conquistarmos a experiencia ideal, nossos tecidos são de
-                alta qualidade, pensando sempre na satifação de nossos clientes.
-                <br /><br />
-                <strong>Sua encomenda</strong> é muito importante para nós.
-                Sabemos também que o seu tempo é igualmente importante, sendo
-                rapidez hoje em dia a palavra final no fechamento de muitos
-                negocios, buscamos pensar no contexto em que seu produto sera
-                melhor projetado, assim o modelo trabalhado de pedido tem o
-                minimo de 30 peças.
-              </p>
-              <div class="main-button">
-                <a href="contact.html">ORÇAMENTO!</a>
-              </div>
-            </div>
+        <div class="carousel-inner">
+          <input
+            class="carousel-open"
+            type="radio"
+            id="carousel-1"
+            name="carousel"
+            aria-hidden="true"
+            hidden=""
+            checked="checked"
+          />
+          <div class="carousel-item">
+            <img src="assets/images/item-01.jpg" />
           </div>
-        </div>
-      </div>
-    </div>
-    <!-- Banner Ends Here -->
-
-    <!-- Featured Starts Here -->
-    <div class="featured-items">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <div class="line-dec"></div>
-              <h1>Camisetas Coloridas</h1>
-            </div>
+          <input
+            class="carousel-open"
+            type="radio"
+            id="carousel-2"
+            name="carousel"
+            aria-hidden="true"
+            hidden=""
+          />
+          <div class="carousel-item">
+            <img src="assets/images/item-02.jpg" />
           </div>
-          <div class="col-md-12">
-            <div class="owl-carousel owl-theme">
-              <a href="#">
-                <div class="featured-item">
-                  <img src="assets/images/item-01.jpg" alt="Item 1" />
-                </div>
-              </a>
-              <a href="#">
-                <div class="featured-item">
-                  <img src="assets/images/item-02.jpg" alt="Item 2" />
-                </div>
-              </a>
-              <a href="#">
-                <div class="featured-item">
-                  <img src="assets/images/item-03.jpg" alt="Item 3" />
-                </div>
-              </a>
-              <a href="#">
-                <div class="featured-item">
-                  <img src="assets/images/item-04.jpg" alt="Item 4" />
-                </div>
-              </a>
-              <a href="#">
-                <div class="featured-item">
-                  <img src="assets/images/item-05.jpg" alt="Item 5" />
-                </div>
-              </a>
-              <a href="#">
-                <div class="featured-item">
-                  <img src="assets/images/item-06.jpg" alt="Item 6" />
-                </div>
-              </a>
-              <a href="#">
-                <div class="featured-item">
-                  <img src="assets/images/item-07.jpg" alt="Item 7" />
-                </div>
-              </a>
-              <a href="#">
-                <div class="featured-item">
-                  <img src="assets/images/item-08.jpg" alt="Item 8" />
-                </div>
-              </a>
-              <a href="#">
-                <div class="featured-item">
-                  <img src="assets/images/item-09.jpg" alt="Item 9" />
-                </div>
-              </a>
-            </div>
+          <input
+            class="carousel-open"
+            type="radio"
+            id="carousel-3"
+            name="carousel"
+            aria-hidden="true"
+            hidden=""
+          />
+          <div class="carousel-item">
+            <img src="assets/images/item-03.jpg" />
           </div>
-        </div>
-      </div>
-    </div>
-    <!-- Featred Ends Here -->
-
-    <!-- Subscribe Form Starts Here -->
-    <div class="subscribe-form">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <div class="line-dec"></div>
-              <br />
-              <h2 class="h2stylecolor">
-                Obrigado Pela Sua Preferência, Volte Sempre!
-              </h2>
-            </div>
-          </div>
+          <label for="carousel-3" class="carousel-control prev control-1"
+            >‹</label
+          >
+          <label for="carousel-2" class="carousel-control next control-1"
+            >›</label
+          >
+          <label for="carousel-1" class="carousel-control prev control-2"
+            >‹</label
+          >
+          <label for="carousel-3" class="carousel-control next control-2"
+            >›</label
+          >
+          <label for="carousel-2" class="carousel-control prev control-3"
+            >‹</label
+          >
+          <label for="carousel-1" class="carousel-control next control-3"
+            >›</label
+          >
+          <ol class="carousel-indicators">
+            <li>
+              <label for="carousel-1" class="carousel-bullet">•</label>
+            </li>
+            <li>
+              <label for="carousel-2" class="carousel-bullet">•</label>
+            </li>
+            <li>
+              <label for="carousel-3" class="carousel-bullet">•</label>
+            </li>
+          </ol>
         </div>
       </div>
     </div>
 
-    <!-- Subscribe Form Ends Here -->
+    <footer>
+      <div class="footer">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
 
-    <!-- Footer Starts Here -->
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="logo">
-              <img src="assets/images/bottom-logo.png" alt="" />
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="footer-menu">
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">How It Works?</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <p>
+          Copyright &copy; 2022 | BlueBerryCamisetas | Designed By:
+          <a href="https://www.facebook.com/victoryagoc">Victor Yago Cury</a>
+        </p>
       </div>
-    </div>
-    <!-- Footer Ends Here -->
+    </footer>
 
-    <!-- Sub Footer Starts Here -->
-    <div class="sub-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="copyright-text">
-              <p>
-                Copyright &copy; 2022 BlueBerryCamisetas - Designed By:
-                <a rel="nofollow" href="https://www.facebook.com/victoryagoc"
-                  >Victor Yago Cury</a
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Sub Footer Ends Here -->
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Additional Scripts -->
-    <script src="assets/js/custom.js"></script>
-    <script src="assets/js/owl.js"></script>
-
-    <script language="text/Javascript">
-      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
-      function clearField(t) {
-        //declaring the array outside of the
-        if (!cleared[t.id]) {
-          // function makes it static and global
-          cleared[t.id] = 1; // you could use true and false, but that's more typing
-          t.value = ""; // with more chance of typos
-          t.style.color = "#fff";
-        }
-      }
-    </script>
+    <script></script>
   </body>
 </html>

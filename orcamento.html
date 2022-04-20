@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>SiteBlueBerryCamisetasOrçamento</title>
+  </head>
+
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      width: 100%;
+    }
+
+    header {
+      background-color: #9c6c55;
+      height: 6%;
+      width: 100%;
+      padding-top: 1%;
+      color: white;
+      font-size: large;
+      margin-bottom: 1%;
+      box-shadow: rgba(0, 0, 0, 0.75) 0px 3px 9px -4px;
+      font-family: "Open Sans", sans-serif;
+    }
+    header a {
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      text-decoration: none;
+    }
+    footer {
+      background-color: #9c6c55;
+      width: 100%;
+      height: 10%;
+      margin-top: 1%;
+      padding-top: 1%;
+      font-family: "Open Sans", sans-serif;
+      box-shadow: rgba(0, 0, 0, 0.411) -1px -2px 5px 0px;
+    }
+    nav {
+      background-color: transparent;
+      width: 100%;
+      height: 8%;
+    }
+    nav a {
+      text-decoration: none;
+      color: black;
+      font-size: large;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #9c6c55;
+      font-size: larger;
+    }
+    .header {
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      font-family: "Open Sans", sans-serif;
+    }
+    .navbar {
+      background-color: transparent;
+      width: 80%;
+      height: 0%;
+      display: flex;
+      flex-direction: row;
+      margin: auto;
+      align-content: center;
+      align-items: center;
+      justify-content: right;
+      font-family: "Open Sans", sans-serif;
+    }
+    .content {
+      flex-basis: 10%;
+      text-align: center;
+      font-family: "Open Sans", sans-serif;
+    }
+    .logoHolder {
+      background-color: rgb(255, 255, 255);
+      width: 80%;
+      height: 12%;
+      display: flex;
+      flex-direction: row;
+      margin: auto;
+      align-content: center;
+      align-items: center;
+      justify-content: left;
+    }
+    .logo {
+      width: 10%;
+      height: 100%;
+    }
+    .logo img {
+      width: 100%;
+      height: 100%;
+    }
+    .mainHolder {
+      width: 100%;
+      height: 76%;
+    }
+    .bannerHolder {
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      position: relative;
+    }
+    .banner {
+      background: url("assets/images/bg2.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 89%;
+      width: 50%;
+      margin: auto;
+      text-align: center;
+      padding-top: 1%;
+      padding-left: 2%;
+      padding-right: 2%;
+      padding-bottom: 1%;
+      box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.288);
+      font-family: "Open Sans", sans-serif;
+      position: absolute;
+      top: 3%;
+      left: 25%;
+      z-index: 10;
+    }
+    .footer {
+      margin: auto;
+      text-align: center;
+      color: white;
+      text-decoration: none;
+      font-family: "Open Sans", sans-serif;
+    }
+    .footer a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .pos_header {
+      padding-bottom: 1%;
+    }
+  </style>
+
+  <body>
+    <header>
+      <div class="header">
+        Entre em contato conosco 📞 (19) 3231-2968 📫
+        <a
+          href="mailto:marildablueberry@uol.com.br"
+          title="email"
+          role="link"
+          tabindex="0"
+          target="blank"
+          >marildablueberry@uol.com.br</a
+        >
+      </div>
+    </header>
+    <div class="pos_header">
+      <div class="logoHolder">
+        <div class="logo"><img src="assets/images/header-logo.png" /></div>
+        <div class="logo"><img src="assets/images/bottom-logo.png" /></div>
+      </div>
+
+      <nav>
+        <div class="navbar">
+          <div class="content"><a href="index.html">Home</a></div>
+          <div class="content"><a href="orcamento.html">Orçamento</a></div>
+          <div class="content"><a href="about.html">Sobre Nós</a></div>
+        </div>
+      </nav>
+    </div>
+    <div class="mainHolder">
+      <div class="bannerHolder">
+        <div class="banner">
+          <h1>Seu Orçamento Aqui 📝</h1>
+
+          <p>
+            Caso você deseje um
+            <strong>Orçamento</strong>
+            para seu projeto.
+          </p>
+
+          <form>
+            <h2>Dados Pessoais</h2>
+
+            <span class="#">Seu Nome: *</span>
+            <input
+              name="Nome"
+              class="#"
+              id="Nome"
+              size="30"
+              maxlength="200"
+              type="text"
+            />
+
+            <span class="#">E-mail: *</span>
+            <input
+              name="Email"
+              class="#"
+              id="Email"
+              size="30"
+              maxlength="250"
+              type="text"
+            />
+
+            <br />
+            <br />
+
+            <span class="#">DDD / Celuar: </span>
+            <input
+              name="DDD"
+              class="#"
+              id="DDD"
+              size="2"
+              maxlength="2"
+              type="text"
+            />
+            <input
+              name="Telefone"
+              class="formcampo3"
+              id="Telefone"
+              size="15"
+              maxlength="15"
+              type="text"
+            />
+
+            <span class="#">DDD / Telefone: </span>
+            <input
+              name="DDD2"
+              class="#"
+              id="DDD2"
+              size="2"
+              maxlength="2"
+              type="text"
+            />
+            <input
+              name="Telefone2"
+              class="formcampo3"
+              id="Telefone2"
+              size="15"
+              maxlength="15"
+              type="text"
+            />
+
+            <h2>Detalhes do Pedido *</h2>
+
+            <span class="#">Tipo de Peça: *</span>
+            <select name="Tipo_de_produto" class="#" id="Tipo_de_produto">
+              <option value="" selected="selected">-- Selecione --</option>
+              <option value="Camiseta">Camiseta</option>
+              <option value="Gola Polo">Gola Polo</option>
+              <option value="Abadá">Abadá</option>
+              <option value="Ecobag">Ecobag</option>
+              <option value="Agasalho">Agasalho</option>
+              <option value="Máscara">Máscara</option>
+              <option value="Bordado">Bordado</option>
+              <option value="Silk Screen">Silk Screen</option>
+              <option value="Uniforme">Uniforme</option>
+              <option value="Outros">Outros</option>
+            </select>
+
+            <br />
+            <br />
+
+            <span class="#">Quantidade (Numero de peças): </span>
+            <input
+              name="Qtd_Pcs"
+              class="#"
+              id="Qtd_Pcs"
+              size="5"
+              maxlength="5"
+              type="text"
+            />
+
+            <h2>Anexar os Arquivos ou Logotipos (Caso Já os Tenha)</h2>
+
+            <p>
+              <span class="#">📎 anexar: </span>
+
+              <a href="#" class="#" title="Choose date">Escolher Arquivos</a>
+            </p>
+
+            <p>
+              <span class="#">Vetorizada: </span>
+
+              <input name="vector" class="#" value="sim" type="radio" />
+              Sim
+              <input name="vector" class="#" value="nao" type="radio" />
+              Não
+              <input name="vector" class="#" value="naosei" type="radio" />
+              Não Sei
+            </p>
+
+            <p>
+              <span class="#">Comentário: * </span>
+
+              <textarea
+                name="Comentario"
+                cols="50"
+                rows="5"
+                class="#"
+                id="Comentario"
+              ></textarea>
+
+              <span class="#">
+                <input
+                  name="tituloMensagem"
+                  id="tituloMensagem"
+                  value="Formulário de Orçamento"
+                  type="hidden"
+                />
+                &nbsp;</span
+              >
+
+              <input name="#" class="#" id="#0" value="Enviar" type="submit" />
+              <input name="#" class="#" id="#1" value="Limpar" type="reset" />
+            </p>
+            <p class="tx_small">
+              <em
+                ><strong>ATENÇÃO:</strong> Campos com * são de preenchimento
+                obrigatório
+              </em>
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <div class="subFooter"></div>
+
+      <footer>
+        <div class="footer">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+
+          <p>
+            Copyright &copy; 2022 | BlueBerryCamisetas | Designed By:
+            <a href="https://www.facebook.com/victoryagoc">Victor Yago Cury</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script></script>
+  </body>
+</html>
