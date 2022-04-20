@@ -112,6 +112,18 @@
       height: 100%;
       background-color: white;
       position: relative;
+      padding: 1%;
+    }
+    .bannerHolder a {
+      text-decoration: none;
+      color: #922E00;
+      font-size: large;
+    }
+    .bannerHolder a:hover {
+      text-decoration: none;
+      color: #000000;
+      font-weight: bold;
+      font-size: larger;
     }
     .banner {
       background: url("assets/images/bg2.jpg");
@@ -120,7 +132,7 @@
       height: 89%;
       width: 50%;
       margin: auto;
-      text-align: center;
+      text-align: left;
       padding-top: 1%;
       padding-left: 2%;
       padding-right: 2%;
@@ -180,7 +192,7 @@
     <div class="mainHolder">
       <div class="bannerHolder">
         <div class="banner">
-          <h1>Seu Orçamento Aqui 📝</h1>
+          <h2>Seu Orçamento Aqui 📝</h2>
 
           <p>
             Caso você deseje um
@@ -189,7 +201,7 @@
           </p>
 
           <form>
-            <h2>Dados Pessoais</h2>
+            <h3>Dados Pessoais</h3>
 
             <span class="#">Seu Nome: *</span>
             <input
@@ -250,7 +262,7 @@
               type="text"
             />
 
-            <h2>Detalhes do Pedido *</h2>
+            <h3>Detalhes do Pedido *</h3>
 
             <span class="#">Tipo de Peça: *</span>
             <select name="Tipo_de_produto" class="#" id="Tipo_de_produto">
@@ -280,7 +292,7 @@
               type="text"
             />
 
-            <h2>Anexar os Arquivos ou Logotipos (Caso Já os Tenha)</h2>
+            <h4>Anexar os Arquivos ou Logotipos (Caso Já os Tenha)</h4>
 
             <p>
               <span class="#">📎 anexar: </span>
@@ -300,8 +312,8 @@
             </p>
 
             <p>
-              <span class="#">Comentário: * </span>
-
+              <span>Faça qualquer observação sobre o pedido. <br /></span>
+                
               <textarea
                 name="Comentario"
                 cols="50"
