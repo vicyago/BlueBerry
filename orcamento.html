@@ -20,7 +20,18 @@
       margin: 0;
       width: 100%;
     }
-
+    select {
+      margin: 1%;
+      background: #e6cabc;
+      color: rgb(0, 0, 0);
+      font-size: large;
+      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+      border-top-left-radius: 80px 80px;
+      border-bottom-left-radius: 80px 80px;
+      border-top-right-radius: 80px 80px;
+      border-bottom-right-radius: 80px 80px;
+      font-family: "Open Sans", sans-serif;
+    }
     header {
       background-color: #9c6c55;
       height: 6%;
@@ -60,6 +71,10 @@
     nav a:hover {
       color: #9c6c55;
       font-size: larger;
+    }
+    hr {
+      border: none;
+      border-color: transparent;
     }
     .header {
       width: 80%;
@@ -116,7 +131,7 @@
     }
     .bannerHolder a {
       text-decoration: none;
-      color: #922E00;
+      color: #922e00;
       font-size: large;
     }
     .bannerHolder a:hover {
@@ -134,9 +149,9 @@
       margin: auto;
       text-align: left;
       padding-top: 1%;
-      padding-left: 2%;
+      padding-left: 4%;
       padding-right: 2%;
-      padding-bottom: 1%;
+      padding-bottom: 2%;
       box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.288);
       font-family: "Open Sans", sans-serif;
       position: absolute;
@@ -158,6 +173,93 @@
     }
     .pos_header {
       padding-bottom: 1%;
+    }
+    .input {
+      margin: 1%;
+      background: #e6cabc;
+      color: rgb(0, 0, 0);
+      font-size: large;
+      border-top-left-radius: 80px 80px;
+      border-bottom-left-radius: 80px 80px;
+      border-top-right-radius: 80px 80px;
+      border-bottom-right-radius: 80px 80px;
+      font-family: "Open Sans", sans-serif;
+    }
+    .inputCor {
+      margin: 1%;
+      padding: 2%;
+      background: linear-gradient(
+        45deg,
+        blue,
+        indigo,
+        violet,
+        green,
+        yellow,
+        orange,
+        red,
+        black,
+        white
+      );
+      border-top-left-radius: 80px 80px;
+      border-bottom-left-radius: 80px 80px;
+      border-top-right-radius: 80px 80px;
+      border-bottom-right-radius: 80px 80px;
+      border: none;
+      border-color: transparent;
+    }
+    .input3 {
+      margin: 1%;
+      padding: 1%;
+      background: #e6cabc;
+      color: rgb(0, 0, 0);
+      font-size: large;
+      border-top-left-radius: 80px 80px;
+      border-bottom-left-radius: 80px 80px;
+      border-top-right-radius: 80px 80px;
+      border-bottom-right-radius: 80px 80px;
+      font-family: "Open Sans", sans-serif;
+      box-shadow: 0 1px 1px 0 #0000006b;
+    }
+    .holderText2 {
+      background: url("assets/images/bg4.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-top: 3%;
+      margin-bottom: 3%;
+      margin-left: 10%;
+      text-align: center;
+      width: 36%;
+      height: 100%;
+      padding-top: 1%;
+      padding-left: 1%;
+      padding-right: 2%;
+      padding-bottom: 2%;
+      box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.288);
+      font-family: "Open Sans", sans-serif;
+      position: relative;
+      top: 3%;
+      left: 25%;
+    }
+    .main-button {
+      display: block;
+      margin-left: 12%;
+      width: 80%;
+      border: none;
+      background-color: #e6cabc;
+      padding: 1%;
+      cursor: pointer;
+      border-top-left-radius: 0.5em 1em;
+      border-top-right-radius: 0.5em 1em;
+      border-bottom-left-radius: 0.5em 1em;
+      border-bottom-right-radius: 0.5em 1em;
+      text-align: center;
+      box-shadow: 1px 1px 1px 1px #0000004b;
+    }
+    .main-button a {
+      font-family: "Open Sans", sans-serif;
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      font-weight: bold;
     }
   </style>
 
@@ -193,12 +295,6 @@
       <div class="bannerHolder">
         <div class="banner">
           <h2>Seu Orçamento Aqui 📝</h2>
-
-          <p>
-            Caso você deseje um
-            <strong>Orçamento</strong>
-            para seu projeto.
-          </p>
 
           <form>
             <h3>Dados Pessoais</h3>
@@ -264,25 +360,59 @@
 
             <h3>Detalhes do Pedido *</h3>
 
-            <span class="#">Tipo de Peça: *</span>
+            <span class="#">1️⃣</span>
             <select name="Tipo_de_produto" class="#" id="Tipo_de_produto">
-              <option value="" selected="selected">-- Selecione --</option>
+              <option value="" selected="selected">-- Tipo de Peça --</option>
               <option value="Camiseta">Camiseta</option>
               <option value="Gola Polo">Gola Polo</option>
-              <option value="Abadá">Abadá</option>
+              <option value="Abada">Abadá</option>
               <option value="Ecobag">Ecobag</option>
               <option value="Agasalho">Agasalho</option>
-              <option value="Máscara">Máscara</option>
+              <option value="Mascara">Máscara</option>
               <option value="Bordado">Bordado</option>
               <option value="Silk Screen">Silk Screen</option>
               <option value="Uniforme">Uniforme</option>
-              <option value="Outros">Outros</option>
+            </select>
+
+            <span class="#">2️⃣</span>
+            <select name="Material_da_peca" class="#" id="Material_da_peça">
+              <option value="" selected="selected">
+                -- Material da Peça --
+              </option>
+              <option value="Algodao_cardada">Algodão cardada</option>
+              <option value="Algodao_penteada">Algodão penteada</option>
+              <option value="Malha_fria_PV">Malha fria ou PV</option>
+              <option value="Dry_dry_fit">Dry ou dry fit</option>
+              <option value="Elastano_lycra">Elastano ou lycra</option>
+              <option value="Viscose">Viscose</option>
+              <option value="Poliester">Poliéster</option>
             </select>
 
             <br />
+
+            <span class="#">3️⃣</span>
+            <select name="Cor_da_peca" class="#" id="Cor_da_peca">
+              <option value="" selected="selected">
+                -- Cor da Peça --
+                <input type="color" class="inputCor" />
+              </option>
+            </select>
+
             <br />
 
-            <span class="#">Quantidade (Numero de peças): </span>
+            <span class="#">4️⃣</span>
+            <select name="Tipo_de_gola" class="#" id="Tipo_de_gola">
+              <option value="" selected="selected">-- Tipo de Gola --</option>
+              <option value="Redonda">Redonda</option>
+              <option value="V">Gola V</option>
+              <option value="Canoa_U">Canoa ou “U”</option>
+              <option value="Gola_canoa">Gola Canoa</option>
+              <option value=" Gola_role">Gola rolê</option>
+              <option value="Gola_henley">Gola Henley</option>
+              <option value="Capuz">Capuz</option>
+            </select>
+
+            5️⃣<span class="input3">-- Quantidade de Peças --</span>
             <input
               name="Qtd_Pcs"
               class="#"
@@ -292,28 +422,16 @@
               type="text"
             />
 
-            <h4>Anexar os Arquivos ou Logotipos (Caso Já os Tenha)</h4>
-
             <p>
-              <span class="#">📎 anexar: </span>
+              <span>
+                6️⃣ <strong>Bordado E/OU SilkScreen:</strong>
+                <br />
+                <hr />
+                (Quantidade de Cores em Cada Logo, Seu Tamanho e Posicionamento
+                na Peça).
+                <br />
+              </span>
 
-              <a href="#" class="#" title="Choose date">Escolher Arquivos</a>
-            </p>
-
-            <p>
-              <span class="#">Vetorizada: </span>
-
-              <input name="vector" class="#" value="sim" type="radio" />
-              Sim
-              <input name="vector" class="#" value="nao" type="radio" />
-              Não
-              <input name="vector" class="#" value="naosei" type="radio" />
-              Não Sei
-            </p>
-
-            <p>
-              <span>Faça qualquer observação sobre o pedido. <br /></span>
-                
               <textarea
                 name="Comentario"
                 cols="50"
@@ -335,6 +453,24 @@
               <input name="#" class="#" id="#0" value="Enviar" type="submit" />
               <input name="#" class="#" id="#1" value="Limpar" type="reset" />
             </p>
+
+            <h4>Anexar os Arquivos ou Logotipos (se disponível)</h4>
+
+            <p>
+              <span class="#">📎 anexar: </span>
+
+              <a href="#" class="#" title="Choose date">Escolher Arquivos</a>
+
+              <span class="#">(Vetorizada: </span>
+
+              <input name="vector" class="#" value="sim" type="radio" />
+              Sim
+              <input name="vector" class="#" value="nao" type="radio" />
+              Não
+              <input name="vector" class="#" value="naosei" type="radio" />
+              Não Sei)
+            </p>
+
             <p class="tx_small">
               <em
                 ><strong>ATENÇÃO:</strong> Campos com * são de preenchimento
@@ -345,7 +481,45 @@
         </div>
       </div>
 
-      <div class="subFooter"></div>
+      <div class="subFooter">
+        <div class="holderText2">
+          <h3>
+            Para montar a solicitação de orçamento diretamente por e-mail <br /> use as
+            seguintes informações em seu pedido: 👇
+          </h3>
+          <p>
+            <em>Itens com <strong>(*)</strong> NÂO poderão ficar em branco!</em>
+          </p>
+
+          <ul>
+            <li>Produto * (ex: Camiseta, Gola Polo, Abadá).</li>
+            <li>Quantidade (Numero de peças do pedido).</li>
+            <li>Material da Peça * (ex: Algodão, PV, Piquet).</li>
+            <li>Cor do Produto * (ex: Azul, Verde, Petro).</li>
+            <li>Tipo de Gola * (ex: Gola Redonda, Gola V).</li>
+            <li>Tipo de Bordado (Tamanho e Posicionamento).</li>
+            <li>
+              SilkScreen (Quantidade de Cor em Cada Logo e Seu Posicionamento na
+              Peça).
+            </li>
+            <li>
+              Anexar os Arquivos ou Logotipos, se possivel com a arte vetorizada
+              (Se disponível).
+            </li>
+          </ul>
+
+          <button class="main-button">
+            <a
+              href="mailto:marildablueberry@uol.com.br"
+              title="email"
+              role="link"
+              tabindex="0"
+              target="blank"
+              >marildablueberry@uol.com.br</a
+            >
+          </button>
+        </div>
+      </div>
 
       <footer>
         <div class="footer">
