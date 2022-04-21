@@ -20,18 +20,7 @@
     padding-left: 2%;
     padding-right: 2%;
 }
-.main-button a {
-    font-family: "Open Sans", sans-serif;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: larger;
-    color: black;
-}
 
-.main-button:hover {
-    background-color: #9c6c55;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.64);
-}
 .carousel {
     position: relative;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.64);
