@@ -159,7 +159,6 @@
   width: 200px;
   height: 400px;
 }
-
 .canvas-container {
   width: 200px;
   height: 400px;
@@ -168,12 +167,13 @@
 }
 
 #tshirt-div {
-  width: 452px;
-  height: 548px;
+  width: 35%;
+  height: 50%;
   position: relative;
   background-color: #fff;
+  margin-left: 32%;
+  margin-top: 1%;
 }
-
 #canvas {
   position: absolute;
   width: 200px;
@@ -182,4 +182,11 @@
   top: 0px;
   user-select: none;
   cursor: default;
+}
+.tshirtHolder {
+  margin: auto;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }

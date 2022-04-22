@@ -189,11 +189,8 @@
               <span>
                 6️⃣ Bordado E/OU SilkScreen
               </span>
-                <div class="main-button">
-                  <a href="tshirt.html">Link Para Montar seu Bordado e/ou SilkScreen</a>
-                </div>
-                <hr />
-              
+              <button class="main-button" id="main-button">P</button>
+
               <h3>7️⃣ Escreva suas duvidas e observações abaixo 💬</h3>
               <textarea
                 name="Comentario"
@@ -247,6 +244,7 @@
 
 
             <div class="personalizado">
+              <div class="tshirtHolder">
              <div id="tshirt-div">
 
                 <!--Initially, the image will have the background tshirt that has transparency
@@ -269,6 +267,53 @@
                 <option value="./blb_small.png">BlueBerry</option>
                 <option value="./blb2_small.png">BlueBerry2</option>
               </select>
+
+              <!-- The Select that allows the user to change the color of the T-Shirt -->
+          <label for="tshirt-color"
+            ><p class="tshirtExt">Cor da Camiseta</p></label
+          >
+          <select id="tshirt-color" class="tshirt-color">
+            <!-- You can add any color with a new option and definings its hex code -->
+            <option value="#fff">Branco</option>
+            <option value="#808080">Cinza</option>
+            <option value="#d3d3d3">Cinza Claro</option>
+            <option value="#aaa9ad">Prata</option>
+            <option value="#000">Preto</option>
+            <option value="#78866b">Verde Militar</option>
+            <option value="#013220">Verde Escuro</option>
+            <option value="#008000">Verde</option>
+            <option value="#90ee90">Verde Claro</option>
+            <option value="#A020F0">Roxo</option>
+            <option value="#0B0B45">Azul Marinho</option>
+            <option value="#00008b">Azul Escuro</option>
+            <option value="#0000ff">Azul</option>
+            <option value="#add8e6 ">Azul Claro</option>
+            <option value="#0FF">Cyan</option>
+            <option value="#FF00FF">Magenta</option>
+            <option value="#ffcbdb">Rosa</option>
+            <option value="#f00">Vermelho</option>
+            <option value="#fa8072">Salmon</option>
+            <option value="#ffa500">Laranja</option>
+            <option value="#cd7f32">Bronze</option>
+            <option value="#ff0">Amarelo</option>
+            <option value="#daa520">Dourado</option>
+            <option value="#ffdb58">Mostarda</option>
+            <option value="#f5f5dc">Beige</option>
+          </select>
+
+
+          <label for="tshirt-custompicture"
+            ><p class="tshirtExt">Carregue seu Layout</p></label
+          >
+          <input type="file" id="tshirt-custompicture" class="tshirtExt" />
+          <h4 class="tshirtExt">
+            <em
+              >Caso deseje remover a imagem carregada,<br />
+              selecione a imagem e pressione tecla <kbd>DEL</kbd>.</em
+            >
+          </h4>
+          
+          </div>
            </div>
 
 
@@ -335,6 +380,9 @@
         </p>
       </div>
     </footer>
+    <script src="assets/javascript/fabric.js"></script>
+    <script src="assets/javascript/fabric.min.js"></script>
+    <script src="assets/javascript/tshirt.js"></script>
     <script></script>
   </body>
 </html>
