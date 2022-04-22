@@ -2,12 +2,30 @@
   background-color: rgb(194, 194, 194);
   position: absolute;
 }
-
+.content:first-child::after{
+  background: green;
+  content: '';
+  bottom: -4px;
+  height: 2px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: 50%;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+.content:first-child:hover::after {
+  width: 80%;
+  background: orange;
+}
 .holderText {
   background: url("../images/bg.png") no-repeat;
   background-size: cover;
   width: 36%;
-  height: 60%;
   position: absolute;
   top: 5%;
   left: 10%;
@@ -20,10 +38,21 @@
   padding-left: 2%;
   padding-right: 2%;
 }
+.holderText h2{
+  text-align: center;
+}
+.holderText ul{
+  list-style-type: circle;
+  margin-top: 1%;
+}
+.holderText h4:first-of-type{
+  margin-bottom: 0;
+}
+
 
 .carousel {
   position: relative;
-  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.64);
   margin-top: 26px;
 }
 
@@ -89,7 +118,10 @@
 #carousel-3:checked ~ .control-3 {
   display: block;
 }
+.tester{
+color: red;
 
+}
 .carousel-indicators {
   list-style: none;
   margin: 0;
@@ -147,4 +179,30 @@
   font-family: "Open Sans", sans-serif;
   z-index: 9999;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.33), -1px 0 2px rgba(255, 255, 255, 0);
+}
+.main-button {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #e6cabc;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 1px 1px 1px 1px #0000004b;
+  font-weight: bold;
+  font-size: larger;
+  margin-bottom: 5%;
+  padding: 2%;
+}
+
+.main-button a {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+  color: black;
+}
+
+.main-button:hover {
+  background-color: #9c6c55;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
 }
