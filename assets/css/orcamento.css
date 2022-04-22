@@ -134,7 +134,6 @@
   margin-bottom: 5%;
   padding: 2%;
 }
-
 .main-button a {
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
@@ -142,8 +141,10 @@
   font-size: larger;
   color: black;
 }
-
 .main-button:hover {
   background-color: #9c6c55;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+}
+.personalizado {
+  
 }
