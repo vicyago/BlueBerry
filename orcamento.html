@@ -13,6 +13,7 @@
     <title>SiteBlueBerryCamisetasOrçamento</title>
     <link rel="stylesheet" type="text/css" href="assets/css/orcamento.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/tshirt.css" />
   </head>
 
   <style></style>
@@ -243,29 +244,39 @@
                 >
               </em>
             </p>
+
+
             <div class="personalizado">
-              <div class="holderText3">
-                
-          <h3>
-            ☑️ Para montar a solicitação de orçamento diretamente por e-mail <br />
-            use as seguintes informações em seu pedido: 👇
-          </h3>
-                
-          <button class="main-button">
-            <a
-              href="mailto:marildablueberry@uol.com.br"
-              title="email"
-              role="link"
-              tabindex="0"
-              target="blank"
-              >marildablueberry@uol.com.br</a
-            >
-          </button>
-        </div>
+             <div id="tshirt-div">
+            <!-- 
+                Initially, the image will have the background tshirt that has transparency
+                So we can simply update the color with CSS or JavaScript dinamically
+            -->
+            <img id="tshirt-backgroundpicture" src="./background_tshirt.png" />
+
+            <div id="drawingArea" class="drawing-area">
+              <div class="canvas-container">
+                <canvas id="tshirt-canvas" width="200" height="400"></canvas>
+              </div>
+             </div>
             </div>
+           </div>
+
+          <!-- The select that will allow the user to pick one of the static designs -->
+          <label for="tshirt-design"
+            ><p class="tshirtExt">Layout da Camiseta</p></label
+          >
+          <select id="tshirt-design">
+            <option value=""><p>Selecione o Layout</p></option>
+            <option value="./blb_small.png">BlueBerry</option>
+            <option value="./blb2_small.png">BlueBerry2</option>
+          </select>
+
           </form>
         </div>
       </div>
+
+      
           
       <div class="subFooter">
         <div class="holderText2">
