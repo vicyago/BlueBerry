@@ -248,8 +248,8 @@
 
             <div class="personalizado">
              <div id="tshirt-div">
-            <!-- 
-                Initially, the image will have the background tshirt that has transparency
+
+                <!--Initially, the image will have the background tshirt that has transparency
                 So we can simply update the color with CSS or JavaScript dinamically
             -->
             <img id="tshirt-backgroundpicture" src="./background_tshirt.png" />
@@ -260,17 +260,18 @@
               </div>
              </div>
             </div>
+              <!-- The select that will allow the user to pick one of the static designs -->
+              <label for="tshirt-design"
+              ><p class="tshirtExt">Layout da Camiseta</p></label
+              >
+              <select id="tshirt-design">
+                <option value=""><p>Selecione o Layout</p></option>
+                <option value="./blb_small.png">BlueBerry</option>
+                <option value="./blb2_small.png">BlueBerry2</option>
+              </select>
            </div>
 
-          <!-- The select that will allow the user to pick one of the static designs -->
-          <label for="tshirt-design"
-            ><p class="tshirtExt">Layout da Camiseta</p></label
-          >
-          <select id="tshirt-design">
-            <option value=""><p>Selecione o Layout</p></option>
-            <option value="./blb_small.png">BlueBerry</option>
-            <option value="./blb2_small.png">BlueBerry2</option>
-          </select>
+
 
           </form>
         </div>
