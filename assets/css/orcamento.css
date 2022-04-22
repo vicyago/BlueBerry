@@ -49,7 +49,7 @@
   margin: auto;
 }
 .content:nth-child(2)::after{
-  background: green;
+  background: #9C6C55;
   content: '';
   bottom: -4px;
   height: 2px;

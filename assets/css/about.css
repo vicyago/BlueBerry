@@ -2,6 +2,10 @@
   margin-left: 15%;
   width: 70%;
 }
+.holder img {
+display: block;
+margin: auto;
+}
 h3,
 h4 {
   color: black;
@@ -10,7 +14,7 @@ h4 {
   font-family: "Open Sans", sans-serif;
 }
 .content:nth-child(3)::after{
-  background: green;
+  background: #9C6C55;
   content: '';
   bottom: -4px;
   height: 2px;
