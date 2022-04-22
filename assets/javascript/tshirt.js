@@ -80,3 +80,6 @@
 document.querySelector("#main-button").addEventListener("click", function(){
    document.querySelector(".personalizado").style.display="block";
 })
+document.querySelector("#final-button").addEventListener("click", function () {
+  document.querySelector(".personalizado").style.display = "none";
+});
