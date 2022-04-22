@@ -11,290 +11,11 @@
     <meta name="author" content="" />
 
     <title>SiteBlueBerryCamisetas</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
   </head>
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    html,
-    body {
-      height: 100%;
-      margin: 0;
-      padding: 0px;
-      width: 100%;
-    }
-    header {
-      background-color: #9c6c55;
-      height: 6%;
-      width: 100%;
-      padding-top: 1%;
-      color: white;
-      font-size: large;
-      margin-bottom: 1%;
-      box-shadow: rgba(0, 0, 0, 0.75) 0px 3px 9px -4px;
-      font-family: "Open Sans", sans-serif;
-    }
-    header a {
-      color: white;
-      font-family: "Open Sans", sans-serif;
-      text-decoration: none;
-    }
-    footer {
-      background-color: #9c6c55;
-      width: 100%;
-      height: 10%;
-      margin-top: 1%;
-      padding-top: 1%;
-      box-shadow: rgba(0, 0, 0, 0.411) -1px -2px 5px 0px;
-    }
-    nav {
-      background-color: transparent;
-      width: 100%;
-      height: 8%;
-    }
-    nav a {
-      text-decoration: none;
-      color: black;
-      font-size: large;
-      font-weight: bold;
-    }
-    nav a:hover {
-      color: #9c6c55;
-      font-size: larger;
-    }
-    hr {
-      padding: 1%;
-      border: none;
-      border-color: transparent;
-    }
-    .header {
-      width: 80%;
-      margin: auto;
-      text-align: center;
-      font-family: "Open Sans", sans-serif;
-    }
-    .navbar {
-      background-color: transparent;
-      width: 80%;
-      height: 100%;
-      display: flex;
-      flex-direction: row;
-      margin: auto;
-      align-content: center;
-      align-items: center;
-      justify-content: right;
-      font-family: "Open Sans", sans-serif;
-    }
-    .content {
-      flex-basis: 10%;
-      text-align: center;
-      font-family: "Open Sans", sans-serif;
-    }
-    .logoHolder {
-      background-color: rgb(255, 255, 255);
-      width: 80%;
-      height: 12%;
-      display: flex;
-      flex-direction: row;
-      margin: auto;
-      align-content: center;
-      align-items: center;
-      justify-content: left;
-    }
-    .logo {
-      width: 10%;
-      height: 100%;
-    }
-    .logo img {
-      width: 100%;
-      height: 100%;
-    }
-    .banner {
-      background-color: rgb(194, 194, 194);
-      position: absolute;
-    }
-    .footer {
-      margin: auto;
-      text-align: center;
-      color: white;
-      text-decoration: none;
-      font-family: "Open Sans", sans-serif;
-    }
-    .footer a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .holderText {
-      background: url("assets/images/bg.jpg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 36%;
-      height: 100%;
-      position: absolute;
-      top: 5%;
-      left: 5%;
-      z-index: 10;
-      color: black;
-      font-family: "Open Sans", sans-serif;
-      text-align: left;
-      padding-left: 2%;
-      padding-right: 2%;
-    }
-    .main-button {
-      display: block;
-      width: 100%;
-      border: none;
-      background-color: #e6cabc;
-      cursor: pointer;
-      border-radius: 80px 80px;
-      text-align: center;
-      box-shadow: 1px 1px 1px 1px #0000004b;
-      font-weight: bold;
-      font-size: larger;
-    }
-    .main-button a {
-      font-family: "Open Sans", sans-serif;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: larger;
-      color: black;
-    }
-
-    .main-button:hover {
-      background-color: #9c6c55;
-      box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
-    }
-    .carousel {
-      position: relative;
-      box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
-      margin-top: 26px;
-    }
-
-    .carousel-inner {
-      position: relative;
-      overflow: hidden;
-      width: 100%;
-    }
-
-    .carousel-open:checked + .carousel-item {
-      position: static;
-      opacity: 100;
-    }
-
-    .carousel-item {
-      position: absolute;
-      opacity: 0;
-      -webkit-transition: opacity 0.6s ease-out;
-      transition: opacity 0.6s ease-out;
-    }
-
-    .carousel-item img {
-      display: block;
-      height: auto;
-      max-width: 100%;
-    }
-
-    .carousel-control {
-      background: rgba(0, 0, 0, 0.28);
-      border-radius: 50%;
-      color: #fff;
-      cursor: pointer;
-      display: none;
-      font-size: 40px;
-      height: 40px;
-      line-height: 35px;
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translate(0, -50%);
-      cursor: pointer;
-      -ms-transform: translate(0, -50%);
-      transform: translate(0, -50%);
-      text-align: center;
-      width: 40px;
-      z-index: 10;
-    }
-
-    .carousel-control.prev {
-      left: 2%;
-    }
-
-    .carousel-control.next {
-      right: 2%;
-    }
-
-    .carousel-control:hover {
-      background: rgba(0, 0, 0, 0.8);
-      color: #aaaaaa;
-    }
-
-    #carousel-1:checked ~ .control-1,
-    #carousel-2:checked ~ .control-2,
-    #carousel-3:checked ~ .control-3 {
-      display: block;
-    }
-
-    .carousel-indicators {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      position: absolute;
-      bottom: 2%;
-      left: 0;
-      right: 0;
-      text-align: center;
-      z-index: 10;
-    }
-
-    .carousel-indicators li {
-      display: inline-block;
-      margin: 0 5px;
-    }
-
-    .carousel-bullet {
-      color: #fff;
-      cursor: pointer;
-      display: block;
-      font-size: 35px;
-    }
-
-    .carousel-bullet:hover {
-      color: #aaaaaa;
-    }
-
-    #carousel-1:checked
-      ~ .control-1
-      ~ .carousel-indicators
-      li:nth-child(1)
-      .carousel-bullet,
-    #carousel-2:checked
-      ~ .control-2
-      ~ .carousel-indicators
-      li:nth-child(2)
-      .carousel-bullet,
-    #carousel-3:checked
-      ~ .control-3
-      ~ .carousel-indicators
-      li:nth-child(3)
-      .carousel-bullet {
-      color: #9c6c55;
-    }
-
-    #title {
-      width: 100%;
-      position: absolute;
-      padding: 0px;
-      margin: 0px auto;
-      text-align: center;
-      font-size: 27px;
-      color: rgba(255, 255, 255, 1);
-      font-family: "Open Sans", sans-serif;
-      z-index: 9999;
-      text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33),
-        -1px 0px 2px rgba(255, 255, 255, 0);
-    }
-  </style>
+  <style></style>
 
   <body>
     <header>
@@ -322,9 +43,11 @@
 
       <nav>
         <div class="navbar">
-          <div class="content"><a href="index.html">Home</a></div>
-          <div class="content"><a href="orcamento.html">Orçamento</a></div>
-          <div class="content"><a href="about.html">Sobre Nós</a></div>
+          <div class="contentHolder">
+            <div class="content"><a href="index.html">Home</a></div>
+            <div class="content"><a href="orcamento.html">Orçamento</a></div>
+            <div class="content"><a href="about.html">Sobre Nós</a></div>
+          </div>
         </div>
       </nav>
     </div>
@@ -347,7 +70,7 @@
             🔹 Caso deseje solicitar um orçamento para seu pedido use o botão
             abaixo: 👇
           </h4>
-
+          <hr />
           <button class="main-button">
             <a href="orcamento.html">ORÇAMENTO!</a>
           </button>

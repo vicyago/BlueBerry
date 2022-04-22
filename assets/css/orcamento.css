@@ -1,0 +1,103 @@
+.mainHolder {
+  width: 100%;
+}
+.mainHolder select {
+  margin: 1%;
+  background: #e6cabc;
+  color: rgb(0, 0, 0);
+  font-size: large;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 80px 80px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.mainHolder span {
+  color: black;
+  font-size: large;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+}
+
+.bannerHolder {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: relative;
+  padding: 1%;
+}
+.bannerHolder a {
+  text-decoration: none;
+  color: #922e00;
+  font-size: large;
+}
+.bannerHolder a:hover {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  font-size: larger;
+}
+.banner {
+  background: url("../images/bg2.jpg") no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 70%;
+  text-align: left;
+  padding: 2% 8% 4% 4%;
+  box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.288);
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  margin: auto;
+}
+
+.input {
+  margin: 1%;
+  background: #e6cabc;
+  color: rgb(0, 0, 0);
+  font-size: large;
+  border-radius: 80px 80px;
+  font-family: "Open Sans", sans-serif;
+}
+.inputCor {
+  background: linear-gradient(
+    45deg,
+    blue,
+    indigo,
+    violet,
+    green,
+    yellow,
+    orange,
+    red,
+    black,
+    white
+  );
+  border-radius: 80px 80px;
+  border: none transparent;
+  width: 50%;
+}
+.input3 {
+  margin: 1%;
+  padding: 1%;
+  background: #e6cabc;
+  color: rgb(0, 0, 0);
+  font-size: large;
+  border-radius: 80px 80px;
+  font-family: "Open Sans", sans-serif;
+  box-shadow: 0 1px 1px 0 #0000006b;
+}
+.holderText2 {
+  background: url("../images/bg4.jpg") no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 3%;
+  width: 60%;
+  height: 100%;
+  box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.288);
+  font-family: "Open Sans", sans-serif;
+  margin-left: 20%;
+}
+.holderText2 ul {
+  text-align: left;
+}
+.holderText2 button {
+  margin-bottom: 3%;
+}
