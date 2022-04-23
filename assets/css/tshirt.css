@@ -155,9 +155,9 @@
 .drawing-area {
   position: absolute;
   z-index: 10;
-  top: 3%;
-  left: 10%;
-  width: 12%;
+  top: 30%;
+  left: 26%;
+  width: 20%;
   height: 12%;
 }
 .canvas-container {
