@@ -171,8 +171,6 @@
   flex-direction: column;
 }
 #tshirt-div {
-  width: 39%;
-  height: 51%;
   background-color: white;
   display: flex;
   flex-direction: row-reverse;
