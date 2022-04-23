@@ -37,7 +37,7 @@
   font-size: larger;
 }
 .banner {
-  background: url("../images/bg2.jpg") no-repeat;
+  background: url("../images/bg5.png") no-repeat;
   background-size: cover;
   height: 100%;
   width: 70%;
@@ -109,7 +109,7 @@
   padding: 3%;
   width: 60%;
   height: 100%;
-  box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.288);
+  box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.288);
   font-family: "Open Sans", sans-serif;
   margin-left: 20%;
 }
