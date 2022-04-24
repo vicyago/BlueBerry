@@ -5,15 +5,9 @@
   margin: 1%;
   background: #e6cabc;
   color: rgb(0, 0, 0);
-
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
   border-radius: 80px 80px;
   font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
-
-  font-style: normal;
-  font-variant: normal;
-
-  line-height: normal;
 }
 .mainHolder span {
   color: black;
@@ -29,19 +23,11 @@
 .bannerHolder a {
   text-decoration: none;
   color: #922e00;
-
   font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
-
-  font-style: normal;
-  font-variant: normal;
-
-  line-height: normal;
 }
 .bannerHolder a:hover {
   text-decoration: none;
   color: #000000;
-
-
 }
 .banner {
   background: url("../images/bg5.png") no-repeat;
@@ -52,6 +38,9 @@
   padding: 2% 8% 4% 4%;
   position: relative;
   margin: auto;
+   -webkit-box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 0.75);
 }
 .content:nth-child(2)::after {
   background: #9c6c55;
@@ -85,27 +74,8 @@
   padding: 1%;
   background: #e6cabc;
   color: rgb(0, 0, 0);
-
   border-radius: 40px 40px;
   box-shadow: 0 1px 1px 0 #0000006b;
-}
-.holderText2 {
-  background: url("../images/bg4.jpg") no-repeat;
-  background-size: cover;
-  text-align: center;
-  padding: 3%;
-  width: 60%;
-  height: 100%;
-  box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.288);
-  margin-left: 20%;
-}
-.holderText2 ul {
-  text-align: left;
-  font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
-  
-}
-.holderText2 button {
-  margin-bottom: 3%;
 }
 .main-button {
   display: block;
@@ -119,17 +89,12 @@
   margin-bottom: 5%;
   padding: 2%;
   font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
- 
   line-height: normal;
 }
 .main-button a {
   text-decoration: none;
-
-  
   color: black;
   font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
- 
-
   line-height: normal;
 }
 .main-button:hover {

@@ -87,3 +87,4 @@ document.querySelector("#final-button").addEventListener("click", function () {
   document.querySelector(".personalizado").style.display="none";
   document.querySelector("#divdisapear").style.display="block";
 });
+
