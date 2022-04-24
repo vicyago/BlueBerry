@@ -8,10 +8,8 @@ body {
   padding: 0;
   width: 100%;
   font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
-  font-size: large;
-  font-style: normal;
-  font-variant: normal;
   
+
   line-height: normal;
 }
 header {
@@ -20,7 +18,7 @@ header {
   width: 100%;
   padding-top: 1%;
   color: white;
-  font-size: large;
+
   margin-bottom: 1%;
   box-shadow: rgba(0, 0, 0, 0.75) 0 3px 9px -4px;
 }
@@ -38,13 +36,12 @@ nav a {
   text-decoration: none;
   color: black;
   display: inline-block;
-  font-size: large;
-  
+
   width: 100%;
 }
 nav a:hover {
   color: #9c6c55;
-  font-size: large;
+
 }
 hr {
   padding: 1%;
@@ -76,11 +73,7 @@ hr {
   align-items: center;
   justify-content: right;
   font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
-  font-size: large;
-  font-style: normal;
-  font-variant: normal;
-  
-  line-height: normal;
+
 }
 
 .content {
@@ -124,11 +117,7 @@ footer {
   padding-top: 1%;
   box-shadow: rgba(0, 0, 0, 0.411) -1px -2px 5px 0;
   font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
-  font-size: large;
-  font-style: normal;
-  font-variant: normal;
   
-  line-height: normal;
 }
 .footer {
   margin: auto;
@@ -139,11 +128,7 @@ footer {
 .footer a {
   color: white;
   text-decoration: none;
-  
+
   font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
-  font-size: large;
-  font-style: normal;
-  font-variant: normal;
-  
-  line-height: normal;
+ 
 }

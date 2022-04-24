@@ -4,11 +4,7 @@
   background: url("../images/bg6.jpg") no-repeat;
   background-size: contain;
   font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
-  font-size: large;
-  font-style: normal;
-  font-variant: normal;
-  
-  line-height: normal;
+ 
 }
 .holder img {
   display: block;

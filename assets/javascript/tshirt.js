@@ -79,11 +79,11 @@
       );
    
 document.querySelector("#main-button").addEventListener("click", function(){
+   document.querySelector("#divdisapear").style.display="none";
    document.querySelector(".personalizado").style.display="block";
-   document.querySelector(".divdisapear").style.display = "none";
+   
 })
-
 document.querySelector("#final-button").addEventListener("click", function () {
-  document.querySelector(".personalizado").style.display = "none";
-  document.querySelector(".divdisapear").style.display = "block";
+  document.querySelector(".personalizado").style.display="none";
+  document.querySelector("#divdisapear").style.display="block";
 });
