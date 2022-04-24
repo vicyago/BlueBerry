@@ -88,3 +88,12 @@ document.querySelector("#final-button").addEventListener("click", function () {
   document.querySelector("#divdisapear").style.display="block";
 });
 
+document.querySelector("#main-button").addEventListener("click", function () {
+  document.querySelector(".footer").style.display = "none";
+  document.querySelector("#divdisapear").style.display = "block";
+});
+
+document.querySelector("#main-button").addEventListener("click", function () {
+  document.querySelector(".header").style.display = "none";
+  document.querySelector("#divdisapear").style.display = "block";
+});
