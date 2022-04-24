@@ -53,7 +53,7 @@
         <div class="banner">
           <hr />
           <h2>Seu Orçamento Aqui 📝</h2>
-
+          <hr />
           <form>
             <h3>◻️ Dados Pessoais</h3>
 
@@ -67,6 +67,8 @@
               type="text"
             />
 
+            <br />
+
             <span class="#">▪️E-mail: *</span>✉️
             <input
               name="Email"
@@ -77,7 +79,6 @@
               type="text"
             />
 
-            <br />
             <br />
 
             <span class="#">▪️DDD / Celular: </span>📱
@@ -98,6 +99,8 @@
               type="text"
             />
 
+            <br />
+
             <span class="#">▪️DDD / Telefone: </span>📞
             <input
               name="DDD2"
@@ -115,12 +118,12 @@
               maxlength="15"
               type="text"
             />
-
+            <hr />
             <h3>◻️ Detalhes do Pedido *</h3>
 
             <span class="#">1️⃣</span>
             <select name="Tipo_de_produto" class="#" id="Tipo_de_produto">
-              <option value="" selected="selected">👕 -- Tipo de Peça --</option>
+              <option value="" selected="selected">▫️ Tipo de Peça</option>
               <option value="Camiseta">Camiseta</option>
               <option value="Gola Polo">Gola Polo</option>
               <option value="Abada">Abadá</option>
@@ -132,10 +135,12 @@
               <option value="Uniforme">Uniforme</option>
             </select>
 
+            <br />
+
             <span class="#">2️⃣</span>
             <select name="Material_da_peca" class="#" id="Material_da_peça">
               <option value="" selected="selected">
-              🧵 -- Material da Peça (Malha) --
+              ▫️ Malha da Peça
               </option>
               <option value="Algodao_cardada">Algodão cardada</option>
               <option value="Algodao_penteada">Algodão penteada</option>
@@ -151,15 +156,16 @@
             <span class="#">3️⃣</span>
             <select name="Cor_da_peca" class="#" id="Cor_da_peca">
               <option value="" selected="selected">
-               🎨 -- Cor da Peça -- 
+               ▫️ Cor da Peça  
               </option>
             </select>
 
+            
             <br />
 
             <span class="#">4️⃣</span>
             <select name="Tipo_de_gola" class="#" id="Tipo_de_gola">
-              <option value="" selected="selected">✂️ -- Tipo de Gola --</option>
+              <option value="" selected="selected">▫️ Tipo de Gola</option>
               <option value="Redonda">Redonda</option>
               <option value="V">Gola V</option>
               <option value="Canoa_U">Canoa ou “U”</option>
@@ -169,10 +175,12 @@
               <option value="Capuz">Capuz</option>
             </select>
 
+            <br />
+
             <span class="#">5️⃣</span>
             <select name="Qts_pedido" class="#" id="Qts_pedido">
               <option value="" selected="selected">
-              ➰  -- Quantidade de Peças --
+              ▫️ Quantidade de Peças 
               </option>
               <option value="50">Minimo (30 Peças)</option>
             </select>
@@ -186,12 +194,19 @@
             />
 
             <p>
-              <span>
-                6️⃣ Bordado E/OU SilkScreen
-              </span>
+              <span class="#">6️⃣</span>
+            <select name="Personalização" class="#" id="Personalização">
+              <option value="" selected="selected">
+              ▫️ Bordado e/ou SilkScreen
+              </option>
+              <option value="50">Sim</option>
+              <option value="50">Não</option>
+              <option value="50">Ambos</option>
+            </select>
+              
 
               <button type="button" class="main-button" id="main-button">
-                Crie e Modele sua Camiseta, Cor da Peça e Posicionamento/Tamanho da arte.
+                Crie um modelo de Camiseta com a Cor da Peça/Posicionamento/Tamanho da arte. 
               </button>
 
               <h3>7️⃣ Escreva suas duvidas e observações abaixo 💬</h3>
