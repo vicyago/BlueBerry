@@ -75,23 +75,6 @@
   border-radius: 40px 40px;
   font-family: "Open Sans", sans-serif;
 }
-.inputCor {
-  background: linear-gradient(
-    45deg,
-    blue,
-    indigo,
-    violet,
-    green,
-    yellow,
-    orange,
-    red,
-    black,
-    white
-  );
-  border-radius: 40px 40px;
-  border: none transparent;
-  width: 50%;
-}
 .input3 {
   margin: 1%;
   padding: 1%;
