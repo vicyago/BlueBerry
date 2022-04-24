@@ -57,7 +57,7 @@
           <form>
             <h3>◻️ Dados Pessoais</h3>
 
-            <span class="#">▪️Seu Nome: *</span>✏️
+            <span class="#">▪️Seu Nome * ✏️</span>
             <input
               name="Nome"
               class="#"
@@ -69,7 +69,7 @@
 
             <br />
 
-            <span class="#">▪️E-mail: *</span>✉️
+            <span class="#">▪️E-mail * ✉️</span>
             <input
               name="Email"
               class="#"
@@ -81,7 +81,7 @@
 
             <br />
 
-            <span class="#">▪️DDD / Celular: </span>📱
+            <span class="#">▪️DDD / Celular 📱</span>
             <input
               name="DDD"
               class="#"
@@ -101,7 +101,7 @@
 
             <br />
 
-            <span class="#">▪️DDD / Telefone: </span>📞
+            <span class="#">▪️DDD / Telefone 📞</span>
             <input
               name="DDD2"
               class="#"
@@ -139,9 +139,7 @@
 
             <span class="#">2️⃣</span>
             <select name="Material_da_peca" class="#" id="Material_da_peça">
-              <option value="" selected="selected">
-              ▫️ Malha da Peça
-              </option>
+              <option value="" selected="selected">▫️ Malha da Peça</option>
               <option value="Algodao_cardada">Algodão cardada</option>
               <option value="Algodao_penteada">Algodão penteada</option>
               <option value="Malha_fria_PV">Malha fria ou PV</option>
@@ -155,12 +153,9 @@
 
             <span class="#">3️⃣</span>
             <select name="Cor_da_peca" class="#" id="Cor_da_peca">
-              <option value="" selected="selected">
-               ▫️ Cor da Peça  
-              </option>
+              <option value="" selected="selected">▫️ Cor da Peça</option>
             </select>
 
-            
             <br />
 
             <span class="#">4️⃣</span>
@@ -180,44 +175,37 @@
             <span class="#">5️⃣</span>
             <select name="Qts_pedido" class="#" id="Qts_pedido">
               <option value="" selected="selected">
-              ▫️ Quantidade de Peças 
+                ▫️ Quantidade de Peças
               </option>
               <option value="50">Minimo (30 Peças)</option>
             </select>
-            <input
-              type="number"
-              name="Qtd_Pdt"
-              class="#"
-              id="Qtd_Pdt"
-              size="15"
-              maxlength="100"
-            />
 
-            <p>
-              <span class="#">6️⃣</span>
+            <br />
+
+            <span class="#">6️⃣</span>
             <select name="Personalização" class="#" id="Personalização">
               <option value="" selected="selected">
-              ▫️ Bordado e/ou SilkScreen
+                ▫️ Bordado e/ou SilkScreen
               </option>
               <option value="50">Sim</option>
               <option value="50">Não</option>
               <option value="50">Ambos</option>
             </select>
-              
 
-              <button type="button" class="main-button" id="main-button">
-                Crie um modelo de Camiseta com a Cor da Peça/Posicionamento/Tamanho da arte. 
-              </button>
+            <button type="button" class="main-button" id="main-button">
+              7️⃣ Crie um modelo/camiseta com a Cor da
+              Peça/Posicionamento/Tamanho da arte.
+            </button>
 
-              <h3>7️⃣ Escreva suas duvidas e observações abaixo 💬</h3>
-              <textarea
-                name="Comentario"
-                cols="50"
-                rows="5"
-                class="#"
-                id="Comentario"
-                style="width:600px; height: 200px;"
-              ></textarea>
+            <h3>8️⃣ Escreva suas duvidas e observações abaixo 💬</h3>
+            <textarea
+              name="Comentario"
+              cols="50"
+              rows="5"
+              class="#"
+              id="Comentario"
+              style="width: 600px; height: 200px"
+            ></textarea>
 
             <span class="#">
               <input
@@ -229,13 +217,12 @@
               &nbsp;</span
             >
 
-              <input name="#" class="#" id="#0" value="Enviar" type="submit" />
-              <input name="#" class="#" id="#1" value="Limpar" type="reset" />
-            </p>
-            <hr />
-            <h3>8️⃣ Anexar os Arquivos ou Logotipos (se disponível)</h3>
+            <input name="#" class="#" id="#0" value="Enviar" type="submit" />
+            <input name="#" class="#" id="#1" value="Limpar" type="reset" />
 
-          <p>
+            <hr />
+            <h3>9️⃣ Anexar os Arquivos ou Logotipos (se disponível)</h3>
+
             <span class="#">📎 anexar: </span>
 
             <a href="#" class="#" title="Choose date">Escolher Arquivos</a>
@@ -248,8 +235,9 @@
             Não
             <input name="vector" class="#" value="naosei" type="radio" />
             Não Sei)
-          </p>
-          <hr />
+
+            <hr />
+            <hr />
             <p>
               <em
                 ><strong
@@ -259,96 +247,105 @@
               </em>
             </p>
 
-
             <div class="personalizado">
-
               <div class="tshirtHolder">
-                
-             <div id="tshirt-div">
-
-                <!--Initially, the image will have the background tshirt that has transparency
+                <div id="tshirt-div">
+                  <!--Initially, the image will have the background tshirt that has transparency
                 So we can simply update the color with CSS or JavaScript dinamically
             -->
-            <img id="tshirt-backgroundpicture" src="assets/images/background_tshirt.png" />
+                  <img
+                    id="tshirt-backgroundpicture"
+                    src="assets/images/background_tshirt.png"
+                  />
 
-            <div id="drawingArea" class="drawing-area">
-              <div class="canvas-container">
-                <canvas id="tshirt-canvas" width="200" height="400"></canvas>
+                  <div id="drawingArea" class="drawing-area">
+                    <div class="canvas-container">
+                      <canvas
+                        id="tshirt-canvas"
+                        width="200"
+                        height="400"
+                      ></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="tshirtText">
+                  <!-- The select that will allow the user to pick one of the static designs -->
+                  <label for="tshirt-design"
+                    ><p class="tshirtExt">Layout da Camiseta</p></label
+                  >
+                  <select id="tshirt-design">
+                    <option value=""><p>Selecione o Layout</p></option>
+                    <option value="assets/images/blb_small.png">
+                      BlueBerry
+                    </option>
+                    <option value="assets/images/blb2_small.png">
+                      BlueBerry2
+                    </option>
+                  </select>
+
+                  <!-- The Select that allows the user to change the color of the T-Shirt -->
+                  <label for="tshirt-color"
+                    ><p class="tshirtExt">Cor da Camiseta</p></label
+                  >
+                  <select id="tshirt-color" class="tshirt-color">
+                    <!-- You can add any color with a new option and definings its hex code -->
+                    <option value="#fff">Branco</option>
+                    <option value="#808080">Cinza</option>
+                    <option value="#d3d3d3">Cinza Claro</option>
+                    <option value="#aaa9ad">Prata</option>
+                    <option value="#000">Preto</option>
+                    <option value="#78866b">Verde Militar</option>
+                    <option value="#013220">Verde Escuro</option>
+                    <option value="#008000">Verde</option>
+                    <option value="#90ee90">Verde Claro</option>
+                    <option value="#A020F0">Roxo</option>
+                    <option value="#0B0B45">Azul Marinho</option>
+                    <option value="#00008b">Azul Escuro</option>
+                    <option value="#0000ff">Azul</option>
+                    <option value="#add8e6 ">Azul Claro</option>
+                    <option value="#0FF">Cyan</option>
+                    <option value="#FF00FF">Magenta</option>
+                    <option value="#ffcbdb">Rosa</option>
+                    <option value="#f00">Vermelho</option>
+                    <option value="#fa8072">Salmon</option>
+                    <option value="#ffa500">Laranja</option>
+                    <option value="#cd7f32">Bronze</option>
+                    <option value="#ff0">Amarelo</option>
+                    <option value="#daa520">Dourado</option>
+                    <option value="#ffdb58">Mostarda</option>
+                    <option value="#f5f5dc">Beige</option>
+                  </select>
+
+                  <label for="tshirt-custompicture"
+                    ><p class="tshirtExt">Carregue seu Layout</p></label
+                  >
+                  <input
+                    type="file"
+                    id="tshirt-custompicture"
+                    class="tshirtExt"
+                  />
+                  <h4 class="tshirtExt">
+                    <em
+                      >Caso deseje remover a imagem carregada,<br />
+                      selecione a imagem e pressione tecla <kbd>DEL</kbd>.</em
+                    >
+                  </h4>
+
+                  <button type="button" class="main-button" id="final-button">
+                    Submeter Arte
+                  </button>
+                </div>
               </div>
-             </div>
             </div>
-<div class="tshirtText">
-              <!-- The select that will allow the user to pick one of the static designs -->
-              <label for="tshirt-design"
-              ><p class="tshirtExt">Layout da Camiseta</p></label
-              >
-              <select id="tshirt-design">
-                <option value=""><p>Selecione o Layout</p></option>
-                <option value="assets/images/blb_small.png">BlueBerry</option>
-                <option value="assets/images/blb2_small.png">BlueBerry2</option>
-              </select>
-
-              <!-- The Select that allows the user to change the color of the T-Shirt -->
-          <label for="tshirt-color"
-            ><p class="tshirtExt">Cor da Camiseta</p></label
-          >
-          <select id="tshirt-color" class="tshirt-color">
-            <!-- You can add any color with a new option and definings its hex code -->
-            <option value="#fff">Branco</option>
-            <option value="#808080">Cinza</option>
-            <option value="#d3d3d3">Cinza Claro</option>
-            <option value="#aaa9ad">Prata</option>
-            <option value="#000">Preto</option>
-            <option value="#78866b">Verde Militar</option>
-            <option value="#013220">Verde Escuro</option>
-            <option value="#008000">Verde</option>
-            <option value="#90ee90">Verde Claro</option>
-            <option value="#A020F0">Roxo</option>
-            <option value="#0B0B45">Azul Marinho</option>
-            <option value="#00008b">Azul Escuro</option>
-            <option value="#0000ff">Azul</option>
-            <option value="#add8e6 ">Azul Claro</option>
-            <option value="#0FF">Cyan</option>
-            <option value="#FF00FF">Magenta</option>
-            <option value="#ffcbdb">Rosa</option>
-            <option value="#f00">Vermelho</option>
-            <option value="#fa8072">Salmon</option>
-            <option value="#ffa500">Laranja</option>
-            <option value="#cd7f32">Bronze</option>
-            <option value="#ff0">Amarelo</option>
-            <option value="#daa520">Dourado</option>
-            <option value="#ffdb58">Mostarda</option>
-            <option value="#f5f5dc">Beige</option>
-          </select>
-
-
-          <label for="tshirt-custompicture"
-            ><p class="tshirtExt">Carregue seu Layout</p></label
-          >
-          <input type="file" id="tshirt-custompicture" class="tshirtExt" />
-          <h4 class="tshirtExt">
-            <em
-              >Caso deseje remover a imagem carregada,<br />
-              selecione a imagem e pressione tecla <kbd>DEL</kbd>.</em
-            >
-          </h4>
-          
-           <button type="button" class="main-button" id="final-button">Submeter Arte</button>
-</div>
-          </div>
-           </div>
-
-
-
           </form>
         </div>
       </div>
 
-          
       <div class="subFooter">
         <div class="holderText2">
           <h3>
-            ☑️ Para montar a solicitação de orçamento diretamente por e-mail <br />
+            ☑️ Para montar a solicitação de orçamento diretamente por e-mail
+            <br />
             use as seguintes informações em seu pedido: 👇
           </h3>
           <p>
@@ -391,11 +388,14 @@
         <a href="about.html">About</a>
 
         <p>
-          Copyright ©️ 2022 | <a
-                    href="https://www.facebook.com/Blueberry-Camisetas-309011612639981/"
-                    target="_blank" title="facebook" 
-                    >🔍 Facebook: Blueberry-Camisetas</a
-                  > | Designed By:
+          Copyright ©️ 2022 |
+          <a
+            href="https://www.facebook.com/Blueberry-Camisetas-309011612639981/"
+            target="_blank"
+            title="facebook"
+            >🔍 Facebook: Blueberry-Camisetas</a
+          >
+          | Designed By:
           <a href="https://www.facebook.com/victoryagoc">Victor Yago Cury</a>
         </p>
       </div>
