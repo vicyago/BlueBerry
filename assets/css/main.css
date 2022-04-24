@@ -11,7 +11,7 @@ body {
   font-size: large;
   font-style: normal;
   font-variant: normal;
-  font-weight: bold;
+  
   line-height: normal;
 }
 header {
@@ -39,12 +39,12 @@ nav a {
   color: black;
   display: inline-block;
   font-size: large;
-  font-weight: bold;
+  
   width: 100%;
 }
 nav a:hover {
   color: #9c6c55;
-  font-size: larger;
+  font-size: large;
 }
 hr {
   padding: 1%;
@@ -79,7 +79,7 @@ hr {
   font-size: large;
   font-style: normal;
   font-variant: normal;
-  font-weight: bold;
+  
   line-height: normal;
 }
 
@@ -127,7 +127,7 @@ footer {
   font-size: large;
   font-style: normal;
   font-variant: normal;
-  font-weight: bold;
+  
   line-height: normal;
 }
 .footer {
@@ -139,11 +139,11 @@ footer {
 .footer a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  
   font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
   font-size: large;
   font-style: normal;
   font-variant: normal;
-  font-weight: bold;
+  
   line-height: normal;
 }

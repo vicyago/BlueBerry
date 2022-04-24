@@ -1,3 +1,4 @@
+
 .banner {
   background-color: rgb(194, 194, 194);
   position: absolute;
@@ -31,8 +32,8 @@
   left: 7%;
   z-index: 10;
   color: black;
-  font-size: larger;
-  font-weight: bold;
+  font-size: large;
+  
   text-align: left;
   padding-left: 2%;
   padding-right: 2%;
@@ -47,7 +48,7 @@
   font-size: large;
   font-style: normal;
   font-variant: normal;
-  font-weight: bold;
+  
   line-height: normal;
 }
 .holderText h4:first-of-type {
@@ -190,21 +191,21 @@
   cursor: pointer;
   text-align: center;
   box-shadow: 1px 1px 1px 1px #0000004b;
-  font-weight: bold;
-  font-size: larger;
+  
+  font-size: large;
   margin-bottom: 5%;
   padding: 2%;
   font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
   font-size: large;
   font-style: normal;
   font-variant: normal;
-  font-weight: bold;
+  
   line-height: normal;
 }
 
 .main-button a {
   text-decoration: none;
-  font-weight: bold;
+  
   font-size: large;
   color: black;
 }

@@ -1,7 +1,7 @@
 .tshirtExt {
   color: black;
   font-size: large;
-  font-weight: bold;
+  
 }
 .mainHolder {
   width: 100%;
@@ -18,7 +18,7 @@
 .mainHolder span {
   color: black;
   font-size: large;
-  font-weight: bold;
+  
 }
 
 .bannerHolder {
@@ -36,14 +36,14 @@
   font-size: 24px;
   font-style: normal;
   font-variant: normal;
-  font-weight: bold;
+  
   line-height: normal;
 }
 .bannerHolder a:hover {
   text-decoration: none;
   color: #000000;
-  font-weight: bold;
-  font-size: larger;
+  
+  font-size: large;
 }
 .banner {
   background: url("../images/bg5.png") no-repeat;
@@ -124,7 +124,7 @@
   font-size: large;
   font-style: normal;
   font-variant: normal;
-  font-weight: bold;
+  
   line-height: normal;
 }
 .holderText2 button {
@@ -138,8 +138,8 @@
   cursor: pointer;
   text-align: center;
   box-shadow: 1px 1px 1px 1px #0000004b;
-  font-weight: bold;
-  font-size: larger;
+  
+  font-size: large;
   margin-top: 3%;
   margin-bottom: 5%;
   padding: 2%;
@@ -150,7 +150,7 @@
   font-size: large;
   font-style: normal;
   font-variant: normal;
-  font-weight: bold;
+  
   line-height: normal;
   color: black;
 
@@ -194,12 +194,15 @@
 .tshirtHolder {
   width: 100%;
   height: 50%;
-  margin: 24% 0 0 0;
+  margin: 0 0 0 0;
   align-items: center;
   justify-content: center;
   text-align: center;
   display: flex;
   flex-direction: row;
+  -webkit-box-shadow: 2px 0px 17px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 0px 17px 0px rgba(0,0,0,0.75);
+box-shadow: 2px 0px 17px 0px rgba(0,0,0,0.75);
 }
 .tshirt-backgroundpicture {
   width: 100%;
