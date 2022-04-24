@@ -7,8 +7,13 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+  font-size: large;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: normal;
 }
-
 header {
   background-color: #9c6c55;
   height: 6%;
@@ -18,11 +23,9 @@ header {
   font-size: large;
   margin-bottom: 1%;
   box-shadow: rgba(0, 0, 0, 0.75) 0 3px 9px -4px;
-  font-family: "Open Sans", sans-serif;
 }
 header a {
   color: white;
-  font-family: "Open Sans", sans-serif;
   text-decoration: none;
 }
 
@@ -53,7 +56,6 @@ hr {
   height: 10%;
   margin: auto;
   text-align: center;
-  font-family: "Open Sans", sans-serif;
 }
 .pos_header {
   display: flex;
@@ -73,12 +75,16 @@ hr {
   align-content: center;
   align-items: center;
   justify-content: right;
-  font-family: "Open Sans", sans-serif;
+  font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+  font-size: large;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: normal;
 }
 
 .content {
   text-align: center;
-  font-family: "Open Sans", sans-serif;
   position: relative;
 }
 .contentHolder {
@@ -116,19 +122,28 @@ footer {
   height: 15%;
   margin-top: 1%;
   padding-top: 1%;
-  font-family: "Open Sans", sans-serif;
   box-shadow: rgba(0, 0, 0, 0.411) -1px -2px 5px 0;
+  font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+  font-size: large;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: normal;
 }
 .footer {
   margin: auto;
   text-align: center;
   color: white;
   text-decoration: none;
-  font-family: "Open Sans", sans-serif;
 }
 .footer a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+  font-size: large;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: normal;
 }
-

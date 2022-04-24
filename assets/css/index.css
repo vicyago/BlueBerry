@@ -31,7 +31,6 @@
   left: 7%;
   z-index: 10;
   color: black;
-  font-family: "Open Sans", sans-serif;
   font-size: larger;
   font-weight: bold;
   text-align: left;
@@ -44,6 +43,12 @@
 .holderText ul {
   list-style-type: circle;
   margin-top: 1%;
+  font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+  font-size: large;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: normal;
 }
 .holderText h4:first-of-type {
   margin-bottom: 0;
@@ -174,7 +179,6 @@
   text-align: center;
   font-size: 27px;
   color: rgba(255, 255, 255, 1);
-  font-family: "Open Sans", sans-serif;
   z-index: 9999;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.33), -1px 0 2px rgba(255, 255, 255, 0);
 }
@@ -190,10 +194,15 @@
   font-size: larger;
   margin-bottom: 5%;
   padding: 2%;
+  font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+  font-size: large;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: normal;
 }
 
 .main-button a {
-  font-family: "Open Sans", sans-serif;
   text-decoration: none;
   font-weight: bold;
   font-size: large;

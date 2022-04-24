@@ -8,14 +8,18 @@
   font-size: large;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
   border-radius: 80px 80px;
-  font-family: "Open Sans", sans-serif;
+  font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+  font-size: large;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: normal;
 }
 
 .mainHolder span {
   color: black;
   font-size: large;
   font-weight: bold;
-  font-family: "Open Sans", sans-serif;
 }
 
 .bannerHolder {
@@ -29,6 +33,12 @@
   text-decoration: none;
   color: #922e00;
   font-size: large;
+  font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+  font-size: large;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: normal;
 }
 .bannerHolder a:hover {
   text-decoration: none;
@@ -43,7 +53,6 @@
   width: 70%;
   text-align: left;
   padding: 2% 8% 4% 4%;
-  font-family: "Open Sans", sans-serif;
   position: relative;
   margin: auto;
 }
@@ -73,7 +82,6 @@
   color: rgb(0, 0, 0);
   font-size: large;
   border-radius: 40px 40px;
-  font-family: "Open Sans", sans-serif;
 }
 .input3 {
   margin: 1%;
@@ -82,7 +90,6 @@
   color: rgb(0, 0, 0);
   font-size: large;
   border-radius: 40px 40px;
-  font-family: "Open Sans", sans-serif;
   box-shadow: 0 1px 1px 0 #0000006b;
 }
 .holderText2 {
@@ -93,11 +100,16 @@
   width: 60%;
   height: 100%;
   box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.288);
-  font-family: "Open Sans", sans-serif;
   margin-left: 20%;
 }
 .holderText2 ul {
   text-align: left;
+  font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+  font-size: large;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: normal;
 }
 .holderText2 button {
   margin-bottom: 3%;
@@ -114,13 +126,24 @@
   font-size: larger;
   margin-bottom: 5%;
   padding: 2%;
+  font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+  font-size: large;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: normal;
 }
 .main-button a {
-  font-family: "Open Sans", sans-serif;
   text-decoration: none;
   font-weight: bold;
   font-size: larger;
   color: black;
+  font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+  font-size: large;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: normal;
 }
 .main-button:hover {
   background-color: #9c6c55;
