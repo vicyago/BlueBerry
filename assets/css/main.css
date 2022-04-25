@@ -25,7 +25,6 @@ header {
 header a {
   color: white;
   text-decoration: none;
-  font-size: large;
 }
 
 nav {
@@ -124,6 +123,5 @@ footer {
 .footer a {
   color: white;
   text-decoration: none;
-  font-size: large;
   font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
 }
