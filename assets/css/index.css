@@ -166,7 +166,6 @@
   .carousel-bullet {
   color: #9c6c55;
 }
-
 #title {
   width: 100%;
   position: absolute;
@@ -178,7 +177,7 @@
   z-index: 9999;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.33), -1px 0 2px rgba(255, 255, 255, 0);
 }
-.main-button {
+.main-button2 {
   display: block;
   width: 100%;
   border: none;
@@ -190,16 +189,12 @@
   padding: 2%;
   font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
   font-size: large;
-  font-size: 1em;
 }
-
-.main-button a {
+.main-button2 a {
   text-decoration: none;
-  font-size: large;
   color: black;
   font-size: 1em;
 }
-
 .main-button:hover {
   background-color: #9c6c55;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
