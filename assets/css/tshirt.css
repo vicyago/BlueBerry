@@ -23,16 +23,19 @@
   background-color: white;
   position: relative;
   padding: 1%;
+  font-size: 1em;
 }
 .bannerHolder a {
   text-decoration: none;
   color: #922e00;
   font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
   font-size: large;
+  font-size: 1em;
 }
 .bannerHolder a:hover {
   text-decoration: none;
   color: #000000;
+  font-size: larger;
 }
 .banner {
   background: url("../images/bg2.png") no-repeat;
@@ -46,6 +49,7 @@
   -webkit-box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 0.75);
+  font-size: 1em;
 }
 .content:nth-child(2)::after {
   background: #9c6c55;
@@ -111,12 +115,14 @@
   padding: 2%;
   font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
   font-size: large;
+  font-size: 1em;
 }
 .main-button a {
   text-decoration: none;
   font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
   color: black;
   font-size: large;
+  font-size: 1em;
 }
 .main-button:hover {
   background-color: #9c6c55;
@@ -137,6 +143,7 @@
 .tshirtText {
   display: flex;
   flex-direction: column;
+  font-size: 1em;
 }
 #tshirt-div {
   background-color: white;

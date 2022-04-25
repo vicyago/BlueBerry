@@ -54,6 +54,7 @@
   text-decoration: none;
   color: black;
   font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+  font-size: 1em;
 }
 .main-button:hover {
   background-color: #9c6c55;
@@ -66,6 +67,7 @@
   left: 0;
   z-index: 10;
   display: none;
+  font-size: 1em;
 }
 #divdisapear {
   display: block;

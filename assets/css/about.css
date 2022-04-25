@@ -4,6 +4,7 @@
   background: url("../images/bg3.jpg") no-repeat;
   background-size: contain;
   font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+  font-size: 1em;
 }
 .holder img {
   display: block;
@@ -12,6 +13,7 @@
 h3,
 h4 {
   color: black;
+  font-size: 1em;
 }
 .content:nth-child(3)::after {
   background: #9c6c55;

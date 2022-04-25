@@ -1,6 +1,7 @@
 .banner {
   background-color: rgb(194, 194, 194);
   position: absolute;
+  font-size: 1em;
 }
 .content:first-child::after {
   background: #9c6c55;
@@ -31,7 +32,7 @@
   left: 7%;
   z-index: 10;
   color: black;
-
+  font-size: 1em;
   text-align: left;
   padding-left: 2%;
   padding-right: 2%;
@@ -43,7 +44,7 @@
   list-style-type: circle;
   margin-top: 1%;
   font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
-  
+  font-size: 1em;
 }
 .holderText h4:first-of-type {
   margin-bottom: 0;
@@ -189,12 +190,14 @@
   padding: 2%;
   font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
   font-size: large;
+  font-size: 1em;
 }
 
 .main-button a {
   text-decoration: none;
   font-size: large;
   color: black;
+  font-size: 1em;
 }
 
 .main-button:hover {
