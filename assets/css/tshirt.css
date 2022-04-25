@@ -10,6 +10,7 @@
   color: rgb(0, 0, 0);
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
   border-radius: 40px 40px;
+  font-size: large;
 }
 
 .mainHolder span {
@@ -25,8 +26,8 @@
 .bannerHolder a {
   text-decoration: none;
   color: #922e00;
- 
   font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+  font-size: large;
 }
 .bannerHolder a:hover {
   text-decoration: none;
@@ -38,9 +39,12 @@
   height: 100%;
   width: 70%;
   text-align: left;
-  padding: 2% 1% 1% 5%;
+  padding: 4% 4% 4% 4%;
   position: relative;
   margin: auto;
+  -webkit-box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 0.75);
 }
 .content:nth-child(2)::after {
   background: #9c6c55;
@@ -66,7 +70,6 @@
   margin: 1%;
   background: #e6cabc;
   color: rgb(0, 0, 0);
- 
   border-radius: 40px 40px;
 }
 .inputCor {
@@ -105,11 +108,14 @@
   margin-top: 3%;
   margin-bottom: 5%;
   padding: 2%;
+  font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+  font-size: large;
 }
 .main-button a {
   text-decoration: none;
   font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
   color: black;
+  font-size: large;
 }
 .main-button:hover {
   background-color: #9c6c55;
@@ -126,7 +132,6 @@
 .canvas-container {
   position: relative;
   user-select: none;
- 
 }
 .tshirtText {
   display: flex;

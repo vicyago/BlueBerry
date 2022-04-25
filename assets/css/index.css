@@ -185,17 +185,15 @@
   cursor: pointer;
   text-align: center;
   box-shadow: 1px 1px 1px 1px #0000004b;
-
-
   margin-bottom: 5%;
   padding: 2%;
   font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
-  
+  font-size: large;
 }
 
 .main-button a {
   text-decoration: none;
-
+  font-size: large;
   color: black;
 }
 

@@ -1,47 +1,6 @@
 .mainHolder {
   width: 100%;
 }
-.mainHolder select {
-  margin: 1%;
-  background: #e6cabc;
-  color: rgb(0, 0, 0);
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
-  border-radius: 80px 80px;
-  font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
-}
-.mainHolder span {
-  color: black;
-
-}
-.bannerHolder {
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  position: relative;
-  padding: 1%;
-}
-.bannerHolder a {
-  text-decoration: none;
-  color: #922e00;
-  font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
-}
-.bannerHolder a:hover {
-  text-decoration: none;
-  color: #000000;
-}
-.banner {
-  background: url("../images/bg2.png") no-repeat;
-  background-size: cover;
-  height: 100%;
-  width: 70%;
-  text-align: left;
-  padding: 2% 8% 4% 4%;
-  position: relative;
-  margin: auto;
-   -webkit-box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 0.75);
-}
 .content:nth-child(2)::after {
   background: #9c6c55;
   content: "";
@@ -95,7 +54,6 @@
   text-decoration: none;
   color: black;
   font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
-  line-height: normal;
 }
 .main-button:hover {
   background-color: #9c6c55;

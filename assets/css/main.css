@@ -25,6 +25,7 @@ header {
 header a {
   color: white;
   text-decoration: none;
+  font-size: large;
 }
 
 nav {
@@ -36,7 +37,7 @@ nav a {
   text-decoration: none;
   color: black;
   display: inline-block;
-
+  font-size: large;
   width: 100%;
 }
 nav a:hover {
@@ -47,7 +48,6 @@ hr {
   padding: 1%;
   border: none transparent;
 }
-
 .header {
   width: 80%;
   height: 10%;
@@ -73,9 +73,7 @@ hr {
   align-items: center;
   justify-content: right;
   font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
-
 }
-
 .content {
   text-align: center;
   position: relative;
@@ -91,7 +89,6 @@ hr {
   margin-top: 3%;
   width: 40%;
 }
-
 .logoHolder {
   background-color: rgb(255, 255, 255);
   height: 100%;
@@ -117,7 +114,6 @@ footer {
   padding-top: 1%;
   box-shadow: rgba(0, 0, 0, 0.411) -1px -2px 5px 0;
   font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
-  
 }
 .footer {
   margin: auto;
@@ -128,7 +124,6 @@ footer {
 .footer a {
   color: white;
   text-decoration: none;
-
+  font-size: large;
   font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
- 
 }
