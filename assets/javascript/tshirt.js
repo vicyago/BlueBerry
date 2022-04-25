@@ -91,3 +91,8 @@ document.querySelector("#final-button").addEventListener("click", function () {
   document.querySelector("#main-button2").style.cursor = "default";
   document.querySelector("#divdisapear").style.display="block";
 });
+
+document.querySelectorAll(".canvas-container")[0].style.width = "100%";
+document.querySelectorAll(".canvas-container")[0].style.height = "100%";
+document.querySelectorAll(".canvas-container")[1].style.width = "100%";
+document.querySelectorAll(".canvas-container")[1].style.height = "100%";
