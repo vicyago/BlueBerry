@@ -74,9 +74,12 @@
 .clientHolder {
    display:flex;
    flex-direction: column;
-   flex-basis: 100%;
    }
 .clientInfo {
+  display:flex;
   flex-direction: row;
   flex-basis: 100%;
+}
+.clientInfo div{
+flex-basis:100%
 }
