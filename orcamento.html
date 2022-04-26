@@ -58,74 +58,88 @@
             <div id="divdisapear">
               <h2>🟦 Dados Pessoais</h2>
 
-              <label class="#">◼ Seu Nome * ✏️</label>
-              <input
-                name="Nome"
-                class="#"
-                id="Nome"
-                size="30"
-                maxlength="200"
-                type="text"
-                required
-              />
-
-              <br />
-
-              <label class="#">◼ E-mail * ✉️</label>
-              <input
-                name="Email"
-                class="#"
-                id="Email"
-                size="30"
-                maxlength="250"
-                type="text"
-                required
-              />
-
-              <br />
-
-              <label class="#">◼ DDD / Celular 📱</label>
-              <input
-                name="DDD"
-                class="#"
-                id="DDD"
-                size="2"
-                maxlength="2"
-                type="text"
-              />
-              <input
-                name="Telefone"
-                class="formcampo3"
-                id="Telefone"
-                size="15"
-                maxlength="15"
-                type="text"
-              />
-
-              <br />
-
-              <label class="#">◼ DDD / Telefone 📞</label>
-              <input
-                name="DDD2"
-                class="#"
-                id="DDD2"
-                size="2"
-                maxlength="2"
-                type="text"
-              />
-              <input
-                name="Telefone2"
-                class="formcampo3"
-                id="Telefone2"
-                size="15"
-                maxlength="15"
-                type="text"
-              />
+              <div class="clientHolder">
+                <div class="clientInfo">
+                  <div><label class="#">◼ Seu Nome * ✏️</label></div>
+                  <div>
+                    <input
+                      name="Nome"
+                      class="#"
+                      id="Nome"
+                      size="30"
+                      maxlength="200"
+                      type="text"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label class="#">◼ E-mail * ✉️</label>
+                  </div>
+                  <div>
+                    <input
+                      name="Email"
+                      class="#"
+                      id="Email"
+                      size="30"
+                      maxlength="250"
+                      type="text"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label class="#">◼ DDD / Celular 📱</label>
+                  </div>
+                  <div>
+                    <input
+                      name="DDD"
+                      class="#"
+                      id="DDD"
+                      size="2"
+                      maxlength="2"
+                      type="text"
+                    />
+                    <input
+                      name="Telefone"
+                      class="formcampo3"
+                      id="Telefone"
+                      size="15"
+                      maxlength="15"
+                      type="text"
+                    />
+                  </div>
+                  <div>
+                    <label class="#">◼ DDD / Telefone 📞</label>
+                  </div>
+                  <div>
+                    <input
+                      name="DDD2"
+                      class="#"
+                      id="DDD2"
+                      size="2"
+                      maxlength="2"
+                      type="text"
+                    />
+                    <input
+                      name="Telefone2"
+                      class="formcampo3"
+                      id="Telefone2"
+                      size="15"
+                      maxlength="15"
+                      type="text"
+                    />
+                  </div>
+                </div>
+              </div>
               <hr />
               <h2>🟦 Detalhes do Pedido *</h2>
 
               <label class="#">1️⃣ Tipo de Peça:</label>
-              <select name="Tipo_de_produto" class="#" id="Tipo_de_produto" required>
+              <select
+                name="Tipo_de_produto"
+                class="#"
+                id="Tipo_de_produto"
+                required
+              >
                 <option value="" selected="selected">▫️ Selecionar ▫️</option>
                 <option value="Camiseta">Camiseta</option>
                 <option value="Gola Polo">Gola Polo</option>
@@ -141,7 +155,12 @@
               <br />
 
               <label class="#">2️⃣ Malha da Peça:</label>
-              <select name="Material_da_peca" class="#" id="Material_da_peça" required>
+              <select
+                name="Material_da_peca"
+                class="#"
+                id="Material_da_peça"
+                required
+              >
                 <option value="" selected="selected">▫️ Selecionar ▫️</option>
                 <option value="Algodao_cardada">Algodão cardada</option>
                 <option value="Algodao_penteada">Algodão penteada</option>
@@ -219,7 +238,12 @@
               <br />
 
               <label class="#">6️⃣ Bordado e/ou SilkScreen:</label>
-              <select name="Personalização" class="#" id="Personalização" required>
+              <select
+                name="Personalização"
+                class="#"
+                id="Personalização"
+                required
+              >
                 <option value="" selected="selected">▫️ Selecionar ▫️</option>
                 <option value="50">Sim</option>
                 <option value="50">Não</option>
@@ -410,8 +434,10 @@
     <script src="assets/javascript/fabric.js"></script>
     <script src="assets/javascript/fabric.min.js"></script>
     <script src="assets/javascript/tshirt.js"></script>
-    <script> function inputErr(){
-    document.querySelector("#shirtAmount").style.outline="1px solid red"
-        }</script>
+    <script>
+      function inputErr() {
+        document.querySelector("#shirtAmount").style.outline = "1px solid red";
+      }
+    </script>
   </body>
 </html>

@@ -71,3 +71,12 @@
 #divdisapear {
   display: block;
 }
+.clientHolder {
+   display:flex;
+   flex-direction: column;
+   flex-basis: 100%;
+   }
+.clientInfo {
+  flex-direction: row;
+  flex-basis: 100%;
+}
