@@ -205,13 +205,14 @@
 
               <input
                 type="number"
-                id="qntPecas"
+                id="shirtAmount"
                 name="qntPecas"
                 min="30"
                 size="20"
                 maxlength="30"
                 placeholder="Mínimo de 30 peças"
                 required
+                oninvalid="inputErr()"
               />
 
               <br />
@@ -409,6 +410,8 @@
     <script src="assets/javascript/fabric.js"></script>
     <script src="assets/javascript/fabric.min.js"></script>
     <script src="assets/javascript/tshirt.js"></script>
-    <script></script>
+    <script> function inputErr(){
+    document.querySelector("#shirtAmount").style.outline="1px solid red"
+        }</script>
   </body>
 </html>
