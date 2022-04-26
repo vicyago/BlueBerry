@@ -10,7 +10,7 @@
   color: rgb(0, 0, 0);
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
   border-radius: 40px 40px;
-  font-size: large;
+  font-size: 0.8em;
   text-align: center;
 }
 
@@ -156,7 +156,7 @@
 .drawing-area {
   position: absolute;
   z-index: 10;
-  left: 27%;
+  left: 24%;
   top: 25%;
   height: 40%;
   width: 25%;

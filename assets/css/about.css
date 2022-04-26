@@ -5,6 +5,8 @@
   background-size: contain;
   font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
   font-size: 1em;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .holder img {
   display: block;
@@ -36,5 +38,5 @@ h4 {
   background: orange;
 }
 .blue {
-  background-color: #24d3d373;
+  color: #055dff;
 }
