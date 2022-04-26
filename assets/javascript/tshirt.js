@@ -85,12 +85,20 @@ document.querySelector("#main-button").addEventListener("click", function(){
    document.querySelector(".personalizado").style.display="block";
    
 })
+
 document.querySelector("#final-button").addEventListener("click", function () {
-  document.querySelector(".personalizado").style.display="none";
+  closeShirtWindow();
+});
+document.querySelector("#final-button2").addEventListener("click", function () {
+  closeShirtWindow();
+});
+
+function closeShirtWindow() {
+  document.querySelector(".personalizado").style.display = "none";
   document.querySelector("#main-button2").disabled = false;
   document.querySelector("#main-button2").style.cursor = "default";
-  document.querySelector("#divdisapear").style.display="block";
-});
+  document.querySelector("#divdisapear").style.display = "block";
+}
 
 document.querySelectorAll(".canvas-container")[0].style.width = "100%";
 document.querySelectorAll(".canvas-container")[0].style.height = "100%";
