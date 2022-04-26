@@ -66,6 +66,7 @@
                 size="30"
                 maxlength="200"
                 type="text"
+                required
               />
 
               <br />
@@ -78,6 +79,7 @@
                 size="30"
                 maxlength="250"
                 type="text"
+                required
               />
 
               <br />
@@ -123,7 +125,7 @@
               <h2>🟦 Detalhes do Pedido *</h2>
 
               <label class="#">1️⃣ Tipo de Peça:</label>
-              <select name="Tipo_de_produto" class="#" id="Tipo_de_produto">
+              <select name="Tipo_de_produto" class="#" id="Tipo_de_produto" required>
                 <option value="" selected="selected">▫️ Selecionar ▫️</option>
                 <option value="Camiseta">Camiseta</option>
                 <option value="Gola Polo">Gola Polo</option>
@@ -139,7 +141,7 @@
               <br />
 
               <label class="#">2️⃣ Malha da Peça:</label>
-              <select name="Material_da_peca" class="#" id="Material_da_peça">
+              <select name="Material_da_peca" class="#" id="Material_da_peça" required>
                 <option value="" selected="selected">▫️ Selecionar ▫️</option>
                 <option value="Algodao_cardada">Algodão cardada</option>
                 <option value="Algodao_penteada">Algodão penteada</option>
@@ -153,7 +155,7 @@
               <br />
 
               <label class="#">3️⃣ Cor da Peça:</label>
-              <select name="Cor_da_peca" class="#" id="Cor_da_peca">
+              <select name="Cor_da_peca" class="#" id="Cor_da_peca" required>
                 <option value="" selected="selected">▫️ Selecionar ▫️</option>
                 <option value="#fff">Branco</option>
                 <option value="#808080">Cinza</option>
@@ -185,7 +187,7 @@
               <br />
 
               <label class="#">4️⃣ Tipo de Gola:</label>
-              <select name="Tipo_de_gola" class="#" id="Tipo_de_gola">
+              <select name="Tipo_de_gola" class="#" id="Tipo_de_gola" required>
                 <option value="" selected="selected">▫️ Selecionar ▫️</option>
                 <option value="Redonda">Redonda</option>
                 <option value="V">Gola V</option>
@@ -207,15 +209,17 @@
                 name="qntPecas"
                 min="10"
                 max="100"
-                size="10"
-                maxlength="15"
-              /><br /><small>Mínimo (30 Peças)</small>
+                size="20"
+                maxlength="30"
+                placeholder="Mínimo de 30 peças"
+                required
+              />
 
               <br />
               <br />
 
               <label class="#">6️⃣ Bordado e/ou SilkScreen:</label>
-              <select name="Personalização" class="#" id="Personalização">
+              <select name="Personalização" class="#" id="Personalização" required>
                 <option value="" selected="selected">▫️ Selecionar ▫️</option>
                 <option value="50">Sim</option>
                 <option value="50">Não</option>
