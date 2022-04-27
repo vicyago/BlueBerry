@@ -85,3 +85,17 @@
 .clientInfo div {
     flex-basis: 100%;
 }
+.detailHolder {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+.detailInfo {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    gap: 0.8rem;
+}
+.detailInfo div {
+    flex-basis: 100%;
+}
