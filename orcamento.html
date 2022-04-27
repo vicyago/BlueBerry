@@ -19,7 +19,7 @@
 <body>
   <header>
     <div class="header">
-      Entre em contato conosco 📞 (19) 3231-2968 📫
+      Entre em contato conosco | (19) 3231-2968 |
       <a href="mailto:marildablueberry@uol.com.br" title="email" role="link" tabindex="0"
         target="blank">marildablueberry@uol.com.br</a>
     </div>
@@ -105,265 +105,251 @@
 
               <div class="detailInfo">
 
-                <div> <label class="#">1️⃣ Tipo de Peça:</label> </div>
-                <div> <select name="Tipo_de_produto" class="#" id="Tipo_de_produto" required>
-                    <option value="" selected="selected">▫️ Selecionar ▫️</option>
-                    <option value="Camiseta">Camiseta</option>
-                    <option value="Gola Polo">Gola Polo</option>
-                    <option value="Abada">Abadá</option>
-                    <option value="Ecobag">Ecobag</option>
-                    <option value="Agasalho">Agasalho</option>
-                    <option value="Mascara">Máscara</option>
-                    <option value="Bordado">Bordado</option>
-                    <option value="Silk Screen">Silk Screen</option>
-                    <option value="Uniforme">Uniforme</option>
-                  </select>
-                 </div>
+                <label class="#">1️⃣ Tipo de Peça:</label>
+                <select name="Tipo_de_produto" class="#" id="Tipo_de_produto" required>
+                  <option value="" selected="selected">▫️ Selecionar ▫️</option>
+                  <option value="Camiseta">Camiseta</option>
+                  <option value="Gola Polo">Gola Polo</option>
+                  <option value="Abada">Abadá</option>
+                  <option value="Ecobag">Ecobag</option>
+                  <option value="Agasalho">Agasalho</option>
+                  <option value="Mascara">Máscara</option>
+                  <option value="Bordado">Bordado</option>
+                  <option value="Silk Screen">Silk Screen</option>
+                  <option value="Uniforme">Uniforme</option>
+                </select>
+
+                <br />
+
+                <label class="#">2️⃣ Malha da Peça:</label>
+
+                <select name="Material_da_peca" class="#" id="Material_da_peça" required>
+                  <option value="" selected="selected">▫️ Selecionar ▫️</option>
+                  <option value="Algodao_cardada">Algodão</option>
+                  <option value="Algodao_cardada">cardada</option>
+                  <option value="Algodao_penteada">penteada</option>
+                  <option value="Malha_fria_PV">Malha fria / PV</option>
+                  <option value="Dry_dry_fit">Dry fit</option>
+                  <option value="Elastano_lycra">lycra</option>
+                  <option value="Elastano_lycra">Elastano</option>
+                  <option value="Viscose">Viscose</option>
+                  <option value="Poliester">Poliéster</option>
+                </select>
+
+                <br />
+
+
+                <label class="#">3️⃣ Cor da Peça:</label>
+
+                <select name="Cor_da_peca" class="#" id="Cor_da_peca" required>
+                  <option value="" selected="selected">▫️ Selecionar ▫️</option>
+                  <option value="#fff">Branco</option>
+                  <option value="#808080">Cinza</option>
+                  <option value="#d3d3d3">Cinza Claro</option>
+                  <option value="#aaa9ad">Prata</option>
+                  <option value="#000">Preto</option>
+                  <option value="#78866b">Verde Militar</option>
+                  <option value="#013220">Verde Escuro</option>
+                  <option value="#008000">Verde</option>
+                  <option value="#90ee90">Verde Claro</option>
+                  <option value="#A020F0">Roxo</option>
+                  <option value="#0B0B45">Azul Marinho</option>
+                  <option value="#00008b">Azul Escuro</option>
+                  <option value="#0000ff">Azul</option>
+                  <option value="#add8e6 ">Azul Claro</option>
+                  <option value="#0FF">Cyan</option>
+                  <option value="#FF00FF">Magenta</option>
+                  <option value="#ffcbdb">Rosa</option>
+                  <option value="#f00">Vermelho</option>
+                  <option value="#fa8072">Salmon</option>
+                  <option value="#ffa500">Laranja</option>
+                  <option value="#cd7f32">Bronze</option>
+                  <option value="#ff0">Amarelo</option>
+                  <option value="#daa520">Dourado</option>
+                  <option value="#ffdb58">Mostarda</option>
+                  <option value="#f5f5dc">Beige</option>
+                </select>
+
+                <br />
+                <label class="#">4️⃣ Tipo de Gola:</label>
+
+                <select name="Tipo_de_gola" class="#" id="Tipo_de_gola" required>
+                  <option value="" selected="selected">▫️ Selecionar ▫️</option>
+                  <option value="Redonda">Redonda</option>
+                  <option value="V">Gola V</option>
+                  <option value="Canoa_U">Canoa / “U”</option>
+                  <option value="Gola_canoa">Gola Canoa</option>
+                  <option value=" Gola_role">Gola rolê</option>
+                  <option value="Gola_henley">Gola Henley</option>
+                  <option value="Capuz">Capuz</option>
+                </select>
+
+
+                <br />
+                <label for="qntPecas" class="#">5️⃣ Quantas Peças: </label>
 
 
 
-                <div> <label class="#">2️⃣ Malha da Peça:</label> </div>
-                <div>
-                  <select name="Material_da_peca" class="#" id="Material_da_peça" required>
-                    <option value="" selected="selected">▫️ Selecionar ▫️</option>
-                    <option value="Algodao_cardada">Algodão</option>
-                    <option value="Algodao_cardada">cardada</option>
-                    <option value="Algodao_penteada">penteada</option>
-                    <option value="Malha_fria_PV">Malha fria / PV</option>
-                    <option value="Dry_dry_fit">Dry fit</option>
-                    <option value="Elastano_lycra">lycra</option>
-                    <option value="Elastano_lycra">Elastano</option>
-                    <option value="Viscose">Viscose</option>
-                    <option value="Poliester">Poliéster</option>
-                  </select>
-                </div>
-
-
-
-                <div> <label class="#">3️⃣ Cor da Peça:</label></div>
-                <div>
-                  <select name="Cor_da_peca" class="#" id="Cor_da_peca" required>
-                    <option value="" selected="selected">▫️ Selecionar ▫️</option>
-                    <option value="#fff">Branco</option>
-                    <option value="#808080">Cinza</option>
-                    <option value="#d3d3d3">Cinza Claro</option>
-                    <option value="#aaa9ad">Prata</option>
-                    <option value="#000">Preto</option>
-                    <option value="#78866b">Verde Militar</option>
-                    <option value="#013220">Verde Escuro</option>
-                    <option value="#008000">Verde</option>
-                    <option value="#90ee90">Verde Claro</option>
-                    <option value="#A020F0">Roxo</option>
-                    <option value="#0B0B45">Azul Marinho</option>
-                    <option value="#00008b">Azul Escuro</option>
-                    <option value="#0000ff">Azul</option>
-                    <option value="#add8e6 ">Azul Claro</option>
-                    <option value="#0FF">Cyan</option>
-                    <option value="#FF00FF">Magenta</option>
-                    <option value="#ffcbdb">Rosa</option>
-                    <option value="#f00">Vermelho</option>
-                    <option value="#fa8072">Salmon</option>
-                    <option value="#ffa500">Laranja</option>
-                    <option value="#cd7f32">Bronze</option>
-                    <option value="#ff0">Amarelo</option>
-                    <option value="#daa520">Dourado</option>
-                    <option value="#ffdb58">Mostarda</option>
-                    <option value="#f5f5dc">Beige</option>
-                  </select>
-                </div>
-
-</div>
-</div>
-
-<hr />
-
-<div class="detailHolder">
-
-  <div class="detailInfo">
-
-                <div> <label class="#">4️⃣ Tipo de Gola:</label></div>
-                <div>
-                  <select name="Tipo_de_gola" class="#" id="Tipo_de_gola" required>
-                    <option value="" selected="selected">▫️ Selecionar ▫️</option>
-                    <option value="Redonda">Redonda</option>
-                    <option value="V">Gola V</option>
-                    <option value="Canoa_U">Canoa / “U”</option>
-                    <option value="Gola_canoa">Gola Canoa</option>
-                    <option value=" Gola_role">Gola rolê</option>
-                    <option value="Gola_henley">Gola Henley</option>
-                    <option value="Capuz">Capuz</option>
-                  </select>
-                </div>
-
-                <div> 
-                  <label for="qntPecas" class="#">5️⃣ Quantas Peças: </label>
-                </div>
-
-              <div>
 
                 <input type="number" id="shirtAmount" name="qntPecas" min="30" size="20" maxlength="30"
                   placeholder="Mínimo de 30 peças" required oninvalid="inputErr()" />
 
-              </div>
 
-              <div><label class="#">6️⃣ Personalização:</label></div>
+                <br />
+                <label class="#">6️⃣ Personalização:</label>
 
-              <div> <label class="#">◼️Bordado:</label> 
-              
+                <label class="#">◼️Bordado:</label>
+
                 <select name="Personalização" class="#" id="PersonalizaçãoBordado" required>
                   <option value="" selected="selected">▫️ Selecionar ▫️</option>
                   <option value="50">Sim</option>
                   <option value="50">Não</option>
                 </select>
-              
-                <label class="#">◼️Silkscreen:</label> 
-              
+
+                <label class="#">◼️Silkscreen:</label>
+
                 <select name="Personalização" class="#" id="PersonalizaçãoSilk" required>
                   <option value="" selected="selected">▫️ Selecionar ▫️</option>
                   <option value="50">Sim</option>
                   <option value="50">Não</option>
                 </select>
 
-              </div>
 
+                <br />
+              </div>
+            </div>
+
+            <h3>7️⃣ Para montar um modelo de seu logo na camiseta 👕</h3>
+
+            <button type="button" class="main-button" id="main-button">
+              ➡️ Teste seu logo aqui
+            </button>
+
+
+            <h3>8️⃣ Escreva suas dúvidas e observações abaixo 💬</h3>
+            <textarea name="Comentario" cols="50" rows="5" class="#" id="Comentario"
+              style="width: 600px; height: 200px"></textarea>
+
+            <label class="#">
+              <input name="tituloMensagem" id="tituloMensagem" value="Formulário de Orçamento" type="hidden" />
+              &nbsp;</label>
+
+            <hr />
+
+            <h3>9️⃣ Anexar os Arquivos ou Logotipos (se disponível)</h3>
+
+            <label class="#">📎 anexar: </label>
+
+            <a href="#" class="#" title="Choose date">Escolher Arquivos</a>
+
+            <label class="#">(Vetorizada: </label>
+
+            <input name="vector" class="#" value="sim" type="radio" />
+            Sim
+            <input name="vector" class="#" value="nao" type="radio" />
+            Não
+            <input name="vector" class="#" value="naosei" type="radio" />
+            Não Sei)
+
+          </div>
+
+          <hr />
+
+          <div class="personalizado">
+            <div class="tshirtHolder">
+              <div id="tshirt-div">
+
+                <img id="tshirt-backgroundpicture" src="assets/images/background_tshirt.png" />
+
+                <div id="drawingArea" class="drawing-area">
+                  <div class="canvas-container">
+                    <canvas width="200" height="450" id="tshirt-canvas"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="tshirtText">
+
+                <label for="tshirt-design">
+                  <p class="tshirtExt">Layout da Camiseta</p>
+                </label>
+                <select id="tshirt-design">
+                  <option value="">
+                    <p>Selecione o Layout</p>
+                  </option>
+                  <option value="assets/images/blb_small.png">
+                    BlueBerry
+                  </option>
+                  <option value="assets/images/blb2_small.png">
+                    BlueBerry2
+                  </option>
+                </select>
+
+
+                <label for="tshirt-color">
+                  <p class="tshirtExt">Cor da Camiseta</p>
+                </label>
+                <select id="tshirt-color" class="tshirt-color">
+
+                  <option value="#fff">Branco</option>
+                  <option value="#808080">Cinza</option>
+                  <option value="#d3d3d3">Cinza Claro</option>
+                  <option value="#aaa9ad">Prata</option>
+                  <option value="#000">Preto</option>
+                  <option value="#78866b">Verde Militar</option>
+                  <option value="#013220">Verde Escuro</option>
+                  <option value="#008000">Verde</option>
+                  <option value="#90ee90">Verde Claro</option>
+                  <option value="#A020F0">Roxo</option>
+                  <option value="#0B0B45">Azul Marinho</option>
+                  <option value="#00008b">Azul Escuro</option>
+                  <option value="#0000ff">Azul</option>
+                  <option value="#add8e6 ">Azul Claro</option>
+                  <option value="#0FF">Cyan</option>
+                  <option value="#FF00FF">Magenta</option>
+                  <option value="#ffcbdb">Rosa</option>
+                  <option value="#f00">Vermelho</option>
+                  <option value="#fa8072">Salmon</option>
+                  <option value="#ffa500">Laranja</option>
+                  <option value="#cd7f32">Bronze</option>
+                  <option value="#ff0">Amarelo</option>
+                  <option value="#daa520">Dourado</option>
+                  <option value="#ffdb58">Mostarda</option>
+                  <option value="#f5f5dc">Beige</option>
+                </select>
+
+                <label for="tshirt-custompicture">
+                  <p class="tshirtExt">Carregue seu Layout</p>
+                </label>
+                <input type="file" id="tshirt-custompicture" class="tshirtExt" />
+                <h4 class="tshirtExt">
+                  <em>Para remover a imagem selecionada pressionar tecla
+                    <kbd>DELETE</kbd>.</em>
+                </h4>
+
+                <button type="button" class="main-button" id="final-button">
+                  Submeter arte
+                </button>
+
+                <button type="button" class="main-button2" id="final-button2">
+                  Voltar página
+                </button>
+              </div>
             </div>
           </div>
 
-         
-          <h3>7️⃣ Para montar um modelo de seu logo na camiseta 👕</h3>
 
-          <button type="button" class="main-button" id="main-button">
-            ➡️ Teste seu logo aqui
+          <h3>🔟 Submeter o seu formulário e enviar suas informações</h3>
+          <p>
+            <strong>ATENÇÃO:<em>
+                Campos com * são de preenchimento obrigatório!</em></strong>
+          </p>
+
+          <button class="main-button" id="main-button2">
+            ☑️ Submeter seu formulário
           </button>
-
-
-          <h3>8️⃣ Escreva suas dúvidas e observações abaixo 💬</h3>
-          <textarea name="Comentario" cols="50" rows="5" class="#" id="Comentario"
-            style="width: 600px; height: 200px"></textarea>
-
-          <label class="#">
-            <input name="tituloMensagem" id="tituloMensagem" value="Formulário de Orçamento" type="hidden" />
-            &nbsp;</label>
-
-          <input name="#" class="#" id="#0" value="Enviar" type="submit" />
-          <input name="#" class="#" id="#1" value="Limpar" type="reset" />
-
-          <hr />
-
-          <h3>9️⃣ Anexar os Arquivos ou Logotipos (se disponível)</h3>
-
-          <label class="#">📎 anexar: </label>
-
-          <a href="#" class="#" title="Choose date">Escolher Arquivos</a>
-
-          <label class="#">(Vetorizada: </label>
-
-          <input name="vector" class="#" value="sim" type="radio" />
-          Sim
-          <input name="vector" class="#" value="nao" type="radio" />
-          Não
-          <input name="vector" class="#" value="naosei" type="radio" />
-          Não Sei)
-
+        </form>
       </div>
-
-          <hr />
-
-      <div class="personalizado">
-        <div class="tshirtHolder">
-          <div id="tshirt-div">
-
-            <img id="tshirt-backgroundpicture" src="assets/images/background_tshirt.png" />
-
-            <div id="drawingArea" class="drawing-area">
-              <div class="canvas-container">
-                <canvas width="200" height="450" id="tshirt-canvas"></canvas>
-              </div>
-            </div>
-          </div>
-          <div class="tshirtText">
-
-            <label for="tshirt-design">
-              <p class="tshirtExt">Layout da Camiseta</p>
-            </label>
-            <select id="tshirt-design">
-              <option value="">
-                <p>Selecione o Layout</p>
-              </option>
-              <option value="assets/images/blb_small.png">
-                BlueBerry
-              </option>
-              <option value="assets/images/blb2_small.png">
-                BlueBerry2
-              </option>
-            </select>
-
-
-            <label for="tshirt-color">
-              <p class="tshirtExt">Cor da Camiseta</p>
-            </label>
-            <select id="tshirt-color" class="tshirt-color">
-
-              <option value="#fff">Branco</option>
-              <option value="#808080">Cinza</option>
-              <option value="#d3d3d3">Cinza Claro</option>
-              <option value="#aaa9ad">Prata</option>
-              <option value="#000">Preto</option>
-              <option value="#78866b">Verde Militar</option>
-              <option value="#013220">Verde Escuro</option>
-              <option value="#008000">Verde</option>
-              <option value="#90ee90">Verde Claro</option>
-              <option value="#A020F0">Roxo</option>
-              <option value="#0B0B45">Azul Marinho</option>
-              <option value="#00008b">Azul Escuro</option>
-              <option value="#0000ff">Azul</option>
-              <option value="#add8e6 ">Azul Claro</option>
-              <option value="#0FF">Cyan</option>
-              <option value="#FF00FF">Magenta</option>
-              <option value="#ffcbdb">Rosa</option>
-              <option value="#f00">Vermelho</option>
-              <option value="#fa8072">Salmon</option>
-              <option value="#ffa500">Laranja</option>
-              <option value="#cd7f32">Bronze</option>
-              <option value="#ff0">Amarelo</option>
-              <option value="#daa520">Dourado</option>
-              <option value="#ffdb58">Mostarda</option>
-              <option value="#f5f5dc">Beige</option>
-            </select>
-
-            <label for="tshirt-custompicture">
-              <p class="tshirtExt">Carregue seu Layout</p>
-            </label>
-            <input type="file" id="tshirt-custompicture" class="tshirtExt" />
-            <h4 class="tshirtExt">
-              <em>Para remover a imagem selecionada pressionar tecla
-                <kbd>DELETE</kbd>.</em>
-            </h4>
-
-            <button type="button" class="main-button" id="final-button">
-              Submeter arte
-            </button>
-
-            <button type="button" class="main-button2" id="final-button2">
-              Voltar página
-            </button>
-          </div>
-        </div>
-      </div>
-
-
-      <h3>🔟 Submeter o seu formulário e enviar suas informações</h3>
-      <p>
-        <strong>ATENÇÃO:<em>
-            Campos com * são de preenchimento obrigatório!</em></strong>
-      </p>
-
-      <button class="main-button" id="main-button2">
-        ☑️ Submeter seu formulário
-      </button>
-      </form>
     </div>
-  </div>
   </div>
 
   <div class="subfooter"></div>
@@ -375,7 +361,7 @@
 
       <p>
         Copyright ©️ 2022 |
-        <a href="https://www.facebook.com/Blueberry-Camisetas-309011612639981/" target="_blank" title="facebook">🔍
+        <a href="https://www.facebook.com/Blueberry-Camisetas-309011612639981/" target="_blank" title="facebook">
           Facebook: Blueberry-Camisetas</a>
         | Designed By:
         <a href="https://www.facebook.com/victoryagoc">Victor Yago Cury</a>
