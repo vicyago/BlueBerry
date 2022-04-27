@@ -72,14 +72,16 @@
   display: block;
 }
 .clientHolder {
-   display:flex;
-   flex-direction: column;
-   }
+  display: flex;
+  flex-direction: column;
+  width: 38%;
+  gap: 0.4rem;
+}
 .clientInfo {
-  display:flex;
+  display: flex;
   flex-direction: row;
   flex-basis: 100%;
 }
-.clientInfo div{
-flex-basis:100%
+.clientInfo div {
+  flex-basis: 100%;
 }
