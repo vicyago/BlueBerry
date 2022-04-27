@@ -1,42 +1,42 @@
 .holder {
-  margin-left: 15%;
-  width: 70%;
-  background: url("../images/bg3.jpg") no-repeat;
-  background-size: contain;
-  font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
-  font-size: 1em;
-  padding-left: 5%;
-  padding-right: 5%;
+    margin-left: 15%;
+    width: 70%;
+    background: url("../images/bg3.jpg") no-repeat;
+    background-size: contain;
+    font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+    font-size: 1em;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .holder img {
-  display: block;
-  margin: auto;
+    display: block;
+    margin: auto;
 }
 h3,
 h4 {
-  color: black;
-  font-size: 1em;
+    color: black;
+    font-size: 1em;
 }
 .content:nth-child(3)::after {
-  background: #9c6c55;
-  content: "";
-  bottom: -4px;
-  height: 2px;
-  left: 0;
-  margin: 0 auto;
-  position: absolute;
-  right: 0;
-  width: 50%;
-  -o-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+    background: #9c6c55;
+    content: "";
+    bottom: -4px;
+    height: 2px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
 }
 .content:nth-child(3):hover::after {
-  width: 80%;
-  background: orange;
+    width: 80%;
+    background: orange;
 }
 .blue {
-  color: #055dff;
+    color: #055dff;
 }

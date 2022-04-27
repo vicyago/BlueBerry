@@ -1,199 +1,199 @@
 .tshirtExt {
-  color: black;
+    color: black;
 }
 .mainHolder {
-  width: 100%;
+    width: 100%;
 }
 .mainHolder select {
-  margin: 1%;
-  background: #e6cabc;
-  color: rgb(0, 0, 0);
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
-  border-radius: 40px 40px;
-  font-size: 0.8em;
-  text-align: center;
+    margin: 1%;
+    background: #e6cabc;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 40px 40px;
+    font-size: 0.8em;
+    text-align: center;
 }
 
 .mainHolder span {
-  color: black;
+    color: black;
 }
 .bannerHolder {
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  position: relative;
-  padding: 1%;
-  font-size: 1em;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: relative;
+    padding: 1%;
+    font-size: 1em;
 }
 .bannerHolder a {
-  text-decoration: none;
-  color: #922e00;
-  font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
-  font-size: large;
-  font-size: 1em;
+    text-decoration: none;
+    color: #922e00;
+    font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+    font-size: large;
+    font-size: 1em;
 }
 .bannerHolder a:hover {
-  text-decoration: none;
-  color: #000000;
-  font-size: larger;
+    text-decoration: none;
+    color: #000000;
+    font-size: larger;
 }
 .banner {
-  background: url("../images/bg2.png") no-repeat;
-  background-size: cover;
-  height: 100%;
-  width: 70%;
-  text-align: left;
-  padding: 4% 4% 4% 4%;
-  position: relative;
-  margin: auto;
-  -webkit-box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 0.75);
-  font-size: 1em;
+    background: url("../images/bg2.png") no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 70%;
+    text-align: left;
+    padding: 4% 4% 4% 4%;
+    position: relative;
+    margin: auto;
+    -webkit-box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 0.75);
+    font-size: 1em;
 }
 .content:nth-child(2)::after {
-  background: #9c6c55;
-  content: "";
-  bottom: -4px;
-  height: 2px;
-  left: 0;
-  margin: 0 auto;
-  position: absolute;
-  right: 0;
-  width: 50%;
-  -o-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+    background: #9c6c55;
+    content: "";
+    bottom: -4px;
+    height: 2px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
 }
 .content:nth-child(2):hover::after {
-  width: 80%;
-  background: orange;
+    width: 80%;
+    background: orange;
 }
 .input {
-  margin: 1%;
-  background: #e6cabc;
-  color: rgb(0, 0, 0);
-  border-radius: 40px 40px;
+    margin: 1%;
+    background: #e6cabc;
+    color: rgb(0, 0, 0);
+    border-radius: 40px 40px;
 }
 .inputCor {
-  background: linear-gradient(
-    45deg,
-    blue,
-    indigo,
-    violet,
-    green,
-    yellow,
-    orange,
-    red,
-    black,
-    white
-  );
-  border-radius: 80px 80px;
-  border: none transparent;
-  width: 50%;
+    background: linear-gradient(
+        45deg,
+        blue,
+        indigo,
+        violet,
+        green,
+        yellow,
+        orange,
+        red,
+        black,
+        white
+    );
+    border-radius: 80px 80px;
+    border: none transparent;
+    width: 50%;
 }
 .input3 {
-  margin: 1%;
-  padding: 1%;
-  background: #e6cabc;
-  color: rgb(0, 0, 0);
-  border-radius: 40px 40px;
-  box-shadow: 0 1px 1px 0 #0000006b;
+    margin: 1%;
+    padding: 1%;
+    background: #e6cabc;
+    color: rgb(0, 0, 0);
+    border-radius: 40px 40px;
+    box-shadow: 0 1px 1px 0 #0000006b;
 }
 .main-button {
-  display: block;
-  width: 100%;
-  border: none;
-  background-color: #e6cabc;
-  cursor: pointer;
-  text-align: center;
-  box-shadow: 1px 1px 1px 1px #0000004b;
-  margin-top: 3%;
-  margin-bottom: 5%;
-  padding: 2%;
-  font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
-  font-size: large;
-  font-size: 1em;
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #e6cabc;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px #0000004b;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    padding: 2%;
+    font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+    font-size: large;
+    font-size: 1em;
 }
 .main-button a {
-  text-decoration: none;
-  font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
-  color: black;
-  font-size: large;
-  font-size: 1em;
+    text-decoration: none;
+    font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+    color: black;
+    font-size: large;
+    font-size: 1em;
 }
 .main-button:hover {
-  background-color: #9c6c55;
-  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    background-color: #9c6c55;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
 }
 .main-button2 {
-  display: block;
-  width: 100%;
-  border: none;
-  background-color: #d8510dbe;
-  text-shadow: 1px 1px 2px black;
-  color: rgb(255, 255, 255);
-  cursor: pointer;
-  text-align: center;
-  box-shadow: 1px 1px 1px 1px #0000004b;
-  margin-bottom: 5%;
-  padding: 2%;
-  font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
-  font-size: 1em;
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #d8510dbe;
+    text-shadow: 1px 1px 2px black;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px #0000004b;
+    margin-bottom: 5%;
+    padding: 2%;
+    font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+    font-size: 1em;
 }
 .main-button2 a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-size: 1em;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
 }
 .main-button2:hover {
-  background-color: #9c6c55;
-  box-shadow: 0px 1px 6px rgba(126, 56, 56, 0.64);
+    background-color: #9c6c55;
+    box-shadow: 0px 1px 6px rgba(126, 56, 56, 0.64);
 }
 
 .drawing-area {
-  position: absolute;
-  z-index: 10;
-  left: 24%;
-  top: 25%;
-  height: 40%;
-  width: 25%;
+    position: absolute;
+    z-index: 10;
+    left: 24%;
+    top: 25%;
+    height: 40%;
+    width: 25%;
 }
 .canvas-container {
-  position: relative;
-  user-select: none;
+    position: relative;
+    user-select: none;
 }
 .tshirtText {
-  display: flex;
-  flex-direction: column;
-  font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
 }
 #tshirt-div {
-  background-color: white;
-  display: flex;
-  flex-direction: row-reverse;
+    background-color: white;
+    display: flex;
+    flex-direction: row-reverse;
 }
 #canvas {
-  position: absolute;
-  user-select: none;
-  cursor: default;
+    position: absolute;
+    user-select: none;
+    cursor: default;
 }
 .tshirtHolder {
-  width: 100%;
-  margin-bottom: 10%;
-  padding: 10%;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  -webkit-box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 0.75);
+    width: 100%;
+    margin-bottom: 10%;
+    padding: 10%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 0.75);
 }
 .tshirt-backgroundpicture {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
