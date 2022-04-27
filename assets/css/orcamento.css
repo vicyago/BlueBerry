@@ -88,14 +88,26 @@
 .detailHolder {
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 100%;
 }
 .detailInfo {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-basis: 100%;
-    gap: 0.8rem;
 }
 .detailInfo div {
+    flex-basis: 100%;
+}
+.detailHolder2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.detailInfo2 {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+}
+.detailInfo2 div {
     flex-basis: 100%;
 }
