@@ -152,14 +152,11 @@
     background-color: #9c6c55;
     box-shadow: 0px 1px 6px rgba(126, 56, 56, 0.64);
 }
-
 .drawing-area {
     position: absolute;
     z-index: 10;
     left: 27%;
-    top: 25%;
-    height: 40%;
-    width: 27%;
+    top: 27%;
 }
 .canvas-container {
     position: relative;
