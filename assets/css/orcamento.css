@@ -74,7 +74,7 @@
 .clientHolder {
     display: flex;
     flex-direction: column;
-    width: 38%;
+    width: 45%;
     gap: 0.6rem;
 }
 .clientInfo {
