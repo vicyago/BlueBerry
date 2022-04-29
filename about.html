@@ -39,20 +39,34 @@
     </nav>
   </div>
   <div class="mainHolder">
+
     <div class="holder">
-      <hr />
-      <hr />
-      <h1>Nossa Empresa</h1>
-      <h2>Blue Berry Camisetas</h2>
+
+      <h1>Blue Berry Camisetas</h1>
+
       <h3>🔵 Nosso Foco</h3>
       <p>
-        - Atender a demanda no <span class="blue">ramo de confecção</span> ,
-        uma area bastante ampla, composta por várias etapas, nos especilizamos
-        na produção de peças do vestuário muito como camiseta promocionias,
-        máscaras e abadás. As Políticas praticadas têm como foco desenvolver e
+        - Atender a demanda no
+         <span class="blue">
+           ramo de confecção
+          </span> ,
+        nos especilizamos em 
+        <span class="blue">
+          camisetas promocionais personalizadas.
+        </span>
+        As Políticas praticadas têm como foco desenvolver e
         valorizar o produto final, assim como a experiencia entre cliente e
         nossos colaboradores.
       </p>
+
+      <hr />
+
+      <div class="imageHolder">
+        <img src="" id="image">
+      </div>
+
+      <hr />
+
       <h3>🔵 É de extrema importância</h3>
       <p>
         - Saber que com <span class="blue">a Blue Berry Camisetas</span> você
@@ -64,25 +78,29 @@
         com os profissionais da Blue Berry Camisetas e tenha todo o suporte
         que precisa!
       </p>
+
+      <hr />
+      
       <h3>🔵 Nossas modelagens</h3>
       <p>
         - Foram desenvolvidas ao longo dos anos,<span class="blue">a Blue Berry Camisetas </span>está a mais de
         <span class="blue">30 anos atendendo o mercado campineiro,</span>
-        como sua região, possuímos trabalhos, com grandes instituições como
+        e sua região, possuímos trabalhos, com grandes instituições como
         cliente, universidades e eventos. Sempre buscando o máximo de conforto
         e ajuste perfeito ao corpo. A Blue Berry Camisetas foi criada para
         transformar os seus projetos e sonhos em realidade. Somos
         especializados em desenvolver projetos com Silkscreen.
       </p>
-      <hr />
-      <hr />
-
-      <img src="assets/images/corisetas.gif" />
 
       <hr />
-      <hr />
+
     </div>
+
+
+
   </div>
+
+
 
   <footer>
     <div class="footer">
@@ -98,7 +116,24 @@
       </p>
     </div>
   </footer>
-  <script></script>
+  <script>
+
+    const delay = async (ms = 1000) =>
+      new Promise(resolve => setTimeout(resolve, ms))
+
+    async function imageLoop() {
+      let image = document.getElementById('image');
+      let images = ['assets/images/item-01.jpg', 'assets/images/item-02.jpg', 'assets/images/item-03.jpg', 'assets/images/item-04.jpg', 'assets/images/item-05.jpg', 'assets/images/item-06.jpg', 'assets/images/item-07.jpg', 'assets/images/item-08.jpg', 'assets/images/item-09.jpg']
+      for (let i = 0; i < images.length; i++) {
+        await delay(1000)
+        image.src = images[i]
+      };
+      imageLoop()
+
+    }
+    imageLoop();
+
+  </script>
 </body>
 
 </html>
