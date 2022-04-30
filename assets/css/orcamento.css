@@ -98,6 +98,9 @@
 .detailInfo div {
     flex-basis: 100%;
 }
+#comentario {
+    width: 60%;
+}
 @media screen and (min-width: 200px) and (max-width: 720px) {
     .clientHolder {
         width: 100%;
@@ -108,4 +111,8 @@
     .detailHolder {
         width: 100%;
     }
+    #comentario {
+    max-width: 100%;
+    min-width: 100%;
+}
 }
