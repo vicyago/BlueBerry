@@ -140,10 +140,11 @@ footer {
   }
   header {
       height: 8%;
-      font-size: 0.9em;
+      font-size: 0.8em;
+      letter-spacing: 1px;
   }
   .header {
-       padding-top: 1%;
+       padding-top: 2%;
   }
   .pos_header {
        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.64);
@@ -162,5 +163,10 @@ footer {
   }
   .logoHolder {
       display: none;
+  }
+  .footer {
+      padding-top: 3%;
+      font-size: 0.8em;
+      letter-spacing: 1px;
   }
 }   
