@@ -148,7 +148,10 @@
 .carousel-bullet:hover {
     color: #aaaaaa;
 }
-
+.imgIndex {
+    display: none;
+    position: absolute;
+}
 #carousel-1:checked
     ~ .control-1
     ~ .carousel-indicators
@@ -206,7 +209,7 @@
         width: 98%;
         left: 1%;
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.64);
-        margin-top: 3%;
+        margin-top: 7%;
     }
     .carousel {
         margin-top: 1%;
@@ -214,6 +217,11 @@
     .carousel-inner{
         display:none
     }
+    .imgIndex {
+    display: block;
+    left: 55%;
+    top: 25%;
+}
     footer {
        position: absolute;
        top: 100%;
