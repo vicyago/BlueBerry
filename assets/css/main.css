@@ -142,12 +142,14 @@ footer {
       height: 8%;
       font-size: 0.8em;
       letter-spacing: 1px;
+      box-shadow: none;
+      margin: 0%;
   }
   .header {
        padding-top: 2%;
   }
   .pos_header {
-       box-shadow: 0 1px 6px rgba(0, 0, 0, 0.64);
+       box-shadow: none;
        flex-direction: column;
        height: 10%;
   }
@@ -155,10 +157,12 @@ footer {
       text-align: center;
       width: 100%;
       justify-content: center;
+      box-shadow: 0 0 3px 0 black;
   }
   .contentHolder {
       width: 100%;
       margin-right: 0%;
+      margin-top: 0%;
       justify-content: space-around;
   }
   .logoHolder {
