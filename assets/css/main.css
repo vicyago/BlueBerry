@@ -142,11 +142,7 @@ footer {
       height: 8%;
       font-size: 0.9em;
   }
-  body {
-       display: flex;
-       flex-direction: column;
-  }
-   .header {
+  .header {
        padding-top: 1%;
   }
   .pos_header {

@@ -98,3 +98,14 @@
 .detailInfo div {
     flex-basis: 100%;
 }
+@media screen and (min-width: 200px) and (max-width: 720px) {
+    .clientHolder {
+        width: 100%;
+    }
+    .clientInfo {
+        flex-direction: column;
+    }
+    .detailHolder {
+        width: 100%;
+    }
+}

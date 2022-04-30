@@ -202,7 +202,6 @@
     box-shadow: 0px 1px 6px rgba(126, 56, 56, 0.64);
 }
 @media screen and (min-width: 200px) and (max-width: 720px) {
-    
     .holderText {
         width: 98%;
         left: 1%;
@@ -215,12 +214,7 @@
     .carousel-inner{
         display:none
     }
-    .banner {
-        width: 98%;
-        left: 1%;
-        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.64);
-    }
-     footer {
+    footer {
        position: absolute;
        top: 100%;
   }
