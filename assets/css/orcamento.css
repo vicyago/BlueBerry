@@ -114,5 +114,8 @@
     #comentario {
     max-width: 100%;
     min-width: 100%;
-}
+    }
+    #main-button {
+     display: none;   
+    }
 }
