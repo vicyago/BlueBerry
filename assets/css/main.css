@@ -133,23 +133,34 @@ footer {
 @media screen and (min-width: 200px) and (max-width: 720px) {
   
   html {
-    font-size: 0.7em;
+      font-size: 0.7em;
   }
   nav a {
-    font-size: 0.9em;
-    width: 100%;
+      font-size: 0.9em;
+      width: 100%;
   }
   header {
       height: 8%;
       font-size: 0.9em;
   }
+  body {
+       display: flex;
+       flex-direction: column;
+  }
+  footer {
+       position: absolute;
+       top: 100%;
+  }
   .header {
-      padding-top: 1%;
+       padding-top: 1%;
+  }
+  .pos_header {
+       margin-top: 2%;
   }
   .navbar {
-    text-align: center;
-    width: 100%;
-    justify-content: center;
+      text-align: center;
+      width: 100%;
+      justify-content: center;
   }
   .contentHolder {
       width: 80%;
