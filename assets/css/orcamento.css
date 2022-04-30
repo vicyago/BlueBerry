@@ -101,6 +101,9 @@
 #comentario {
     width: 60%;
 }
+#h3CellJs {
+    display: none;
+}
 @media screen and (min-width: 200px) and (max-width: 720px) {
     .clientHolder {
         width: 100%;
@@ -114,5 +117,11 @@
     }
     #main-button {
      display: none;   
+    }
+    #h3CellJs {
+     display: inline-block; 
+    }
+    #h3CellDs {
+     display: none; 
     }
 }
