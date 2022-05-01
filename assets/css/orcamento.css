@@ -146,18 +146,18 @@
         width: 100%;
     }
     #comentario {
-    max-width: 100%;
-    min-width: 100%;
+        max-width: 100%;
+        min-width: 100%;
     }
     #main-button {
-     display: none;   
+        display: none;
     }
     .banner {
         width: 98%;
         left: 1%;
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.64);
         margin-top: 3%;
-        margin-right: 3%;  
+        margin-right: 3%;
         padding: 3% 3% 3% 3%;
     }
 }

@@ -214,16 +214,16 @@
     .carousel {
         margin-top: 1%;
     }
-    .carousel-inner{
-        display:none
+    .carousel-inner {
+        display: none;
     }
     .imgIndex {
-    display: block;
-    left: 55%;
-    top: 25%;
-}
+        display: block;
+        left: 55%;
+        top: 25%;
+    }
     footer {
-       position: absolute;
-       top: 100%;
-  }
+        position: absolute;
+        top: 100%;
+    }
 }
