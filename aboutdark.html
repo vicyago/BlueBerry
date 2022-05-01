@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <link rel="stylesheet" type="text/css" href="assetsdark/css/main.css" />
+  <link rel="stylesheet" type="text/css" href="assetsdark/css/about.css" />
+
+  <title>SiteBlueBerryCamisetasAboutUs</title>
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      Entre em contato conosco | (19) 3231-2968 |
+      <a href="mailto:marildablueberry@uol.com.br" title="email" role="link" tabindex="0"
+        target="blank">marildablueberry@uol.com.br</a>
+    </div>
+  </header>
+  <div class="pos_header">
+    <div class="logoHolder">
+      <div class="logo"><img src="assetsdark/images/header-logo.png" /></div>
+      <div class="logo"><img src="assetsdark/images/bottom-logo.png" /></div>
+    </div>
+
+    <nav>
+      <div class="navbar">
+        <div class="contentHolder">
+          <div class="content"><a href="indexdark.html">Home</a></div>
+          <div class="content"><a href="orcamentodark.html">Orçamento</a></div>
+          <div class="content"><a href="aboutdark.html">Sobre Nós</a></div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="mainHolder">
+
+
+    <div class="holder">
+
+      <h1>Blue Berry Camisetas</h1>
+
+      <h3>🟠 Nosso Foco</h3>
+      <p>
+        - Atender a demanda no <span class="blue"> ramo de confecção</span>,
+         nos especilizamos em 
+          <span class="blue">camisetas promocionais personalizadas</span>.       
+        As Políticas praticadas têm como foco desenvolver e
+        valorizar o produto final, assim como a experiencia entre cliente e
+        nossos colaboradores.
+      </p>
+
+      <hr />
+
+      <div class="imageHolder">
+        <img src="." id="image">
+      </div>
+
+      <hr />
+
+      <h3>🟠 É de extrema importância</h3>
+      <p>
+        - Saber que com <span class="blue">a Blue Berry Camisetas</span> você
+        pode encontrar diversas opções quando se trata de confecção de nossos
+        produtos oferecidos, personalização e produção, a empresa
+        disponibiliza contato direto com nossos colaboradores. Camisetas com
+        silkscreen ou camisetas bordadas, entre outras opções, priorizando
+        sempre atender de forma personalizada cada cliente. Entre em contato
+        com os profissionais da Blue Berry Camisetas e tenha todo o suporte
+        que precisa!
+      </p>
+
+      <h3>🟠 Nossas modelagens</h3>
+      <p>
+        - Foram desenvolvidas ao longo dos anos,<span class="blue">a Blue Berry Camisetas </span>está a mais de
+        <span class="blue">30 anos atendendo o mercado campineiro,</span>
+        e sua região, possuímos trabalhos, com grandes instituições como
+        cliente, universidades e eventos. Sempre buscando o máximo de conforto
+        e ajuste perfeito ao corpo. A Blue Berry Camisetas foi criada para
+        transformar os seus projetos e sonhos em realidade. Somos
+        especializados em desenvolver projetos com Silkscreen.
+      </p>
+
+      <hr />
+
+    </div>
+
+
+
+  </div>
+
+
+
+  <footer>
+    <div class="footer">
+      <a href="indexdark.html">Home</a>
+      <a href="aboutdark.html">About</a>
+
+      <p>
+        Copyright ©️ 2022 |
+        <a href="https://www.facebook.com/Blueberry-Camisetas-309011612639981/" target="_blank" title="facebook">
+          Facebook: Blueberry-Camisetas</a>
+        | Designed By:
+        <a href="https://www.facebook.com/victoryagoc">Victor Yago Cury 🇧🇷</a>
+      </p>
+    </div>
+  </footer>
+  <script>
+
+    const delay = async (ms = 1000) =>
+      new Promise(resolve => setTimeout(resolve, ms))
+
+    async function imageLoop() {
+      let image = document.getElementById('image');
+      let images = ['assetsdark/images/item-01.jpg', 'assetsdark/images/item-02.jpg', 'assetsdark/images/item-03.jpg', 'assetsdark/images/item-04.jpg', 'assetsdark/images/item-05.jpg', 'assetsdark/images/item-06.jpg', 'assetsdark/images/item-07.jpg', 'assetsdark/images/item-08.jpg', 'assetsdark/images/item-09.jpg']
+      for (let i = 0; i < images.length; i++) {
+        await delay(1000)
+        image.src = images[i]
+      };
+      imageLoop()
+
+    }
+    imageLoop();
+
+  </script>
+</body>
+
+</html>
