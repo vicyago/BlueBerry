@@ -5,7 +5,7 @@
     color: white;
 }
 .content:first-child::after {
-    background: hsl(229, 100%, 8%);;
+    background: orange;
     content: "";
     bottom: -4px;
     height: 2px;

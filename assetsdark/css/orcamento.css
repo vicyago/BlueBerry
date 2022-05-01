@@ -2,7 +2,7 @@
     width: 100%;
 }
 .content:nth-child(2)::after {
-    background: hsl(229, 100%, 8%);
+    background: orange;
     content: "";
     bottom: -4px;
     height: 2px;
@@ -23,17 +23,9 @@
 }
 .input {
     margin: 1%;
-    background: #e6cabc;
+    background: orange;
     color: rgb(0, 0, 0);
     border-radius: 40px 40px;
-}
-.input3 {
-    margin: 1%;
-    padding: 1%;
-    background: #e6cabc;
-    color: rgb(0, 0, 0);
-    border-radius: 40px 40px;
-    box-shadow: 0 1px 1px 0 #0000006b;
 }
 .main-button {
     display: block;
@@ -129,7 +121,7 @@
     font-size: 1em;
 }
 .content:nth-child(2)::after {
-    background: hsl(229, 100%, 8%);
+    background: orange;
     content: "";
     bottom: -4px;
     height: 2px;
