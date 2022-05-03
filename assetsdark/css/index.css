@@ -111,7 +111,7 @@
 }
 
 .carousel-control:hover {
-    background: rgba(0, 0, 0, 0.8);
+    background: white;
     color: #aaaaaa;
 }
 
@@ -141,14 +141,14 @@
 }
 
 .carousel-bullet {
-    color: rgb(0, 0, 0);
+    color: #1c5d99;
     cursor: pointer;
     display: block;
     font-size: 35px;
 }
 
 .carousel-bullet:hover {
-    color: hsl(229, 100%, 8%);
+    color: white;
 }
 .imgIndex {
     display: none;
