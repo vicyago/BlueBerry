@@ -130,6 +130,17 @@ footer {
     font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
     font-size: 1em;
 }
+.footer-button {
+    background-color: #9C6C55;
+    cursor: pointer;
+    text-align: center;
+    font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+}
+.footer-button:hover {
+    background-color: #d8510dbe;
+}
 @media screen and (min-width: 200px) and (max-width: 720px) {
     html {
         font-size: 0.7em;

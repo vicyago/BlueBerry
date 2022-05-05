@@ -119,6 +119,17 @@ footer {
     font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
     font-size: 0.9em;
 }
+.footer-button {
+    background-color: hsl(229, 100%, 8%);
+    cursor: pointer;
+    text-align: center;
+    font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+}
+.footer-button:hover {
+    background-color: #d8510dbe;
+}
 .footer {
     margin: auto;
     text-align: center;

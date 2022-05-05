@@ -8,8 +8,8 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
-  <link rel="stylesheet" type="text/css" href="assets/css/about.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css" id="pagestyle"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/about.css" id="pagestyle2"/>
 
   <title>SiteBlueBerryCamisetasAboutUs</title>
 </head>
@@ -98,9 +98,10 @@
 
   <footer>
     <div class="footer">
-      <a href="index.html">Home 🏠</a>
-      <a href="#"> | </a>
-      <a href="indexdark.html">🌙 Escuro</a>
+
+      <button class="footer-button" href="index.html">Home 🏠</button>
+      
+      <button class="footer-button" onclick="changeStyleToDark()">Dark 🌙</button>
 
       <p>
         Copyright ©️ 2022 |
@@ -127,6 +128,13 @@
 
     }
     imageLoop();
+
+    function changeStyleToDark() {
+
+        document.getElementById('pagestyle').href = "maindark.css"
+        document.getElementById('pagestyle2').href = "aboutdark.css"
+      }
+    
 
   </script>
 </body>

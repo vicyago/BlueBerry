@@ -9,8 +9,8 @@
   <meta name="author" content="" />
 
   <title>SiteBlueBerryCamisetasOrçamento</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/orcamento.css" />
-  <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/orcamento.css" id="pagestyle"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css" id="pagestyle2"/>
 
 </head>
 
@@ -267,9 +267,10 @@
 
   <footer>
     <div class="footer">
-      <a href="index.html">Home 🏠</a>
-      <a href="#"> | </a>
-      <a href="indexdark.html">🌙 Escuro</a>
+     
+      <button class="footer-button" href="index.html">Home 🏠</button>
+      
+      <button class="footer-button" onclick="changeStyleToDark()">Dark 🌙</button>
 
       <p>
         Copyright ©️ 2022 |
@@ -282,6 +283,12 @@
   </footer>
 
   <script>
+
+  function changeStyleToDark() {
+
+    document.getElementById('pagestyle').href = "orcamentodark.css"
+    document.getElementById('pagestyle2').href = "maindark.css"
+  }
 
   </script>
 </body>
