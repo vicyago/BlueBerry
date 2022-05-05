@@ -11,6 +11,8 @@
   <title>SiteBlueBerryCamisetas</title>
   <link rel="stylesheet" type="text/css" href="assets/css/index.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+  <link rel="alternate stylesheet" type="text/css" href="assets/cssdark/indexdark.css" id="pagestyle" />
+  <link rel="alternate stylesheet" type="text/css" href="assets/cssdark/maindark.css" id="pagestyle2" />
 </head>
 
 <style></style>
@@ -111,10 +113,9 @@
   <footer>
     <div class="footer">
     
-      <a href="index.html">Home 🏠</a>
-      <a href="#"> | </a>
-      <a href="indexdark.html">🌙 Escuro</a>
+      <button class="footer-button"><a href="index.html">Home 🏠</a></button>
 
+      <button class="footer-button"><a href="#" onclick="changeStyleToDark()">Dark 🌙</a></button>
 
       <p>
         Copyright ©️ 2022 |
@@ -123,10 +124,28 @@
         | Designed By:
         <a href="https://www.facebook.com/victoryagoc">Victor Cury</a>
       </p>
+
     </div>
+
   </footer>
 
-  <script></script>
+  <script>
+     
+   function changeStyleToDark() {
+
+      swapStyleSheet('assets/cssdark/indexdark.css');
+      swapStyleSheet2('assets/cssdark/maindark.css');
+    }
+
+    function swapStyleSheet(sheet) {
+      document.getElementById('pagestyle').setAttribute('href', sheet);
+    }
+    function swapStyleSheet2(sheet) {
+      document.getElementById('pagestyle2').setAttribute('href', sheet);
+    }
+   
+  </script>
+
 </body>
 
 </html>

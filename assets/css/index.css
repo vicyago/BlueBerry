@@ -181,6 +181,17 @@
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.33),
         -1px 0 2px rgba(255, 255, 255, 0);
 }
+.footer-button {
+    background-color: #9C6C55;
+    cursor: pointer;
+    text-align: center;
+    font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+}
+.footer-button:hover {
+    background-color: #d8510dbe;
+}
 .main-button2 {
     display: block;
     width: 100%;
@@ -199,6 +210,7 @@
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 2px black;
     font-size: 1em;
+    display:inline-block;
 }
 .main-button2:hover {
     background-color: #9c6c55;
