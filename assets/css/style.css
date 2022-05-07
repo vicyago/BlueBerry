@@ -1,0 +1,602 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+}
+
+body {
+    background: rgb(255, 255, 255);
+    color: #000;
+}
+
+body.dark-theme {
+    color: #eee;
+    background: #121212;
+}
+body.dark-theme a {
+    color: rgb(159, 185, 255);
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.301);
+}
+body.dark-theme aside {
+    color: #527dfc;
+}
+body.dark-theme button {
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    width: 100%;
+}
+button a{
+    width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        grid-area: header;
+        text-align: center;
+        padding: 3%;
+        font-size: 0.6em;
+    }
+
+    section {
+        align-items: center;
+        grid-area: section;
+        display: grid;
+        grid-template-columns: 50% 20% 30%;
+        grid-template-areas:
+            "logo logo logo"
+            "nav nav nav"
+            "sectionText sectionText sectionText"
+            "carousel carousel carousel";
+    }
+    form {
+        margin-left: 5%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+        margin-top: 10%;
+        list-style-type: none;
+        text-align: left;
+        font-size: 0.8em;
+        line-height: 1.5rem;
+    }
+    .sectionDetail {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+        list-style-type: none;
+        text-align: left;
+        font-size: 0.9em;
+        line-height: 2rem;
+    }
+    .formStyle {
+        display: block;
+        width: 90%;
+        line-height: 2rem;
+    }
+    .logo {
+        grid-area: logo;
+        padding: 5%;
+    }
+
+    .empty {
+        grid-area: empty;
+    }
+
+    .nav {
+        padding-top: 2%;
+        grid-area: nav;
+    }
+
+    .carousel {
+        grid-area: carousel;
+    }
+
+    .navRight {
+        text-align: center;
+    }
+    .navRight li {
+        display: inline-block;
+        margin: 0 1%;
+        font-size: 0.7em;
+        line-height: 1.5rem;
+    }
+    .navRight li:hover {
+        font-size: 0.9em;
+        cursor: pointer;
+        color: rgba(0, 0, 0, 0.678);
+    }
+    .sectionText {
+        grid-area: sectionText;
+        text-align: left;
+        line-height: 2rem;
+        font-size: 0.7em;
+        margin: 5%;
+    }
+    .sectionText h1 {
+        text-align: center;
+        text-shadow: 1px 1px 1px #fac927af;
+        padding: 3%;
+        margin-bottom: 1%;
+        font-family: cursive;
+        font-size: 2em;
+    }
+    .sectionText ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        list-style-type: none;
+        text-align: center;
+    }
+    .imageHolder {
+        grid-area: image holder;
+    }
+
+    .textHolder {
+        margin-top: 5%;
+        margin-right: 5%;
+        text-align: right;
+    }
+    .sectionAbout {
+        grid-area: sectionAbout;
+        text-align: left;
+        line-height: 1.5rem;
+        font-size: 0.5em;
+        margin: 5%;
+    }
+    .sectionButton {
+        grid-area: sectionButton;
+        text-align: center;
+        line-height: 1.5rem;
+        font-size: 0.5em;
+        margin: 5%;
+    }
+
+    .main-button {
+        display: block;
+        width: 100%;
+        border: none;
+        background-color: rgb(0, 75, 160);
+        cursor: pointer;
+        text-align: center;
+        box-shadow: 1px 1px 1px 1px #000000;
+        margin-bottom: 5%;
+        padding: 2%;
+        font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+        font-size: large;
+    }
+    .main-button a {
+        text-decoration: none;
+        text-shadow: 2px 2px 3px rgb(80, 80, 80);
+        font-size: 1em;
+        display: inline-block;
+        color: white;
+    }
+    .main-button:hover {
+        background-color: orangered;
+        box-shadow: 0px 1px 6px rgba(80, 80, 80, 0.64);
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    aside {
+        grid-area: aside;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 10%;
+        padding: 3%;
+        font-size: 1.3em;
+    }
+
+    footer {
+        grid-area: footer;
+        text-align: center;
+        font-size: 0.6em;
+        line-height: 1.2rem;
+        margin-top: 1%;
+        margin-bottom: 2%;
+    }
+    .footer-button {
+        background-color: transparent;
+        cursor: pointer;
+        text-align: center;
+        color: black;
+        font-size: 1em;
+        margin-bottom: 2%;
+        padding-left: 1%;
+        padding-right: 1%;
+        font-family: cursive;
+    }
+    .footer-button:hover {
+        background-color: goldenrod;
+        font-weight: bold;
+    }
+    .centerFix {
+        display: grid;
+        justify-content: center;
+        align-self: center;
+        font-size: 1.5em;
+        margin-top: 4%;
+    }
+    .commentHolder {
+        line-height: 4.6em;
+    }
+    .commentHolder textarea {
+        display: block;
+        width: 90%;
+        margin-bottom: -10%;
+    }
+    .vectorCon {
+        line-height: 2.5em;
+    }
+    .formHolder {
+        line-height: 2.6em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        display: grid;
+        grid-template-columns: 65% 30%;
+        justify-content: space-between;
+        padding: 1% 5%;
+        grid-template-areas:
+            "header header"
+            "section section"
+            "main aside"
+            "footer footer";
+    }
+
+    header {
+        grid-area: header;
+        text-align: right;
+        padding: 1%;
+        font-size: 1em;
+    }
+
+    section {
+        align-items: center;
+        grid-area: section;
+        display: grid;
+        grid-template-columns: 50% 20% 30%;
+        grid-template-areas:
+            "logo empty nav"
+            "sectionText sectionText imageHolder"
+            "carousel carousel carousel";
+    }
+
+    .logo {
+        grid-area: logo;
+    }
+    .logo img {
+        width: 120%;
+    }
+
+    .empty {
+        grid-area: empty;
+    }
+
+    .nav {
+        grid-area: nav;
+    }
+
+    .carousel {
+        grid-area: carousel;
+    }
+
+    .navRight {
+        text-align: center;
+    }
+    .navRight li {
+        display: inline-block;
+        margin: 2%;
+        font-size: 1em;
+        font-weight: 500;
+    }
+    .navRight li:hover {
+        font-size: 1.1em;
+        cursor: pointer;
+        color: rgba(0, 0, 0, 0.678);
+    }
+    .sectionText {
+        grid-area: sectionText;
+        text-align: left;
+        line-height: 1rem;
+        margin-top: 1%;
+    }
+    .sectionText h1 {
+        text-align: center;
+        text-shadow: 1px 1px 1px #fac927af;
+        padding: 3%;
+        margin-bottom: 1%;
+        font-family: cursive;
+        font-size: 2em;
+    }
+    .sectionText ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        list-style-type: none;
+        text-align: center;
+    }
+    .imageHolder {
+        grid-area: image holder;
+        height: 1500px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    #image {
+        object-fit: cover;
+        height: 100%;
+        min-height: 100%;
+    }
+    .textHolder {
+        margin-top: 5%;
+        margin-right: 30%;
+        text-align: left;
+        padding: 5%;
+        font-size: 1.5em;
+        line-height: 2.5rem;
+    }
+    .sectionAbout {
+        grid-area: sectionAbout;
+        text-align: left;
+        line-height: 2rem;
+        font-size: 1em;
+        margin: 5%;
+    }
+    .sectionButton {
+        grid-area: sectionButton;
+        text-align: center;
+        line-height: 5rem;
+        font-size: 1em;
+        margin: 5%;
+    }
+
+    .main-button {
+        display: block;
+        width: 100%;
+        border: none;
+        background-color: rgb(0, 75, 160);
+        cursor: pointer;
+        text-align: center;
+        box-shadow: 2px 1px 2px 3px #0000004b;
+        margin-bottom: 5%;
+        padding: 2%;
+        font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+        font-size: large;
+    }
+    .main-button a {
+        text-decoration: none;
+        text-shadow: 2px 2px 3px rgb(80, 80, 80);
+        font-size: 1em;
+        display: inline-block;
+        color: white;
+    }
+    .main-button:hover {
+        background-color: orangered;
+        box-shadow: 0px 1px 6px rgba(80, 80, 80, 0.64);
+    }
+
+    main {
+        grid-area: main;
+        margin-top: 4%;
+    }
+
+    aside {
+        grid-area: aside;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin-top: 5%;
+    }
+
+    footer {
+        grid-area: footer;
+        text-align: center;
+        font-size: 1em;
+        line-height: 1rem;
+        margin-top: 10%;
+    }
+    form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+        margin-top: 10%;
+        list-style-type: none;
+        text-align: left;
+        font-size: 1.5em;
+        line-height: 2.5rem;
+    }
+    .sectionDetail {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+        list-style-type: none;
+        text-align: left;
+        font-size: 1em;
+        line-height: 4.5rem;
+    }
+    .footer-button {
+        background-color: transparent;
+        cursor: pointer;
+        text-align: center;
+        font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+        color: black;
+        font-size: 1em;
+        margin-bottom: 1%;
+        padding-left: 1%;
+        padding-right: 1%;
+        font-family: cursive;
+    }
+    .footer-button:hover {
+        background-color: #527dfc;
+        color: white;
+    }
+    .formStyle {
+        display: inline-grid;
+    }
+    .centerFix {
+        display: grid;
+        justify-content: center;
+        align-self: center;
+        font-size: 3em;
+        margin-top: 1%;
+        margin-bottom: -4%;
+    }
+    .commentHolder {
+        line-height: 3.5em;
+        margin-top: 5%;
+    }
+    .vectorCon {
+        line-height: 3.5em;
+        margin-bottom: 5%;
+        margin-top: 2%;
+    }
+    .formHolder {
+        line-height: 1.8em;
+        margin-bottom: 5%;
+        margin-top: 2%;
+    }
+}
+.carousel {
+    position: relative;
+    box-shadow: 0 1px 6px hsl(0, 0%, 100%);
+    margin-top: 26px;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.carousel-control {
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: white;
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+.tester {
+    color: red;
+}
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #000000;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: white;
+}
+.imgIndex {
+    display: none;
+    position: absolute;
+}
+#carousel-1:checked
+    ~ .control-1
+    ~ .carousel-indicators
+    li:nth-child(1)
+    .carousel-bullet,
+#carousel-2:checked
+    ~ .control-2
+    ~ .carousel-indicators
+    li:nth-child(2)
+    .carousel-bullet,
+#carousel-3:checked
+    ~ .control-3
+    ~ .carousel-indicators
+    li:nth-child(3)
+    .carousel-bullet {
+    color: rgb(255, 255, 255);
+}
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    z-index: 9999;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.33),
+        -1px 0 2px rgba(255, 255, 255, 0);
+}
