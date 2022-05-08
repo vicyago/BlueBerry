@@ -6,32 +6,17 @@
 }
 
 body {
-    background: rgb(255, 255, 255);
-    color: #000;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
-
-body.dark-theme {
-    color: #eee;
-    background: #121212;
-}
-body.dark-theme a {
-    color: rgb(159, 185, 255);
-    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.301);
-}
-body.dark-theme aside {
-    color: #527dfc;
-}
-body.dark-theme button {
-    color: white;
-}
-
 ul {
     list-style: none;
 }
 
 a {
     text-decoration: none;
-    color: #000;
+    color: #6289fc;
+    text-shadow: 2px 2px 3px rgba(223, 223, 223, 0.301);
 }
 
 img {
@@ -39,6 +24,25 @@ img {
 }
 button a {
     width: 100%;
+    color: white;
+}
+
+body.light-theme {
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+}
+body.light-theme a {
+    color: #6289fc;
+    text-shadow: 2px 2px 3px rgba(112, 112, 112, 0.301);
+}
+body.light-theme aside {
+    color: #527dfc;
+}
+body.light-theme button {
+    color: #000000;
+}
+.footer-button {
+    color: white;
 }
 #main-button {
     color: rgb(255, 255, 255);
@@ -46,6 +50,7 @@ button a {
 .blue {
     color: #527dfc;
 }
+
 @media screen and (min-width: 320px) and (max-width: 479px) {
     header {
         grid-area: header;
@@ -228,7 +233,6 @@ button a {
         background-color: transparent;
         cursor: pointer;
         text-align: center;
-        color: black;
         font-size: 1em;
         margin-bottom: 2%;
         padding-left: 1%;
@@ -449,7 +453,6 @@ button a {
         background-color: transparent;
         cursor: pointer;
         text-align: center;
-        color: black;
         font-size: 1em;
         margin-bottom: 2%;
         padding-left: 1%;
@@ -676,7 +679,6 @@ button a {
         background-color: transparent;
         cursor: pointer;
         text-align: center;
-        color: black;
         font-size: 1em;
         margin-bottom: 2%;
         padding-left: 1%;
@@ -908,7 +910,6 @@ button a {
         cursor: pointer;
         text-align: center;
         font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
-        color: black;
         font-size: 1em;
         margin-bottom: 1%;
         padding-left: 1%;
@@ -1138,7 +1139,6 @@ button a {
         cursor: pointer;
         text-align: center;
         font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
-        color: black;
         font-size: 1em;
         margin-bottom: 1%;
         padding-left: 1%;
@@ -1368,7 +1368,6 @@ button a {
         cursor: pointer;
         text-align: center;
         font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
-        color: black;
         font-size: 1em;
         margin-bottom: 1%;
         padding-left: 1%;
