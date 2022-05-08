@@ -1004,12 +1004,12 @@ button a {
     }
     .navRight li {
         display: inline-block;
-        margin: 2%;
-        font-size: 1.4em;
+        margin: 0 auto;
+        font-size: 1.3em;
         font-weight: 500;
     }
     .navRight li:hover {
-        font-size: 1.6em;
+        font-size: 1.4em;
         cursor: pointer;
         color: rgba(0, 0, 0, 0.678);
     }
