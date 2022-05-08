@@ -44,7 +44,7 @@ button a {
     color: rgb(255, 255, 255);
 }
 .blue {
-    color:#527dfc;
+    color: #527dfc;
 }
 @media screen and (max-width: 480px) {
     header {
@@ -158,7 +158,8 @@ button a {
         margin-right: 5%;
         text-align: left;
     }
-    .textHolder h3,h4{
+    .textHolder h3,
+    h4 {
         line-height: 1.5em;
         font-size: 1em;
         margin-left: 5%;
@@ -496,5 +497,3 @@ button a {
         font-size: 1.1em;
     }
 }
-
-
