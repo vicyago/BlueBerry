@@ -1,106 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
-
     <link rel="stylesheet" href="assets/css/style.css">
-
 </head>
-
 <body class="dark-theme || light-theme">
-
     <div class="container">
-
         <header>
-
             <div class="header">
                 ☎️ (19) 3231-2968
                 <a href="mailto:marildablueberry@uol.com.br" title="email" role="link" tabindex="0" target="blank">📧
                     marildablueberry@uol.com.br</a>
             </div>
-
         </header>
-
         <section>
             <div class="logo">
                 <img src="assets/images/headerLogo.png">
             </div>
-
             <div class="empty"></div>
-
             <nav class="nav">
                 <div class="navRight" id="nav">
                     <ul>
-                        <li><a href="index.html">HOME PAGE </a>🏠</li>
-                        <li><a href="#stnAbtPull">SOBRE NÓS </a>👥</li>
-                        <li><a href="#StnBtnPull">ORÇAMENTO </a>📋</li>
+                        <li><a href="index.html">HOME PAGE </a></li>
+                        <li><a href="about.html">SOBRE NÓS </a></li>
+                        <li><a href="#StnBtnPull">ORÇAMENTO </a></li>
                     </ul>
                 </div>
             </nav>
         </section>
-
         <main>
-
             <h1 class="centerFix">Seu Orçamento 📝</h1>
-
             <form class="formStyle">
-
                 <h2 id="StnBtnPull">🟦 Dados Pessoais</h2>
-
                 <div class="#">
-
                     <div><label class="#">◼ Seu Nome :*</label></div>
                     <div>✏️
                         <input name="Nome" class="#" id="Nome" size="32" maxlength="200" type="text" required />
                     </div>
-
                 </div>
-
                 <div class="#">
-
                     <div>
                         <label class="#">◼ E-mail :*</label>
                     </div>
-
                     <div>✉️
                         <input name="Email" class="#" id="Email" size="32" maxlength="250" type="text" required />
                     </div>
-
                 </div>
-
                 <div class="#">
-
                     <div>
                         <label class="#">◼ DDD / Celular:</label>
                     </div>
-
                     <div>📞
                         <input name="DDD" class="#" id="DDD" size="5" maxlength="2" type="text" />
                         <input name="Telefone" class="#" id="Telefone" size="20" maxlength="15" type="text" />
                     </div>
-
                 </div>
-
                 <div class="#">
-
                     <div>
                         <label class="#">◼ DDD / Telefone:</label>
                     </div>
-
                     <div>☎️
                         <input name="DDD2" class="#" id="DDD2" size="5" maxlength="2" type="text" />
                         <input name="Telefone2" class="#" id="Telefone2" size="20" maxlength="15" type="text" />
                     </div>
-
                 </div>
-
                 <div class="sectionDetail">
                     <h2>🟦 Detalhes do Pedido *</h2>
-
                     <label class="#">1️⃣ Tipo de Peça:</label>
                     <select name="Tipo_de_produto" class="#" id="Tipo_de_produto" required>
                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
@@ -114,9 +82,7 @@
                         <option value="Silk Screen">Silk Screen</option>
                         <option value="Uniforme">Uniforme</option>
                     </select>
-
                     <label class="#">2️⃣ Malha da Peça:</label>
-
                     <select name="Material_da_peca" class="#" id="Material_da_peça" required>
                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                         <option value="Algodao_cardada">Algodão</option>
@@ -129,9 +95,7 @@
                         <option value="Viscose">Viscose</option>
                         <option value="Poliester">Poliéster</option>
                     </select>
-
                     <label class="#">3️⃣ Cor da Peça:</label>
-
                     <select name="Cor_da_peca" class="#" id="Cor_da_peca" required>
                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                         <option value="#fff">Branco</option>
@@ -160,9 +124,7 @@
                         <option value="#ffdb58">Mostarda</option>
                         <option value="#f5f5dc">Beige</option>
                     </select>
-
                     <label class="#">4️⃣ Tipo de Gola:</label>
-
                     <select name="Tipo_de_gola" class="#" id="Tipo_de_gola" required>
                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                         <option value="Redonda">Redonda</option>
@@ -173,54 +135,36 @@
                         <option value="Gola_henley">Gola Henley</option>
                         <option value="Capuz">Capuz</option>
                     </select>
-
                     <label for="qntPecas" class="#">5️⃣ Quantas Peças: </label>
-
-
                     <input type="number" id="shirtAmount" name="qntPecas" min="30" size="20" maxlength="30"
                         placeholder="Mínimo de 30 peças" required oninvalid="inputErr()" />
-
                     <label class="#">6️⃣ Personalização:</label>
-
                     <label class="#">🔵 Bordado:</label>
-
                     <select name="Personalização" class="#" id="PersonalizaçãoBordado" required>
                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                         <option value="50">Sim</option>
                         <option value="50">Não</option>
                     </select>
-
                     <label class="#">🔵 Silkscreen:</label>
-
                     <select name="Personalização" class="#" id="PersonalizaçãoSilk" required>
                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                         <option value="#">Sim</option>
                         <option value="#">Não</option>
                     </select>
                 </div>
-
                 <div class="commentHolder">
-
                     <h3>7️⃣ observações 💬 dúvidas ❓ </h3>
-
                     <textarea name="Comentario" cols="50" rows="5" class="#" id="comentario"></textarea>
-
                     <label class="#">
                         <input name="tituloMensagem" id="tituloMensagem" value="Formulário de Orçamento"
                             type="hidden" />
                         &nbsp;</label>
-
                 </div>
-
                 <div class="vectorCon">
                     <h3>8️⃣ Anexar os Arquivos ou Logotipos (se disponível)</h3>
-
                     <label class="#">📎 anexar: </label>
-
                     <a href="#" class="#" title="Choose date">Escolher Arquivos</a>
-
                     <label class="#">(Vetorizada: </label>
-
                     <input name="vector" class="#" value="sim" type="radio" />
                     Sim
                     <input name="vector" class="#" value="nao" type="radio" />
@@ -228,44 +172,34 @@
                     <input name="vector" class="#" value="naosei" type="radio" />
                     Não Sei)
                 </div>
-
                 <div class="formHolder">
-
                     <h3>9️⃣ Submeter o formulário e enviar suas escolhas</h3>
-
                     <p>
                         <strong>ATENÇÃO:<em style="color: #527dfc;">
                                 Campos com * são de preenchimento obrigatório!</em></strong>
                     </p>
                 </div>
-
                 <div class="centerFix">
                     <button class="main-button" id="main-button">
                         🔟 Enviar Formulário
                     </button>
                 </div>
-
             </form>
-
         </main>
-
         <aside>
-
             <div class="imageHolder">
-
-                <img src="." id="image">
-
-                <img src="assets/images/shieldIcon.png" alt="">
-                <img src="assets/images/bottomLogo.png" alt="">
-
+                <img src="assets/images/orc-01.jpg">
+                <img src="assets/images/orc-02.jpg">
+                <img src="assets/images/orc-05.jpg">
+                <img src="assets/images/orc-06.jpg">
+                <img src="assets/images/orc-07.jpg">
+                <img src="assets/images/orc-09.jpg">
             </div>
-
+            <br />
+            <img src="assets/images/bottomLogo.png" alt="">
         </aside>
-
         <footer>
-
-            <button class="footer-button"><a style="color: white;" href="index.html">Home </a>🏠</button>
-
+            <button class="footer-button" href="index.html">Home 🏠</button>
             <button class="footer-button" id="btn-toggle">Dark 🌙</button>
             <p>
                 Copyright ©️ 2022 |
@@ -275,43 +209,13 @@
                 | Designed By:
                 <a href="https://www.facebook.com/victoryagoc">Victor Cury</a>
             </p>
-
         </footer>
-
     </div>
-
     <script>
-        const delay = async (ms = 1000) =>
-            new Promise(resolve => setTimeout(resolve, ms))
-
-        async function imageLoop() {
-            let image = document.getElementById('image');
-            let images = [
-                'assets/images/orc-01.jpg',
-                'assets/images/orc-02.jpg',
-                'assets/images/orc-03.jpg',
-                'assets/images/orc-04.jpg',
-                'assets/images/orc-05.jpg',
-                'assets/images/orc-06.jpg',
-                'assets/images/orc-07.jpg',
-                'assets/images/orc-08.jpg',
-                'assets/images/orc-09.jpg']
-            for (let i = 0; i < images.length; i++) {
-                await delay(5000)
-                image.src = images[i]
-            };
-            imageLoop()
-
-        }
-        imageLoop();
-
         const btn = document.querySelector("#btn-toggle");
-
         btn.addEventListener("click", function () {
             document.body.classList.toggle("dark-theme");
         });
-
     </script>
 </body>
-
 </html>
