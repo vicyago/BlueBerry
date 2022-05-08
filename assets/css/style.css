@@ -149,6 +149,7 @@ button a {
         grid-template-columns: 1fr 1fr 1fr;
         list-style-type: none;
         text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
     .imageHolder2 {
         display: none;
@@ -263,7 +264,7 @@ button a {
         padding: 5%;
         line-height: 2.5em;
         font-size: 0.7em;
-        margin-bottom: -10%;
+        margin-bottom: -5%;
     }
 }
 @media screen and (min-width: 1200px) {
@@ -421,7 +422,6 @@ button a {
 
     aside {
         grid-area: aside;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         margin-top: 10%;
     }
 
