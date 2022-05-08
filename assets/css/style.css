@@ -43,7 +43,9 @@ button a {
 #main-button {
     color: rgb(255, 255, 255);
 }
-
+.blue {
+    color:#527dfc;
+}
 @media screen and (max-width: 480px) {
     header {
         grid-area: header;
@@ -175,7 +177,6 @@ button a {
         font-size: 0.5em;
         margin: 5%;
     }
-    
     .main-button {
         display: block;
         width: 100%;
@@ -200,11 +201,9 @@ button a {
         background-color: orangered;
         box-shadow: 0px 1px 6px rgba(80, 80, 80, 0.64);
     }
-
     main {
         grid-area: main;
     }
-
     aside {
         grid-area: aside;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -215,7 +214,6 @@ button a {
         padding: 3%;
         font-size: 1.3em;
     }
-
     footer {
         grid-area: footer;
         text-align: center;
@@ -260,8 +258,13 @@ button a {
     .formHolder {
         line-height: 2.6em;
     }
+    .aboutText {
+        padding: 5%;
+        line-height: 2.5em;
+        font-size: 0.7em;
+        margin-bottom: -10%;
+    }
 }
-
 @media screen and (min-width: 1200px) {
     .container {
         display: grid;
@@ -493,137 +496,5 @@ button a {
         font-size: 1.1em;
     }
 }
-.carousel {
-    position: relative;
-    box-shadow: 0 1px 6px hsl(0, 0%, 100%);
-    margin-top: 26px;
-}
 
-.carousel-inner {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-}
 
-.carousel-open:checked + .carousel-item {
-    position: static;
-    opacity: 100;
-}
-
-.carousel-item {
-    position: absolute;
-    opacity: 0;
-    -webkit-transition: opacity 0.6s ease-out;
-    transition: opacity 0.6s ease-out;
-}
-
-.carousel-item img {
-    display: block;
-    height: auto;
-    max-width: 100%;
-}
-
-.carousel-control {
-    background: rgb(0, 0, 0);
-    border-radius: 50%;
-    color: #fff;
-    cursor: pointer;
-    display: none;
-    font-size: 40px;
-    height: 40px;
-    line-height: 35px;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-    cursor: pointer;
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    text-align: center;
-    width: 40px;
-    z-index: 10;
-}
-
-.carousel-control.prev {
-    left: 2%;
-}
-
-.carousel-control.next {
-    right: 2%;
-}
-
-.carousel-control:hover {
-    background: white;
-    color: #aaaaaa;
-}
-
-#carousel-1:checked ~ .control-1,
-#carousel-2:checked ~ .control-2,
-#carousel-3:checked ~ .control-3 {
-    display: block;
-}
-.tester {
-    color: red;
-}
-.carousel-indicators {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    bottom: 2%;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 10;
-}
-
-.carousel-indicators li {
-    display: inline-block;
-    margin: 0 5px;
-}
-
-.carousel-bullet {
-    color: #000000;
-    cursor: pointer;
-    display: block;
-    font-size: 35px;
-}
-
-.carousel-bullet:hover {
-    color: white;
-}
-.imgIndex {
-    display: none;
-    position: absolute;
-}
-#carousel-1:checked
-    ~ .control-1
-    ~ .carousel-indicators
-    li:nth-child(1)
-    .carousel-bullet,
-#carousel-2:checked
-    ~ .control-2
-    ~ .carousel-indicators
-    li:nth-child(2)
-    .carousel-bullet,
-#carousel-3:checked
-    ~ .control-3
-    ~ .carousel-indicators
-    li:nth-child(3)
-    .carousel-bullet {
-    color: rgb(255, 255, 255);
-}
-#title {
-    width: 100%;
-    position: absolute;
-    padding: 0;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 27px;
-    color: rgba(255, 255, 255, 1);
-    z-index: 9999;
-    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.33),
-        -1px 0 2px rgba(255, 255, 255, 0);
-}
-.blue {
-    color:#527dfc;
-}
