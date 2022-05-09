@@ -37,6 +37,9 @@ body.light-theme aside {
 body.light-theme button {
     color: #000000;
 }
+body.light-theme h3 {
+    color: #000000;
+}
 .footer-button {
     color: white;
 }
@@ -47,6 +50,7 @@ body.light-theme button {
     border-style: dotted;
     box-shadow: 0px 1px 5px 2px #575757b6;
     border-color: #3f6df5;
+    padding: 2%;
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
     header {
@@ -1004,11 +1008,11 @@ body.light-theme button {
     .navRight li {
         display: inline-block;
         margin: 0 auto;
-        font-size: 1.3em;
+        font-size: 1em;
         font-weight: 500;
     }
     .navRight li:hover {
-        font-size: 1.4em;
+        font-size: 1.2em;
         cursor: pointer;
         color: rgba(0, 0, 0, 0.678);
     }
@@ -1095,10 +1099,14 @@ body.light-theme button {
         background-color: orangered;
         box-shadow: 0px 1px 6px rgba(80, 80, 80, 0.64);
     }
+    #carrosel {
+        margin-top: 30%;
+    }
 
     main {
         grid-area: main;
         margin-top: 4%;
+        font-size: 0.7em;
     }
 
     aside {
@@ -1121,7 +1129,7 @@ body.light-theme button {
         list-style-type: none;
         text-align: left;
         font-size: 1.5em;
-        line-height: 2.5rem;
+        line-height: 1.5rem;
     }
     .sectionDetail {
         display: grid;
@@ -1130,7 +1138,7 @@ body.light-theme button {
         list-style-type: none;
         text-align: left;
         font-size: 1em;
-        line-height: 4.5rem;
+        line-height: 2.5rem;
     }
     .footer-button {
         background-color: transparent;
@@ -1154,16 +1162,16 @@ body.light-theme button {
         display: grid;
         justify-content: center;
         align-self: center;
-        font-size: 3em;
+        font-size: 2.5em;
         margin-top: 1%;
         margin-bottom: -4%;
     }
     .commentHolder {
-        line-height: 3.5em;
+        line-height: 2.5em;
         margin-top: 5%;
     }
     .vectorCon {
-        line-height: 3.5em;
+        line-height: 2.5em;
         margin-bottom: 5%;
         margin-top: 2%;
     }
@@ -1174,7 +1182,7 @@ body.light-theme button {
     }
     .aboutText {
         line-height: 2.5em;
-        font-size: 1.1em;
+        font-size: 1.5em;
     }
 }
 @media screen and (min-width: 1400px) and (max-width: 2400px) {
