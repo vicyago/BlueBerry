@@ -124,7 +124,7 @@ body.light-theme button {
         cursor: pointer;
         color: rgba(0, 0, 0, 0.678);
     }
-   
+
     .sectionText {
         grid-area: sectionText;
         text-align: left;
