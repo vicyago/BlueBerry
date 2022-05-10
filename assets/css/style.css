@@ -4,21 +4,42 @@
     box-sizing: border-box;
     font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
 }
-
 body {
-    background: rgb(0, 0, 0);
+    min-height: 100vh;
+    background: linear-gradient(
+        #2f2b47,
+        hsl(245, 100%, 64%),
+        #6f5de0,
+        #5c44e7,
+        #2f2b47
+    );
     color: rgb(255, 255, 255);
+}
+aside.light-theme {
+    border-style: dotted;
+    box-shadow: 0px 1px 5px 2px #575757b6;
+    border-color: linear-gradient(
+        #2f2b477a,
+        hsla(245, 100%, 64%, 0.479),
+        #6e5de07e,
+        #5c44e77c,
+        #2f2b4770
+    );
 }
 ul {
     list-style: none;
 }
-
 a {
     text-decoration: none;
-    color: #4b78ff;
+    color: #ffffff;
     text-shadow: 2px 2px 3px rgba(90, 90, 90, 0.158);
 }
-
+.navRight a:hover {
+    background: #3f6df5;
+    color: white;
+    text-shadow: none;
+    padding: 6px 15px;
+}
 img {
     width: 100%;
 }
@@ -26,7 +47,6 @@ button a {
     width: 100%;
     color: white;
 }
-
 body.light-theme {
     color: rgb(0, 0, 0);
     background: #ffffff;
@@ -34,22 +54,33 @@ body.light-theme {
 body.light-theme aside {
     color: #527dfc;
 }
+body.light-theme span {
+    color: #527dfc;
+}
 body.light-theme button {
     color: #000000;
 }
+body.light-theme button a {
+    color: #ffffff;
+}
 body.light-theme h3 {
     color: #000000;
+}
+body.light-theme a {
+    text-decoration: none;
+    color: #4b78ff;
+    text-shadow: 2px 2px 3px rgba(90, 90, 90, 0.158);
 }
 .footer-button {
     color: white;
 }
 .blue {
-    color: #527dfc;
+    color: #FCB641;
 }
 .navRight {
     border-style: dotted;
     box-shadow: 0px 1px 5px 2px #575757b6;
-    border-color: #3f6df5;
+    border-color: #356FEF;
     padding: 2%;
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
@@ -124,7 +155,6 @@ body.light-theme h3 {
         line-height: 1.5rem;
     }
     .navRight li:hover {
-        font-size: 0.9em;
         cursor: pointer;
         color: rgba(0, 0, 0, 0.678);
     }
@@ -345,7 +375,6 @@ body.light-theme h3 {
         line-height: 1.5rem;
     }
     .navRight li:hover {
-        font-size: 0.9em;
         cursor: pointer;
         color: rgba(0, 0, 0, 0.678);
     }
@@ -569,7 +598,6 @@ body.light-theme h3 {
         line-height: 1.5rem;
     }
     .navRight li:hover {
-        font-size: 1.5em;
         cursor: pointer;
         color: rgba(0, 0, 0, 0.678);
     }
@@ -779,7 +807,6 @@ body.light-theme h3 {
         font-weight: 500;
     }
     .navRight li:hover {
-        font-size: 0.9em;
         cursor: pointer;
         color: rgba(0, 0, 0, 0.678);
     }
@@ -878,7 +905,7 @@ body.light-theme h3 {
 
     aside {
         grid-area: aside;
-        margin-top: 15%;
+        margin-top: 20%;
     }
 
     footer {
@@ -886,7 +913,7 @@ body.light-theme h3 {
         text-align: center;
         font-size: 1em;
         line-height: 1rem;
-        margin-top: 10%;
+        margin-top: 5%;
     }
     form {
         display: grid;
@@ -1012,7 +1039,6 @@ body.light-theme h3 {
         font-weight: 500;
     }
     .navRight li:hover {
-        font-size: 1.2em;
         cursor: pointer;
         color: rgba(0, 0, 0, 0.678);
     }
@@ -1070,7 +1096,7 @@ body.light-theme h3 {
     .sectionButton {
         grid-area: sectionButton;
         text-align: center;
-        line-height: 5rem;
+        line-height: 3rem;
         font-size: 1em;
         margin: 5%;
     }
@@ -1111,7 +1137,7 @@ body.light-theme h3 {
 
     aside {
         grid-area: aside;
-        margin-top: 10%;
+        margin-top: 20%;
     }
 
     footer {
@@ -1119,7 +1145,7 @@ body.light-theme h3 {
         text-align: center;
         font-size: 1em;
         line-height: 1rem;
-        margin-top: 10%;
+        margin-top: 5%;
     }
     form {
         display: grid;
@@ -1245,7 +1271,6 @@ body.light-theme h3 {
         font-weight: 500;
     }
     .navRight li:hover {
-        font-size: 1.6em;
         cursor: pointer;
         color: rgba(0, 0, 0, 0.678);
     }
@@ -1303,9 +1328,9 @@ body.light-theme h3 {
     .sectionButton {
         grid-area: sectionButton;
         text-align: center;
-        line-height: 5rem;
+        line-height: 3rem;
         font-size: 1em;
-        margin: 5%;
+        margin: 2%;
     }
 
     .main-button {
@@ -1340,7 +1365,7 @@ body.light-theme h3 {
 
     aside {
         grid-area: aside;
-        margin-top: 10%;
+        margin-top: 20%;
     }
 
     footer {
@@ -1348,7 +1373,7 @@ body.light-theme h3 {
         text-align: center;
         font-size: 1em;
         line-height: 1rem;
-        margin-top: 10%;
+        margin-top: 5%;
     }
     form {
         display: grid;
