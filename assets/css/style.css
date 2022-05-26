@@ -149,6 +149,7 @@ body.light-theme a {
     .logo {
         grid-area: logo;
         padding: 5%;
+        margin-top: -6%;
     }
 
     .empty {
