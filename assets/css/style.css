@@ -852,7 +852,7 @@ body.light-theme a {
         grid-area: header;
         text-align: center;
         padding: 2%;
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
     section {
