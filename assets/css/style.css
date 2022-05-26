@@ -1241,7 +1241,7 @@ body.light-theme a {
         grid-area: sectionButton;
         text-align: center;
         line-height: 3rem;
-        font-size: 1em;
+        font-size: 0.8em;
         margin: 5%;
     }
 
