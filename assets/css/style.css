@@ -4,85 +4,99 @@
     box-sizing: border-box;
     font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
 }
+
 body {
     min-height: 100vh;
-    background: linear-gradient(
-        #2f2b47,
-        hsl(245, 100%, 64%),
-        #6f5de0,
-        #5c44e7,
-        #2f2b47
-    );
+    background: linear-gradient(#2f2b47,
+            hsl(245, 100%, 64%),
+            #6f5de0,
+            #5c44e7,
+            #2f2b47);
     color: rgb(255, 255, 255);
 }
+
 aside.light-theme {
     border-style: dotted;
     box-shadow: 0px 1px 5px 2px #575757b6;
-    border-color: linear-gradient(
-        #2f2b477a,
-        hsla(245, 100%, 64%, 0.479),
-        #6e5de07e,
-        #5c44e77c,
-        #2f2b4770
-    );
+    border-color: linear-gradient(#2f2b477a,
+            hsla(245, 100%, 64%, 0.479),
+            #6e5de07e,
+            #5c44e77c,
+            #2f2b4770);
 }
+
 ul {
     list-style: none;
 }
+
 a {
     text-decoration: none;
     color: #ffffff;
     text-shadow: 2px 2px 3px rgba(90, 90, 90, 0.158);
 }
+
 .navRight a:hover {
     background: #3f6df5;
     color: white;
     text-shadow: none;
     padding: 6px 15px;
 }
+
 img {
     width: 100%;
 }
+
 button a {
     width: 100%;
     color: white;
 }
+
 body.light-theme {
     color: rgb(0, 0, 0);
     background: #ffffff;
 }
+
 body.light-theme aside {
     color: #527dfc;
 }
+
 body.light-theme span {
     color: #527dfc;
 }
+
 body.light-theme button {
     color: #000000;
 }
+
 body.light-theme button a {
     color: #ffffff;
 }
+
 body.light-theme h3 {
     color: #000000;
 }
+
 body.light-theme a {
     text-decoration: none;
     color: #4b78ff;
     text-shadow: 2px 2px 3px rgba(90, 90, 90, 0.158);
 }
+
 .footer-button {
     color: white;
 }
+
 .blue {
     color: #FCB641;
 }
+
 .navRight {
     border-style: dotted;
     box-shadow: 0px 1px 5px 2px #575757b6;
     border-color: #356FEF;
     padding: 2%;
 }
+
 @media screen and (min-width: 320px) and (max-width: 479px) {
     header {
         grid-area: header;
@@ -102,6 +116,7 @@ body.light-theme a {
             "sectionText sectionText sectionText"
             "carousel carousel carousel";
     }
+
     form {
         margin-left: 5%;
         display: grid;
@@ -113,6 +128,7 @@ body.light-theme a {
         font-size: 0.8em;
         line-height: 1.5rem;
     }
+
     .sectionDetail {
         display: grid;
         grid-template-columns: 1fr;
@@ -122,11 +138,13 @@ body.light-theme a {
         font-size: 0.9em;
         line-height: 2rem;
     }
+
     .formStyle {
         display: block;
         width: 90%;
         line-height: 2rem;
     }
+
     .logo {
         grid-area: logo;
         padding: 5%;
@@ -148,12 +166,14 @@ body.light-theme a {
     .navRight {
         text-align: center;
     }
+
     .navRight li {
         display: inline-block;
         margin: 0 1%;
         font-size: 0.7em;
         line-height: 1.5rem;
     }
+
     .navRight li:hover {
         cursor: pointer;
         color: rgba(0, 0, 0, 0.678);
@@ -166,6 +186,7 @@ body.light-theme a {
         font-size: 0.7em;
         margin: 5%;
     }
+
     .sectionText h1 {
         text-align: center;
         text-shadow: 1px 1px 1px #fac927af;
@@ -174,12 +195,14 @@ body.light-theme a {
         font-family: cursive;
         font-size: 2em;
     }
+
     .sectionText ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         list-style-type: none;
         text-align: center;
     }
+
     .imageHolder {
         grid-area: image holder;
         display: grid;
@@ -188,20 +211,24 @@ body.light-theme a {
         text-align: center;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
+
     .imageHolder2 {
         display: none;
     }
+
     .textHolder {
         margin-top: 5%;
         margin-right: 5%;
         text-align: left;
     }
+
     .textHolder h3,
     h4 {
         line-height: 1.5em;
         font-size: 1em;
         margin-left: 5%;
     }
+
     .sectionAbout {
         grid-area: sectionAbout;
         text-align: left;
@@ -209,6 +236,7 @@ body.light-theme a {
         font-size: 0.5em;
         margin: 5%;
     }
+
     .sectionButton {
         grid-area: sectionButton;
         text-align: center;
@@ -216,6 +244,7 @@ body.light-theme a {
         font-size: 0.5em;
         margin: 5%;
     }
+
     .main-button {
         display: block;
         width: 100%;
@@ -229,6 +258,7 @@ body.light-theme a {
         font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
         font-size: large;
     }
+
     .main-button a {
         text-decoration: none;
         text-shadow: 2px 2px 3px rgb(80, 80, 80);
@@ -236,13 +266,16 @@ body.light-theme a {
         display: inline-block;
         color: white;
     }
+
     .main-button:hover {
         background-color: orangered;
         box-shadow: 0px 1px 6px rgba(80, 80, 80, 0.64);
     }
+
     main {
         grid-area: main;
     }
+
     aside {
         grid-area: aside;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -253,6 +286,7 @@ body.light-theme a {
         padding: 3%;
         font-size: 1.3em;
     }
+
     footer {
         grid-area: footer;
         text-align: center;
@@ -261,6 +295,7 @@ body.light-theme a {
         margin-top: 1%;
         margin-bottom: 2%;
     }
+
     .footer-button {
         background-color: transparent;
         cursor: pointer;
@@ -271,10 +306,12 @@ body.light-theme a {
         padding-right: 1%;
         font-family: cursive;
     }
+
     .footer-button:hover {
         background-color: goldenrod;
         font-weight: bold;
     }
+
     .centerFix {
         display: grid;
         justify-content: center;
@@ -282,20 +319,25 @@ body.light-theme a {
         font-size: 1.5em;
         margin-top: 4%;
     }
+
     .commentHolder {
         line-height: 4.6em;
     }
+
     .commentHolder textarea {
         display: block;
         width: 90%;
         margin-bottom: -10%;
     }
+
     .vectorCon {
         line-height: 2.5em;
     }
+
     .formHolder {
         line-height: 2.6em;
     }
+
     .aboutText {
         padding: 5%;
         line-height: 2.5em;
@@ -303,6 +345,7 @@ body.light-theme a {
         margin-bottom: -5%;
     }
 }
+
 @media screen and (min-width: 480px) and (max-width: 759px) {
     header {
         grid-area: header;
@@ -322,6 +365,7 @@ body.light-theme a {
             "sectionText sectionText sectionText"
             "carousel carousel carousel";
     }
+
     form {
         margin-left: 5%;
         display: grid;
@@ -333,6 +377,7 @@ body.light-theme a {
         font-size: 0.8em;
         line-height: 1.5rem;
     }
+
     .sectionDetail {
         display: grid;
         grid-template-columns: 1fr;
@@ -342,11 +387,13 @@ body.light-theme a {
         font-size: 0.9em;
         line-height: 2rem;
     }
+
     .formStyle {
         display: block;
         width: 90%;
         line-height: 2rem;
     }
+
     .logo {
         grid-area: logo;
         padding: 5%;
@@ -368,16 +415,19 @@ body.light-theme a {
     .navRight {
         text-align: center;
     }
+
     .navRight li {
         display: inline-block;
         margin: 0 1%;
         font-size: 0.7em;
         line-height: 1.5rem;
     }
+
     .navRight li:hover {
         cursor: pointer;
         color: rgba(0, 0, 0, 0.678);
     }
+
     .sectionText {
         grid-area: sectionText;
         text-align: left;
@@ -385,6 +435,7 @@ body.light-theme a {
         font-size: 0.7em;
         margin: 5%;
     }
+
     .sectionText h1 {
         text-align: center;
         text-shadow: 1px 1px 1px #fac927af;
@@ -393,12 +444,14 @@ body.light-theme a {
         font-family: cursive;
         font-size: 2em;
     }
+
     .sectionText ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         list-style-type: none;
         text-align: center;
     }
+
     .imageHolder {
         grid-area: image holder;
         display: grid;
@@ -407,20 +460,24 @@ body.light-theme a {
         text-align: center;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
+
     .imageHolder2 {
         display: none;
     }
+
     .textHolder {
         margin-top: 5%;
         margin-right: 5%;
         text-align: left;
     }
+
     .textHolder h3,
     h4 {
         line-height: 1.5em;
         font-size: 1em;
         margin-left: 5%;
     }
+
     .sectionAbout {
         grid-area: sectionAbout;
         text-align: left;
@@ -428,6 +485,7 @@ body.light-theme a {
         font-size: 0.5em;
         margin: 5%;
     }
+
     .sectionButton {
         grid-area: sectionButton;
         text-align: center;
@@ -435,6 +493,7 @@ body.light-theme a {
         font-size: 0.5em;
         margin: 5%;
     }
+
     .main-button {
         display: block;
         width: 100%;
@@ -448,6 +507,7 @@ body.light-theme a {
         font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
         font-size: large;
     }
+
     .main-button a {
         text-decoration: none;
         text-shadow: 2px 2px 3px rgb(80, 80, 80);
@@ -455,13 +515,16 @@ body.light-theme a {
         display: inline-block;
         color: white;
     }
+
     .main-button:hover {
         background-color: orangered;
         box-shadow: 0px 1px 6px rgba(80, 80, 80, 0.64);
     }
+
     main {
         grid-area: main;
     }
+
     aside {
         grid-area: aside;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -472,6 +535,7 @@ body.light-theme a {
         padding: 3%;
         font-size: 1.3em;
     }
+
     footer {
         grid-area: footer;
         text-align: center;
@@ -480,6 +544,7 @@ body.light-theme a {
         margin-top: 1%;
         margin-bottom: 2%;
     }
+
     .footer-button {
         background-color: transparent;
         cursor: pointer;
@@ -490,10 +555,12 @@ body.light-theme a {
         padding-right: 1%;
         font-family: cursive;
     }
+
     .footer-button:hover {
         background-color: goldenrod;
         font-weight: bold;
     }
+
     .centerFix {
         display: grid;
         justify-content: center;
@@ -501,20 +568,25 @@ body.light-theme a {
         font-size: 1.5em;
         margin-top: 4%;
     }
+
     .commentHolder {
         line-height: 4.6em;
     }
+
     .commentHolder textarea {
         display: block;
         width: 90%;
         margin-bottom: -10%;
     }
+
     .vectorCon {
         line-height: 2.5em;
     }
+
     .formHolder {
         line-height: 2.6em;
     }
+
     .aboutText {
         padding: 5%;
         line-height: 2.5em;
@@ -522,6 +594,7 @@ body.light-theme a {
         margin-bottom: -5%;
     }
 }
+
 @media screen and (min-width: 760px) and (max-width: 999px) {
     header {
         grid-area: header;
@@ -541,6 +614,7 @@ body.light-theme a {
             "sectionText sectionText sectionText"
             "carousel carousel carousel";
     }
+
     form {
         margin-left: 5%;
         display: grid;
@@ -552,6 +626,7 @@ body.light-theme a {
         font-size: 0.8em;
         line-height: 1.5rem;
     }
+
     .sectionDetail {
         display: grid;
         grid-template-columns: 1fr;
@@ -561,20 +636,24 @@ body.light-theme a {
         font-size: 0.9em;
         line-height: 2rem;
     }
+
     .formStyle {
         display: block;
         width: 90%;
         line-height: 2rem;
     }
+
     .logo {
         grid-area: logo;
         padding: 1% 3% 0;
     }
+
     .imgBlb {
         display: block;
         width: 50%;
         margin: 5% auto 3%;
     }
+
     .empty {
         grid-area: empty;
     }
@@ -591,16 +670,19 @@ body.light-theme a {
     .navRight {
         text-align: center;
     }
+
     .navRight li {
         display: inline-block;
         margin: 1% 1% 0;
         font-size: 1, 3em;
         line-height: 1.5rem;
     }
+
     .navRight li:hover {
         cursor: pointer;
         color: rgba(0, 0, 0, 0.678);
     }
+
     .sectionText {
         grid-area: sectionText;
         text-align: left;
@@ -608,6 +690,7 @@ body.light-theme a {
         font-size: 0.7em;
         margin: 2%;
     }
+
     .sectionText h1 {
         text-align: center;
         text-shadow: 1px 1px 1px #fac927af;
@@ -616,12 +699,14 @@ body.light-theme a {
         font-family: cursive;
         font-size: 2em;
     }
+
     .sectionText ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         list-style-type: none;
         text-align: center;
     }
+
     .imageHolder {
         grid-area: image holder;
         display: grid;
@@ -630,14 +715,17 @@ body.light-theme a {
         text-align: center;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
+
     .imageHolder2 {
         display: none;
     }
+
     .textHolder {
         margin-top: 2%;
         margin-right: 5%;
         text-align: center;
     }
+
     .textHolder h3,
     h4 {
         line-height: 1.5em;
@@ -645,6 +733,7 @@ body.light-theme a {
         margin-left: 15%;
         margin-right: 10%;
     }
+
     .sectionAbout {
         grid-area: sectionAbout;
         text-align: center;
@@ -652,6 +741,7 @@ body.light-theme a {
         font-size: 0.7em;
         margin: 0 6% 1%;
     }
+
     .sectionButton {
         grid-area: sectionButton;
         text-align: center;
@@ -660,6 +750,7 @@ body.light-theme a {
         margin: 2%;
         padding: 0 10% 0;
     }
+
     .main-button {
         display: block;
         width: 100%;
@@ -673,6 +764,7 @@ body.light-theme a {
         font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
         font-size: large;
     }
+
     .main-button a {
         text-decoration: none;
         text-shadow: 2px 2px 3px rgb(80, 80, 80);
@@ -680,13 +772,16 @@ body.light-theme a {
         display: inline-block;
         color: white;
     }
+
     .main-button:hover {
         background-color: orangered;
         box-shadow: 0px 1px 6px rgba(80, 80, 80, 0.64);
     }
+
     main {
         grid-area: main;
     }
+
     aside {
         grid-area: aside;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -697,6 +792,7 @@ body.light-theme a {
         padding: 3%;
         font-size: 1.3em;
     }
+
     footer {
         grid-area: footer;
         text-align: center;
@@ -705,6 +801,7 @@ body.light-theme a {
         margin-top: 1%;
         margin-bottom: 2%;
     }
+
     .footer-button {
         background-color: transparent;
         cursor: pointer;
@@ -715,10 +812,12 @@ body.light-theme a {
         padding-right: 1%;
         font-family: cursive;
     }
+
     .footer-button:hover {
         background-color: goldenrod;
         font-weight: bold;
     }
+
     .centerFix {
         display: grid;
         justify-content: center;
@@ -726,20 +825,25 @@ body.light-theme a {
         font-size: 1.5em;
         margin-top: 4%;
     }
+
     .commentHolder {
         line-height: 4.6em;
     }
+
     .commentHolder textarea {
         display: block;
         width: 90%;
         margin-bottom: -10%;
     }
+
     .vectorCon {
         line-height: 2.5em;
     }
+
     .formHolder {
         line-height: 2.6em;
     }
+
     .aboutText {
         padding: 5%;
         line-height: 2.5em;
@@ -747,6 +851,7 @@ body.light-theme a {
         margin-bottom: -5%;
     }
 }
+
 @media screen and (min-width: 1000px) and (max-width: 1199px) {
     .container {
         display: grid;
@@ -781,6 +886,7 @@ body.light-theme a {
     .logo {
         grid-area: logo;
     }
+
     .logo img {
         width: 120%;
     }
@@ -800,22 +906,26 @@ body.light-theme a {
     .navRight {
         text-align: center;
     }
+
     .navRight li {
         display: inline-block;
         margin: 2%;
         font-size: 0.8em;
         font-weight: 500;
     }
+
     .navRight li:hover {
         cursor: pointer;
         color: rgba(0, 0, 0, 0.678);
     }
+
     .sectionText {
         grid-area: sectionText;
         text-align: left;
         line-height: 1rem;
         margin-top: 1%;
     }
+
     .sectionText h1 {
         text-align: center;
         text-shadow: 1px 1px 1px #fac927af;
@@ -824,27 +934,32 @@ body.light-theme a {
         font-family: cursive;
         font-size: 1.5em;
     }
+
     .sectionText ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         list-style-type: none;
         text-align: center;
     }
+
     .imageHolder {
         grid-area: imageHolder;
         display: grid;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
+
     .imageHolder2 {
         grid-area: imageHolder;
         display: grid;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
+
     #image {
         object-fit: cover;
         height: 100%;
         min-height: 100%;
     }
+
     .textHolder {
         grid-area: textHolder;
         margin-top: 1%;
@@ -854,6 +969,7 @@ body.light-theme a {
         font-size: 1.1em;
         line-height: 2rem;
     }
+
     .sectionAbout {
         grid-area: sectionAbout;
         text-align: center;
@@ -861,6 +977,7 @@ body.light-theme a {
         font-size: 0.6em;
         margin: 0;
     }
+
     .sectionButton {
         grid-area: sectionButton;
         text-align: center;
@@ -868,10 +985,12 @@ body.light-theme a {
         font-size: 0.8em;
         margin: 10% 0 0;
     }
+
     .imgBlb {
         display: block;
         margin: 5% auto 3%;
     }
+
     .main-button {
         display: block;
         width: 100%;
@@ -885,6 +1004,7 @@ body.light-theme a {
         font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
         font-size: large;
     }
+
     .main-button a {
         text-decoration: none;
         text-shadow: 2px 2px 3px rgb(80, 80, 80);
@@ -892,6 +1012,7 @@ body.light-theme a {
         display: inline-block;
         color: white;
     }
+
     .main-button:hover {
         background-color: orangered;
         box-shadow: 0px 1px 6px rgba(80, 80, 80, 0.64);
@@ -915,6 +1036,7 @@ body.light-theme a {
         line-height: 1rem;
         margin-top: 5%;
     }
+
     form {
         display: grid;
         grid-template-columns: 1fr;
@@ -925,6 +1047,7 @@ body.light-theme a {
         font-size: 1.5em;
         line-height: 2.5rem;
     }
+
     .sectionDetail {
         display: grid;
         grid-template-columns: 1fr;
@@ -934,6 +1057,7 @@ body.light-theme a {
         font-size: 1em;
         line-height: 4.5rem;
     }
+
     .footer-button {
         background-color: transparent;
         cursor: pointer;
@@ -945,13 +1069,16 @@ body.light-theme a {
         padding-right: 1%;
         font-family: cursive;
     }
+
     .footer-button:hover {
         background-color: #527dfc;
         color: white;
     }
+
     .formStyle {
         display: inline-grid;
     }
+
     .centerFix {
         display: grid;
         justify-content: center;
@@ -960,25 +1087,30 @@ body.light-theme a {
         margin-top: 1%;
         margin-bottom: -4%;
     }
+
     .commentHolder {
         line-height: 3.5em;
         margin-top: 5%;
     }
+
     .vectorCon {
         line-height: 3.5em;
         margin-bottom: 5%;
         margin-top: 2%;
     }
+
     .formHolder {
         line-height: 1.8em;
         margin-bottom: 5%;
         margin-top: 2%;
     }
+
     .aboutText {
         line-height: 2.5em;
         font-size: 0.9em;
     }
 }
+
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
     .container {
         display: grid;
@@ -996,7 +1128,7 @@ body.light-theme a {
         grid-area: header;
         text-align: center;
         padding-top: 1%;
-        font-size: 1.5em;
+        font-size: 1em;
         padding-bottom: 3%;
     }
 
@@ -1013,6 +1145,7 @@ body.light-theme a {
     .logo {
         grid-area: logo;
     }
+
     .logo img {
         width: 120%;
     }
@@ -1032,22 +1165,26 @@ body.light-theme a {
     .navRight {
         text-align: center;
     }
+
     .navRight li {
         display: inline-block;
         margin: 0 auto;
         font-size: 1em;
         font-weight: 500;
     }
+
     .navRight li:hover {
         cursor: pointer;
         color: rgba(0, 0, 0, 0.678);
     }
+
     .sectionText {
         grid-area: sectionText;
         text-align: left;
         line-height: 1rem;
         margin-top: 1%;
     }
+
     .sectionText h1 {
         text-align: center;
         text-shadow: 1px 1px 1px #fac927af;
@@ -1056,27 +1193,32 @@ body.light-theme a {
         font-family: cursive;
         font-size: 2em;
     }
+
     .sectionText ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         list-style-type: none;
         text-align: center;
     }
+
     .imageHolder {
         grid-area: imageHolder;
         display: grid;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
+
     .imageHolder2 {
         grid-area: imageHolder;
         display: grid;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
+
     #image {
         object-fit: cover;
         height: 100%;
         min-height: 100%;
     }
+
     .textHolder {
         grid-area: textHolder;
         margin-top: 1%;
@@ -1086,6 +1228,7 @@ body.light-theme a {
         font-size: 2em;
         line-height: 3.5rem;
     }
+
     .sectionAbout {
         grid-area: sectionAbout;
         text-align: left;
@@ -1093,6 +1236,7 @@ body.light-theme a {
         font-size: 1em;
         margin: 5%;
     }
+
     .sectionButton {
         grid-area: sectionButton;
         text-align: center;
@@ -1114,6 +1258,7 @@ body.light-theme a {
         font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
         font-size: large;
     }
+
     .main-button a {
         text-decoration: none;
         text-shadow: 2px 2px 3px rgb(80, 80, 80);
@@ -1121,10 +1266,12 @@ body.light-theme a {
         display: inline-block;
         color: white;
     }
+
     .main-button:hover {
         background-color: orangered;
         box-shadow: 0px 1px 6px rgba(80, 80, 80, 0.64);
     }
+
     #carrosel {
         margin-top: 30%;
     }
@@ -1147,6 +1294,7 @@ body.light-theme a {
         line-height: 1rem;
         margin-top: 5%;
     }
+
     form {
         display: grid;
         grid-template-columns: 1fr;
@@ -1157,6 +1305,7 @@ body.light-theme a {
         font-size: 1.5em;
         line-height: 1.5rem;
     }
+
     .sectionDetail {
         display: grid;
         grid-template-columns: 1fr;
@@ -1166,6 +1315,7 @@ body.light-theme a {
         font-size: 1em;
         line-height: 2.5rem;
     }
+
     .footer-button {
         background-color: transparent;
         cursor: pointer;
@@ -1177,13 +1327,16 @@ body.light-theme a {
         padding-right: 1%;
         font-family: cursive;
     }
+
     .footer-button:hover {
         background-color: #527dfc;
         color: white;
     }
+
     .formStyle {
         display: inline-grid;
     }
+
     .centerFix {
         display: grid;
         justify-content: center;
@@ -1192,25 +1345,30 @@ body.light-theme a {
         margin-top: 1%;
         margin-bottom: -4%;
     }
+
     .commentHolder {
         line-height: 2.5em;
         margin-top: 5%;
     }
+
     .vectorCon {
         line-height: 2.5em;
         margin-bottom: 5%;
         margin-top: 2%;
     }
+
     .formHolder {
         line-height: 1.8em;
         margin-bottom: 5%;
         margin-top: 2%;
     }
+
     .aboutText {
         line-height: 2.5em;
         font-size: 1.5em;
     }
 }
+
 @media screen and (min-width: 1400px) and (max-width: 2400px) {
     .container {
         display: grid;
@@ -1245,6 +1403,7 @@ body.light-theme a {
     .logo {
         grid-area: logo;
     }
+
     .logo img {
         width: 120%;
     }
@@ -1264,22 +1423,26 @@ body.light-theme a {
     .navRight {
         text-align: center;
     }
+
     .navRight li {
         display: inline-block;
         margin: 2%;
         font-size: 1.4em;
         font-weight: 500;
     }
+
     .navRight li:hover {
         cursor: pointer;
         color: rgba(0, 0, 0, 0.678);
     }
+
     .sectionText {
         grid-area: sectionText;
         text-align: left;
         line-height: 1rem;
         margin-top: 1%;
     }
+
     .sectionText h1 {
         text-align: center;
         text-shadow: 1px 1px 1px #fac927af;
@@ -1288,27 +1451,32 @@ body.light-theme a {
         font-family: cursive;
         font-size: 2em;
     }
+
     .sectionText ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         list-style-type: none;
         text-align: center;
     }
+
     .imageHolder {
         grid-area: imageHolder;
         display: grid;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
+
     .imageHolder2 {
         grid-area: imageHolder;
         display: grid;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
+
     #image {
         object-fit: cover;
         height: 100%;
         min-height: 100%;
     }
+
     .textHolder {
         grid-area: textHolder;
         margin-top: 1%;
@@ -1318,6 +1486,7 @@ body.light-theme a {
         font-size: 2em;
         line-height: 3.5rem;
     }
+
     .sectionAbout {
         grid-area: sectionAbout;
         text-align: left;
@@ -1325,6 +1494,7 @@ body.light-theme a {
         font-size: 1em;
         margin: 5%;
     }
+
     .sectionButton {
         grid-area: sectionButton;
         text-align: center;
@@ -1346,6 +1516,7 @@ body.light-theme a {
         font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
         font-size: large;
     }
+
     .main-button a {
         text-decoration: none;
         text-shadow: 2px 2px 3px rgb(80, 80, 80);
@@ -1353,6 +1524,7 @@ body.light-theme a {
         display: inline-block;
         color: white;
     }
+
     .main-button:hover {
         background-color: orangered;
         box-shadow: 0px 1px 6px rgba(80, 80, 80, 0.64);
@@ -1375,6 +1547,7 @@ body.light-theme a {
         line-height: 1rem;
         margin-top: 5%;
     }
+
     form {
         display: grid;
         grid-template-columns: 1fr;
@@ -1385,6 +1558,7 @@ body.light-theme a {
         font-size: 1.5em;
         line-height: 2.5rem;
     }
+
     .sectionDetail {
         display: grid;
         grid-template-columns: 1fr;
@@ -1394,6 +1568,7 @@ body.light-theme a {
         font-size: 1em;
         line-height: 4.5rem;
     }
+
     .footer-button {
         background-color: transparent;
         cursor: pointer;
@@ -1405,13 +1580,16 @@ body.light-theme a {
         padding-right: 1%;
         font-family: cursive;
     }
+
     .footer-button:hover {
         background-color: #527dfc;
         color: white;
     }
+
     .formStyle {
         display: inline-grid;
     }
+
     .centerFix {
         display: grid;
         justify-content: center;
@@ -1420,20 +1598,24 @@ body.light-theme a {
         margin-top: 1%;
         margin-bottom: -4%;
     }
+
     .commentHolder {
         line-height: 3.5em;
         margin-top: 5%;
     }
+
     .vectorCon {
         line-height: 3.5em;
         margin-bottom: 5%;
         margin-top: 2%;
     }
+
     .formHolder {
         line-height: 1.8em;
         margin-bottom: 5%;
         margin-top: 2%;
     }
+
     .aboutText {
         line-height: 2.5em;
         font-size: 1.1em;
