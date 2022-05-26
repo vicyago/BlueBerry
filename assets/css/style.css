@@ -101,7 +101,7 @@ body.light-theme a {
     header {
         grid-area: header;
         text-align: center;
-        padding: 2%;
+        padding: 5%;
         line-height: 1rem;
         font-size: 0.5em;
     }
