@@ -648,6 +648,7 @@ body.light-theme a {
     .logo {
         grid-area: logo;
         padding: 5%;
+        margin-top: -5%;
     }
 
     .empty {
