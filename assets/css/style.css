@@ -1233,7 +1233,7 @@ body.light-theme a {
         grid-area: sectionAbout;
         text-align: left;
         line-height: 2rem;
-        font-size: 1em;
+        font-size: 0.7em;
         margin: 5%;
     }
 
