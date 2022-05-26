@@ -102,7 +102,7 @@ body.light-theme a {
         grid-area: header;
         text-align: center;
         padding: 2%;
-        font-size: 0.4em;
+        font-size: 0.6em;
     }
 
     section {
@@ -224,7 +224,7 @@ body.light-theme a {
     .textHolder h3,
     h4 {
         line-height: 1.5em;
-        font-size: 1em;
+        font-size: 0.7em;
         margin-left: 5%;
     }
 
