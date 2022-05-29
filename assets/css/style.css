@@ -1674,9 +1674,9 @@ body.light-theme a {
 
     .navRight li {
         display: inline-block;
-        margin: 2%;
         font-size: 1.4em;
         font-weight: 500;
+        margin: 2%;
     }
 
     .navRight li:hover {
