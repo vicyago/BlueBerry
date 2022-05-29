@@ -626,7 +626,7 @@ body.light-theme a {
         margin-top: 10%;
         list-style-type: none;
         text-align: left;
-        font-size: 0.8em;
+        font-size: 0.9em;
         line-height: 1.5rem;
     }
 
@@ -636,7 +636,7 @@ body.light-theme a {
         grid-gap: 5px;
         list-style-type: none;
         text-align: left;
-        font-size: 0.9em;
+        font-size: 1em;
         line-height: 2rem;
     }
 
@@ -672,7 +672,7 @@ body.light-theme a {
     .navRight li {
         display: inline-block;
         margin: 0 1%;
-        font-size: 0.7em;
+        font-size: 0.9em;
         line-height: 1.5rem;
     }
 
@@ -685,7 +685,7 @@ body.light-theme a {
         grid-area: sectionText;
         text-align: left;
         line-height: 2rem;
-        font-size: 0.7em;
+        font-size: 0.9em;
         margin: 5%;
     }
 
@@ -726,7 +726,7 @@ body.light-theme a {
     .textHolder h3,
     h4 {
         line-height: 1.5em;
-        font-size: 1em;
+        font-size: 1.1em;
         margin-left: 5%;
     }
 
@@ -734,7 +734,7 @@ body.light-theme a {
         grid-area: sectionAbout;
         text-align: left;
         line-height: 1.5rem;
-        font-size: 0.5em;
+        font-size: 0.8em;
         margin: 5%;
     }
 
@@ -742,7 +742,7 @@ body.light-theme a {
         grid-area: sectionButton;
         text-align: center;
         line-height: 1.5rem;
-        font-size: 0.5em;
+        font-size: 0.8em;
         margin: 5%;
     }
 
@@ -763,7 +763,7 @@ body.light-theme a {
     .main-button a {
         text-decoration: none;
         text-shadow: 2px 2px 3px rgb(80, 80, 80);
-        font-size: 1em;
+        font-size: 1.2em;
         display: inline-block;
         color: white;
     }
@@ -785,14 +785,14 @@ body.light-theme a {
         margin-right: 5%;
         margin-bottom: 10%;
         padding: 3%;
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
 
     footer {
         grid-area: footer;
         text-align: center;
         font-size: 0.6em;
-        line-height: 1.2rem;
+        line-height: 1.5rem;
         margin-top: 1%;
         margin-bottom: 2%;
     }
