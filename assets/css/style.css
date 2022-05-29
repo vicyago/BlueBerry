@@ -1218,7 +1218,7 @@ body.light-theme a {
     .textHolder {
         grid-area: textHolder;
         margin-top: 1%;
-        margin-right: 10%;
+        margin-right: 5%;
         text-align: left;
         font-size: 1.1em;
         line-height: 2rem;
@@ -1239,6 +1239,8 @@ body.light-theme a {
         line-height: 2rem;
         font-size: 0.8em;
         margin: 1% 0 0;
+        padding-right: 2%;
+        padding-left: 2%;
     }
 
     .imgBlb {
