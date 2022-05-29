@@ -798,8 +798,8 @@ body.light-theme a {
         line-height: 1.2rem;
         margin-top: 1%;
         margin-bottom: 2%;
-        padding-right: 10%;
-        padding-left: 10%;
+        padding-right: 15%;
+        padding-left: 15%;
     }
 
     .footer-button {
@@ -1052,7 +1052,7 @@ body.light-theme a {
     footer {
         grid-area: footer;
         text-align: center;
-        font-size: 0.6em;
+        font-size: 0.9em;
         line-height: 1.2rem;
         margin-top: 1%;
         margin-bottom: 2%;
