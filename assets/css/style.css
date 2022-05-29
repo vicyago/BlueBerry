@@ -1611,8 +1611,9 @@ body.light-theme a {
     }
 
     .aboutText {
-        line-height: 2.5em;
+        line-height: 2em;
         font-size: 1.5em;
+        padding-right: 6%;
     }
 }
 
