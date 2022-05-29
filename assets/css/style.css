@@ -603,7 +603,10 @@ body.light-theme a {
         grid-area: header;
         text-align: center;
         padding: 3%;
-        font-size: 0.6em;
+        font-size: 0.9em;
+        padding-right: 20%;
+        padding-left: 20%;
+        line-height: 1.5rem;
     }
 
     section {
@@ -741,7 +744,7 @@ body.light-theme a {
     .sectionButton {
         grid-area: sectionButton;
         text-align: center;
-        line-height: 1.5rem;
+        line-height: 1.7rem;
         font-size: 0.8em;
         margin: 5%;
     }
@@ -763,7 +766,7 @@ body.light-theme a {
     .main-button a {
         text-decoration: none;
         text-shadow: 2px 2px 3px rgb(80, 80, 80);
-        font-size: 1.2em;
+        font-size: 1em;
         display: inline-block;
         color: white;
     }
@@ -785,16 +788,18 @@ body.light-theme a {
         margin-right: 5%;
         margin-bottom: 10%;
         padding: 3%;
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     footer {
         grid-area: footer;
         text-align: center;
-        font-size: 0.6em;
-        line-height: 1.5rem;
+        font-size: 0.8em;
+        line-height: 1.2rem;
         margin-top: 1%;
         margin-bottom: 2%;
+        padding-right: 10%;
+        padding-left: 10%;
     }
 
     .footer-button {
