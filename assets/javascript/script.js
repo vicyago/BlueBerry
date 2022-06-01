@@ -28,8 +28,7 @@ btn.addEventListener("click", function () {
     } else {
         btn.innerText = "Dark 🌙";
     }
-})
-newFunction();
+    newFunction();
 function newFunction() {
     const x = document.getElementById("myDIV");
     if (x.style.display === "none") {
@@ -39,6 +38,8 @@ function newFunction() {
     }
 }
 ;
+})
+
 
 
 
