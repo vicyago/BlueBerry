@@ -49,7 +49,7 @@ let imgDark = [
 
 function imgToTheme (imgToDarkTheme, index) {console.log(imgToDarkTheme,index);}
 
-ligthImgs.forEach(imgToTheme,index)
+ligthImgs.forEach(imgToTheme(imgToDarkTheme,index))
 
 
 
