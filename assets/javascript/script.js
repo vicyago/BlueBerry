@@ -33,7 +33,7 @@ btn.addEventListener("click", function () {
 
 
 ul = document.getElementById("myUL");
-let imgList = imgUL.querySelectorAll("img")
+let imgUL = document.querySelector("#myUl")
 console.log(imgList)
 
 
