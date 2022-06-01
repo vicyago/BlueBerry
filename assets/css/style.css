@@ -1166,7 +1166,7 @@ body.light-theme a {
     .navRight li {
         display: inline-block;
         margin: 1%;
-        font-size: 1em;
+        font-size: 0.9em;
         font-weight: 500;
     }
 
@@ -1238,7 +1238,7 @@ body.light-theme a {
         text-align: center;
         line-height: 2rem;
         font-size: 0.8em;
-        margin: 1% 0 0;
+        margin: 10% 0 0;
         padding-right: 2%;
         padding-left: 2%;
     }
