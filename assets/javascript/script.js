@@ -29,6 +29,10 @@ btn.addEventListener("click", function () {
         btn.innerText = "Dark 🌙";
     }
 });
+
+
+
+ul = document.getElementById("myUL");
 let imgList = imgUL.querySelectorAll("img")
 console.log(imgList)
 
