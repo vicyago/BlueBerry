@@ -20,10 +20,6 @@ async function imageLoop() {
     imageLoop();
 }
 imageLoop();
-
-newFunction();
-
-
 const btn = document.querySelector("#btn-toggle");
 btn.addEventListener("click", function () {
     document.body.classList.toggle("light-theme");
@@ -32,18 +28,9 @@ btn.addEventListener("click", function () {
     } else {
         btn.innerText = "Dark 🌙";
     }
-
 })
 
-function newFunction() {
-    const x = document.getElementById("myDIV");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-;
+
 
 
 
