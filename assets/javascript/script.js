@@ -33,6 +33,19 @@ btn.addEventListener("click", function () {
 let imgUl = document.querySelector("#ulLight")
 let ligthImgs = imgUl.querySelectorAll("img")
 console.log(ligthImgs)
+let imgDark = [
+    "assets/images/polodark.png",
+    "assets/images/abadadark.png",
+    "assets/images/ecobagdark.png",
+    "assets/images/bordadodark.png",
+    "assets/images/maskdark.png",
+    "assets/images/confeccaodark.png",
+    "assets/images/camisetadark.png",
+    "assets/images/hoodiedark.png",
+    "assets/images/silkscreendark.png"
+];
+function imgToTheme (imgToDarkTheme) {} 
+console.log(imgToTheme);
 
 
 
