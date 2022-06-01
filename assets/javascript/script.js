@@ -20,6 +20,7 @@ async function imageLoop() {
     imageLoop();
 }
 imageLoop();
+
 const btn = document.querySelector("#btn-toggle");
 btn.addEventListener("click", function () {
     document.body.classList.toggle("light-theme");
@@ -28,12 +29,16 @@ btn.addEventListener("click", function () {
     } else {
         btn.innerText = "Dark 🌙";
     }
-    document.getElementById("myDIV");
+
+    const x = document.getElementById("myDIV");
     if (x.style.display === "none") {
-    x.style.display = "block";
+        x.style.display = "block";
     } else {
-    x.style.display = "none";
+        x.style.display = "none";
     }
 
 });
+
+
+
 
