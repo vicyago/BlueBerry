@@ -30,9 +30,9 @@ btn.addEventListener("click", function () {
     }
 });
 
-let imgList = document.querySelector("#myUl")
-let darkImgs = imgList.querySelectorAll("img")
-console.log(imgList)
+let imgUl = document.querySelector("#ulLight")
+let ligthImgs = imgList.querySelectorAll("img")
+console.log(lightImgs)
 
 
 
