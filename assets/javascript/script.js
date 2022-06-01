@@ -30,12 +30,9 @@ btn.addEventListener("click", function () {
     }
 });
 
-
-
-ul = document.getElementById("myUL");
-let imgUL = document.querySelector("#myUl")
+let imgList = querySelector("#myUl")
+let darkImgs = imgList.querySelectorAll("img")
 console.log(imgList)
-
 
 
 
