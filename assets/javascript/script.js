@@ -32,7 +32,7 @@ btn.addEventListener("click", function () {
 
 let imgUl = document.querySelector("#ulLight")
 let ligthImgs = imgUl.querySelectorAll("img")
-console.log(lightImgs)
+console.log(ligthImgs)
 
 
 
