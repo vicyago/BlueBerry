@@ -31,7 +31,7 @@ btn.addEventListener("click", function () {
 });
 
 let imgUl = document.querySelector("#ulLight")
-let ligthImgs = imgList.querySelectorAll("img")
+let ligthImgs = imgUl.querySelectorAll("img")
 console.log(lightImgs)
 
 
