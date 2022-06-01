@@ -94,7 +94,9 @@ body.light-theme a {
     border-style: dotted;
     box-shadow: 0px 1px 5px 2px #575757b6;
     border-color: #356FEF;
-    padding: 2%;
+    padding: 2% 2%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 @media screen and (min-width: 239px) and (max-width: 319px) {
@@ -1168,6 +1170,7 @@ body.light-theme a {
         margin: 1%;
         font-size: 0.9em;
         font-weight: 500;
+
     }
 
     .navRight li:hover {
