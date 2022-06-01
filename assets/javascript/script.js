@@ -22,26 +22,28 @@ async function imageLoop() {
 imageLoop();
 
 newFunction();
-    function newFunction() {
+function newFunction() {
 
-        const btn = document.querySelector("#btn-toggle");
-btn.addEventListener("click", function () {
-    document.body.classList.toggle("light-theme");
-    if (btn.innerText === "Dark 🌙") {
-        btn.innerText = "Light ☀️";
-    } else {
-        btn.innerText = "Dark 🌙";
-    }
-
-});    
-        const x = document.getElementById("myDIV");
-        if (x.style.display === "none") {
-            x.style.display = "block";
+    const btn = document.querySelector("#btn-toggle");
+    btn.addEventListener("click", function () {
+        document.body.classList.toggle("light-theme");
+        if (btn.innerText === "Dark 🌙") {
+            btn.innerText = "Light ☀️";
         } else {
-            x.style.display = "none";
+            btn.innerText = "Dark 🌙";
         }
+
+    })
+    const x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
     }
-    
+}
+;
+
+
 
 
 
