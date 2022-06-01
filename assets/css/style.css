@@ -603,7 +603,10 @@ body.light-theme a {
         grid-area: header;
         text-align: center;
         padding: 3%;
-        font-size: 0.6em;
+        font-size: 0.9em;
+        padding-right: 20%;
+        padding-left: 20%;
+        line-height: 1.5rem;
     }
 
     section {
@@ -626,7 +629,7 @@ body.light-theme a {
         margin-top: 10%;
         list-style-type: none;
         text-align: left;
-        font-size: 0.8em;
+        font-size: 0.9em;
         line-height: 1.5rem;
     }
 
@@ -636,7 +639,7 @@ body.light-theme a {
         grid-gap: 5px;
         list-style-type: none;
         text-align: left;
-        font-size: 0.9em;
+        font-size: 1em;
         line-height: 2rem;
     }
 
@@ -672,7 +675,7 @@ body.light-theme a {
     .navRight li {
         display: inline-block;
         margin: 0 1%;
-        font-size: 0.7em;
+        font-size: 1.2em;
         line-height: 1.5rem;
     }
 
@@ -685,7 +688,7 @@ body.light-theme a {
         grid-area: sectionText;
         text-align: left;
         line-height: 2rem;
-        font-size: 0.7em;
+        font-size: 0.9em;
         margin: 5%;
     }
 
@@ -726,7 +729,7 @@ body.light-theme a {
     .textHolder h3,
     h4 {
         line-height: 1.5em;
-        font-size: 1em;
+        font-size: 1.1em;
         margin-left: 5%;
     }
 
@@ -734,15 +737,15 @@ body.light-theme a {
         grid-area: sectionAbout;
         text-align: left;
         line-height: 1.5rem;
-        font-size: 0.5em;
+        font-size: 0.8em;
         margin: 5%;
     }
 
     .sectionButton {
         grid-area: sectionButton;
         text-align: center;
-        line-height: 1.5rem;
-        font-size: 0.5em;
+        line-height: 1.7rem;
+        font-size: 0.8em;
         margin: 5%;
     }
 
@@ -785,16 +788,18 @@ body.light-theme a {
         margin-right: 5%;
         margin-bottom: 10%;
         padding: 3%;
-        font-size: 1.3em;
+        font-size: 1em;
     }
 
     footer {
         grid-area: footer;
         text-align: center;
-        font-size: 0.6em;
+        font-size: 0.8em;
         line-height: 1.2rem;
         margin-top: 1%;
         margin-bottom: 2%;
+        padding-right: 15%;
+        padding-left: 15%;
     }
 
     .footer-button {
@@ -1047,7 +1052,7 @@ body.light-theme a {
     footer {
         grid-area: footer;
         text-align: center;
-        font-size: 0.6em;
+        font-size: 0.9em;
         line-height: 1.2rem;
         margin-top: 1%;
         margin-bottom: 2%;
@@ -1160,7 +1165,7 @@ body.light-theme a {
 
     .navRight li {
         display: inline-block;
-        margin: 2%;
+        margin: 1%;
         font-size: 0.8em;
         font-weight: 500;
     }
@@ -1213,7 +1218,7 @@ body.light-theme a {
     .textHolder {
         grid-area: textHolder;
         margin-top: 1%;
-        margin-right: 10%;
+        margin-right: 5%;
         text-align: left;
         font-size: 1.1em;
         line-height: 2rem;
@@ -1224,7 +1229,8 @@ body.light-theme a {
         text-align: center;
         line-height: 1.2rem;
         font-size: 0.6em;
-        margin: 0;
+        padding-left: 2%;
+        padding-right: 2%;
     }
 
     .sectionButton {
@@ -1232,7 +1238,9 @@ body.light-theme a {
         text-align: center;
         line-height: 2rem;
         font-size: 0.8em;
-        margin: 10% 0 0;
+        margin: 1% 0 0;
+        padding-right: 2%;
+        padding-left: 2%;
     }
 
     .imgBlb {
@@ -1249,6 +1257,7 @@ body.light-theme a {
         text-align: center;
         box-shadow: 2px 1px 2px 3px #0000004b;
         margin-bottom: 5%;
+        margin-top: -7%;
         padding: 2%;
         font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
         font-size: large;
@@ -1289,12 +1298,12 @@ body.light-theme a {
     form {
         display: grid;
         grid-template-columns: 1fr;
-        grid-gap: 5px;
+        grid-gap: 2px;
         margin-top: 10%;
         list-style-type: none;
         text-align: left;
-        font-size: 1.5em;
-        line-height: 2.5rem;
+        font-size: 1.1em;
+        line-height: 1.8rem;
     }
 
     .sectionDetail {
@@ -1304,7 +1313,7 @@ body.light-theme a {
         list-style-type: none;
         text-align: left;
         font-size: 1em;
-        line-height: 4.5rem;
+        line-height: 2.5rem;
     }
 
     .footer-button {
@@ -1332,19 +1341,17 @@ body.light-theme a {
         display: grid;
         justify-content: center;
         align-self: center;
-        font-size: 3em;
-        margin-top: 1%;
+        font-size: 2em;
         margin-bottom: -4%;
     }
 
     .commentHolder {
-        line-height: 3.5em;
+        line-height: 2.5em;
         margin-top: 5%;
     }
 
     .vectorCon {
-        line-height: 3.5em;
-        margin-bottom: 5%;
+        line-height: 2em;
         margin-top: 2%;
     }
 
@@ -1674,9 +1681,9 @@ body.light-theme a {
 
     .navRight li {
         display: inline-block;
-        margin: 2%;
         font-size: 1.4em;
         font-weight: 500;
+        margin: 2%;
     }
 
     .navRight li:hover {
