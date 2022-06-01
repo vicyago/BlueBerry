@@ -31,8 +31,9 @@ btn.addEventListener("click", function () {
 });
 
 let imgUl = document.querySelector("#ulLight")
+
 let ligthImgs = imgUl.querySelectorAll("img")
-console.log(ligthImgs)
+
 let imgDark = [
     "assets/images/polodark.png",
     "assets/images/abadadark.png",
@@ -44,8 +45,10 @@ let imgDark = [
     "assets/images/hoodiedark.png",
     "assets/images/silkscreendark.png"
 ];
-function imgToTheme (imgToDarkTheme) {} 
-console.log(imgToTheme);
+
+function imgToTheme (imgToDarkTheme) {console.log(imgToDarkTheme);} 
+
+ligthImgs.forEach(imgToTheme)
 
 
 
