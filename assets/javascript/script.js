@@ -26,9 +26,9 @@ btn.addEventListener("click", function () {
     document.body.classList.toggle("light-theme");
     if (btn.innerText === "Dark 🌙") {
         btn.innerText = "Light ☀️";
+        changeImgIcon();
     } else {
         btn.innerText = "Dark 🌙";
-        changeImgIcon();
     }
 });
 
