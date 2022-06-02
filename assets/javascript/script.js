@@ -28,28 +28,31 @@ btn.addEventListener("click", function () {
         btn.innerText = "Light ☀️";
     } else {
         btn.innerText = "Dark 🌙";
+        changeImgIcon();
     }
 });
 
-let imgUl = document.querySelector("#ulLight")
+function changeImgIcon() {
+    let imgUl = document.querySelector("#ulLight")
 
-let ligthImgs = imgUl.querySelectorAll("img")
+    let ligthImgs = imgUl.querySelectorAll("img")
 
-let imgDark = [
-    "assets/images/polodark.png",
-    "assets/images/abadadark.png",
-    "assets/images/ecobagdark.png",
-    "assets/images/bordadodark.png",
-    "assets/images/maskdark.png",
-    "assets/images/confeccaodark.png",
-    "assets/images/camisetadark.png",
-    "assets/images/hoodiedark.png",
-    "assets/images/silkscreendark.png"
-];
+    let imgDark = [
+        "assets/images/polodark.png",
+        "assets/images/abadadark.png",
+        "assets/images/ecobagdark.png",
+        "assets/images/bordadodark.png",
+        "assets/images/maskdark.png",
+        "assets/images/confeccaodark.png",
+        "assets/images/camisetadark.png",
+        "assets/images/hoodiedark.png",
+        "assets/images/silkscreendark.png"
+    ];
 
-function imgToTheme(imgToDarkTheme, index) { imgToDarkTheme.src = imgDark[index] }
+    function imgToTheme(imgToDarkTheme, index) { imgToDarkTheme.src = imgDark[index] }
 
-ligthImgs.forEach(imgToTheme)
+    ligthImgs.forEach(imgToTheme)
+}
 
 
 
