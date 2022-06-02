@@ -47,7 +47,7 @@ let imgDark = [
     "assets/images/silkscreendark.png"
 ];
 
-function imgToTheme (imgToDarkTheme, index) {imgToDarkTheme.src = imgDark[index]}
+function imgToTheme(imgToDarkTheme, index) { imgToDarkTheme.src = imgDark[index] }
 
 ligthImgs.forEach(imgToTheme)
 
