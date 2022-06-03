@@ -58,7 +58,7 @@ function changeImgIcon() {
         "assets/images/maskblue.png",
         "assets/images/confeccaoblue.png",
         "assets/images/camisetablue.png",
-        "assets/images/hoodiedblue.png",
+        "assets/images/hoodieblue.png",
         "assets/images/silkscreenblue.png"
     ];
     
