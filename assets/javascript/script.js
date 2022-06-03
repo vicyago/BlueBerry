@@ -48,7 +48,19 @@ function changeImgIcon() {
         "assets/images/hoodiedark.png",
         "assets/images/silkscreendark.png"
     ];
-
+    
+    let imgLight = [
+        "assets/images/poloblue.png",
+        "assets/images/abadablue.png",
+        "assets/images/ecobagblue.png",
+        "assets/images/bordadoblue.png",
+        "assets/images/maskblue.png",
+        "assets/images/confeccaoblue.png",
+        "assets/images/camisetablue.png",
+        "assets/images/hoodiedablue.png",
+        "assets/images/silkscreenblue.png"
+    ];
+    
     function imgToTheme(imgToDarkTheme, index) { imgToDarkTheme.src = imgDark[index] }
 
     ligthImgs.forEach(imgToTheme)
