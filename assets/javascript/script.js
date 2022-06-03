@@ -29,6 +29,7 @@ btn.addEventListener("click", function () {
         changeImgIcon();
     } else {
         btn.innerText = "Dark 🌙";
+        changeImgIconLight();
     }
 });
 
@@ -57,13 +58,17 @@ function changeImgIcon() {
         "assets/images/maskblue.png",
         "assets/images/confeccaoblue.png",
         "assets/images/camisetablue.png",
-        "assets/images/hoodiedablue.png",
+        "assets/images/hoodiedblue.png",
         "assets/images/silkscreenblue.png"
     ];
     
     function imgToTheme(imgToDarkTheme, index) { imgToDarkTheme.src = imgDark[index] }
 
     ligthImgs.forEach(imgToTheme)
+
+    function imgToThemeLight(imgToLightTheme, index) { imgToLightTheme.src = imgLight[index] }
+
+    ligthImgs.forEach(imgToThemeLight)
 }
 
 
