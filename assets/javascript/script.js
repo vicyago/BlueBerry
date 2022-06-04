@@ -65,11 +65,10 @@ function changeImgIcon(toDark) {
     } else {
         chossenArray = lightImg;
     }
-  
+console.log(imgsArray);  
+imgsArray.forEach(imgToTheme);
 }
 
 function imgToTheme(imgTag, index) {
     imgTag.src = chossenArray[index];
 }
-
-imgsArray.forEach(imgToTheme);
