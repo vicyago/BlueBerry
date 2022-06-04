@@ -34,7 +34,10 @@ btn.addEventListener("click", function () {
 });
 
 function changeImgIcon(toDark) {
-    
+
+    let ulImgs = document.querySelector("#imgsArray");
+    let imgsArray = ulImgs.querySelectorAll("img");
+
     let darkImg = [
         "assets/images/polodark.png",
         "assets/images/abadadark.png",
@@ -65,7 +68,7 @@ function changeImgIcon(toDark) {
     } else {
         chossenArray = lightImg;
     }
-console.log(imgsArray);  
+ 
 imgsArray.forEach(imgToTheme);
 }
 
