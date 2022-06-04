@@ -63,6 +63,7 @@ function changeImgIcon(toDark) {
     ];
 
     let chossenArray;
+
     if (toDark) {
         chossenArray = darkImg;
     } else {
@@ -70,6 +71,7 @@ function changeImgIcon(toDark) {
     }
  
 imgsArray.forEach(imgToTheme);
+
 }
 
 function imgToTheme(imgTag, index) {
