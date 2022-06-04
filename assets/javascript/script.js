@@ -26,19 +26,21 @@ btn.addEventListener("click", function () {
     document.body.classList.toggle("light-theme");
     if (btn.innerText === "Dark 🌙") {
         btn.innerText = "Light ☀️";
-        changeImgIcon();
+        changeImgIcon(true);
     } else {
         btn.innerText = "Dark 🌙";
-        changeImgIconLight();
+        changeImgIcon(false);
     }
 });
 
-function changeImgIcon() {
-    let imgUl = document.querySelector("#ulLight")
-
-    let ligthImgs = imgUl.querySelectorAll("img")
-
-    let imgDark = [
+function changeImgIcon(toDark) {
+    let chossenArray;
+    if (toDark) {
+        chossenArray = darkImg;
+    } else {
+        chossenArray = lightImg;
+    }
+    let darkImg = [
         "assets/images/polodark.png",
         "assets/images/abadadark.png",
         "assets/images/ecobagdark.png",
@@ -47,10 +49,10 @@ function changeImgIcon() {
         "assets/images/confeccaodark.png",
         "assets/images/camisetadark.png",
         "assets/images/hoodiedark.png",
-        "assets/images/silkscreendark.png"
+        "assets/images/silkscreendark.png",
     ];
-    
-    let imgLight = [
+
+    let lightImg = [
         "assets/images/poloblue.png",
         "assets/images/abadablue.png",
         "assets/images/ecobagblue.png",
@@ -59,24 +61,12 @@ function changeImgIcon() {
         "assets/images/confeccaoblue.png",
         "assets/images/camisetablue.png",
         "assets/images/hoodieblue.png",
-        "assets/images/silkscreenblue.png"
+        "assets/images/silkscreenblue.png",
     ];
-    
-    function imgToTheme(imgToDarkTheme, index) { imgToDarkTheme.src = imgDark[index] }
 
-    ligthImgs.forEach(imgToTheme)
-
-    function imgToThemeLight(imgToLightTheme, index) { imgToLightTheme.src = imgLight[index] }
-
-    ligthImgs.forEach(imgToThemeLight)
+    imgsArray.forEach(imgToTheme);
 }
 
-
-
-
-
-
-
-
-
-
+function imgToTheme(imgTag, index) {
+    imgTag.src = chossenArray[index];
+}
