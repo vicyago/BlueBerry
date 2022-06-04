@@ -33,6 +33,8 @@ btn.addEventListener("click", function () {
     }
 });
 
+imgsArray.forEach(imgToTheme);
+
 function changeImgIcon(toDark) {
     
     let darkImg = [
@@ -67,8 +69,6 @@ function changeImgIcon(toDark) {
     }
   
 }
-
-imgsArray.forEach(imgToTheme);
 
 function imgToTheme(imgTag, index) {
     imgTag.src = chossenArray[index];
