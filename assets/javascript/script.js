@@ -34,12 +34,6 @@ btn.addEventListener("click", function () {
 });
 
 function changeImgIcon(toDark) {
-    let chossenArray;
-    if (toDark) {
-        chossenArray = darkImg;
-    } else {
-        chossenArray = lightImg;
-    }
     let darkImg = [
         "assets/images/polodark.png",
         "assets/images/abadadark.png",
@@ -63,6 +57,13 @@ function changeImgIcon(toDark) {
         "assets/images/hoodieblue.png",
         "assets/images/silkscreenblue.png",
     ];
+
+    let chossenArray;
+    if (toDark) {
+        chossenArray = darkImg;
+    } else {
+        chossenArray = lightImg;
+    }
 
     imgsArray.forEach(imgToTheme);
 }
