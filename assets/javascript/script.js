@@ -35,8 +35,6 @@ btn.addEventListener("click", function () {
 
 function changeImgIcon(toDark) {
     
-imgsArray.forEach(imgToTheme);
-
     let darkImg = [
         "assets/images/polodark.png",
         "assets/images/abadadark.png",
@@ -69,6 +67,8 @@ imgsArray.forEach(imgToTheme);
     }
   
 }
+
+imgsArray.forEach(imgToTheme);
 
 function imgToTheme(imgTag, index) {
     imgTag.src = chossenArray[index];
