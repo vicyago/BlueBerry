@@ -1,0 +1,231 @@
+.banner {
+    background-color: hsl(229, 100%, 8%);
+    position: absolute;
+    font-size: 1em;
+    color: white;
+}
+.content:first-child::after {
+    background: orange;
+    content: "";
+    bottom: -4px;
+    height: 2px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.content:first-child:hover::after {
+    width: 80%;
+    background: rgb(255, 255, 255);
+}
+.holderText {
+    background: url("../images/bg.png") no-repeat;
+    background-size: cover;
+    width: 36%;
+    position: absolute;
+    top: 5%;
+    left: 7%;
+    z-index: 10;
+    color: black;
+    font-size: 1em;
+    text-align: left;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: white;
+}
+.holderText h2 {
+    text-align: center;
+}
+.holderText ul {
+    list-style-type: circle;
+    margin-top: 1%;
+    font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+    font-size: 1em;
+}
+.holderText h4:first-of-type {
+    margin-bottom: 0;
+}
+
+.carousel {
+    position: relative;
+    box-shadow: 0 1px 6px hsl(0, 0%, 100%);
+    margin-top: 26px;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: white;
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+.tester {
+    color: red;
+}
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #1c5d99;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: white;
+}
+.imgIndex {
+    display: none;
+    position: absolute;
+}
+#carousel-1:checked
+    ~ .control-1
+    ~ .carousel-indicators
+    li:nth-child(1)
+    .carousel-bullet,
+#carousel-2:checked
+    ~ .control-2
+    ~ .carousel-indicators
+    li:nth-child(2)
+    .carousel-bullet,
+#carousel-3:checked
+    ~ .control-3
+    ~ .carousel-indicators
+    li:nth-child(3)
+    .carousel-bullet {
+    color: rgb(255, 255, 255);
+}
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    z-index: 9999;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.33),
+        -1px 0 2px rgba(255, 255, 255, 0);
+}
+.main-button2 {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #d8510dbe;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px #ff88004b;
+    margin-bottom: 5%;
+    padding: 2%;
+    font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+    font-size: large;
+}
+.main-button2 a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    font-size: 1em;
+}
+.main-button2:hover {
+    background-color: hsl(229, 100%, 8%);
+    box-shadow: 0px 1px 6px hsl(0, 0%, 100%);
+}
+@media screen and (min-width: 200px) and (max-width: 720px) {
+    .holderText {
+        width: 98%;
+        left: 1%;
+        box-shadow: 0 1px 6px rgba(255, 255, 255, 0.64);
+        margin-top: 7%;
+    }
+    .carousel {
+        margin-top: 1%;
+    }
+    .carousel-inner {
+        display: none;
+    }
+    .imgIndex {
+        display: block;
+        left: 55%;
+        top: 25%;
+    }
+    footer {
+        position: absolute;
+        top: 100%;
+    }
+}
