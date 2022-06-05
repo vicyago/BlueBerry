@@ -51,15 +51,15 @@ function changeImgIcon(toDark) {
     ];
 
     let lightImg = [
-        "assets/images/poloblue.png",
-        "assets/images/abadablue.png",
-        "assets/images/ecobagblue.png",
-        "assets/images/bordadoblue.png",
-        "assets/images/maskblue.png",
-        "assets/images/confeccaoblue.png",
-        "assets/images/camisetablue.png",
-        "assets/images/hoodieblue.png",
-        "assets/images/silkscreenblue.png",
+        "assets/images/polo.png",
+        "assets/images/abada.png",
+        "assets/images/ecobag.png",
+        "assets/images/bordado.png",
+        "assets/images/mask.png",
+        "assets/images/confeccao.png",
+        "assets/images/camiseta.png",
+        "assets/images/hoodie.png",
+        "assets/images/silkscreen.png",
     ];
 
     let chossenArray;
@@ -78,3 +78,14 @@ function imgToTheme(imgTag, index) {
 
 }
 
+let blueImg = [
+    "assets/images/poloblue.png",
+    "assets/images/abadablue.png",
+    "assets/images/ecobagblue.png",
+    "assets/images/bordadoblue.png",
+    "assets/images/maskblue.png",
+    "assets/images/confeccaoblue.png",
+    "assets/images/camisetablue.png",
+    "assets/images/hoodieblue.png",
+    "assets/images/silkscreenblue.png",
+];
