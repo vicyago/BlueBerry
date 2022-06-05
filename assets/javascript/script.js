@@ -14,11 +14,13 @@ async function imageLoop() {
         "assets/images/item-09.jpg",
     ];
     for (let i = 0; i < images.length; i++) {
-        await delay(5000);
         image.src = images[i];
+        await delay(5000);
     }
+
     imageLoop();
 }
+
 imageLoop();
 
 const btn = document.querySelector("#btn-toggle");
