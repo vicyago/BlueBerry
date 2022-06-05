@@ -26,15 +26,19 @@ btn.addEventListener("click", function () {
     document.body.classList.toggle("light-theme");
     if (btn.innerText === "Dark 🌙") {
         btn.innerText = "Light ☀️";
-        changeImgIcon(true);
+        changeImgIcon("darkYes");
     } else {
         btn.innerText = "Dark 🌙";
-        changeImgIcon(false);
+        changeImgIcon("lightYes");
     }
 });
 
-function changeImgIcon(toDark) {
+const btnBlue = document.querySelector("#blueImgs");
+btnBlue.addEventListener("click", function () {
+    changeImgIcon("blueYes");
+});
 
+function changeImgIcon(toDark) {
     let ulImgs = document.querySelector("#imgsArray");
     let imgsArray = ulImgs.querySelectorAll("img");
 
@@ -62,30 +66,31 @@ function changeImgIcon(toDark) {
         "assets/images/silkscreen.png",
     ];
 
+    let blueImg = [
+        "assets/images/poloblue.png",
+        "assets/images/abadablue.png",
+        "assets/images/ecobagblue.png",
+        "assets/images/bordadoblue.png",
+        "assets/images/maskblue.png",
+        "assets/images/confeccaoblue.png",
+        "assets/images/camisetablue.png",
+        "assets/images/hoodieblue.png",
+        "assets/images/silkscreenblue.png",
+    ];
+
     let chossenArray;
 
-    if (toDark) {
-        chossenArray = darkImg;
-    } else {
+    if (toDark === "lightYes") {
         chossenArray = lightImg;
+    } else if (toDark === "darkYes") {
+        chossenArray = darkImg;
+    } else if (toDark === "blueYes") {
+        chossenArray = blueImg;
     }
- 
-imgsArray.forEach(imgToTheme);
 
-function imgToTheme(imgTag, index) {
-    imgTag.src = chossenArray[index];
+    imgsArray.forEach(imgToTheme);
+
+    function imgToTheme(imgTag, index) {
+        imgTag.src = chossenArray[index];
+    }
 }
-
-}
-
-let blueImg = [
-    "assets/images/poloblue.png",
-    "assets/images/abadablue.png",
-    "assets/images/ecobagblue.png",
-    "assets/images/bordadoblue.png",
-    "assets/images/maskblue.png",
-    "assets/images/confeccaoblue.png",
-    "assets/images/camisetablue.png",
-    "assets/images/hoodieblue.png",
-    "assets/images/silkscreenblue.png",
-];
