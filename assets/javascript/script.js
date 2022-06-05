@@ -72,8 +72,9 @@ function changeImgIcon(toDark) {
  
 imgsArray.forEach(imgToTheme);
 
-}
-
 function imgToTheme(imgTag, index) {
     imgTag.src = chossenArray[index];
 }
+
+}
+
