@@ -38,14 +38,14 @@
             <div class="sectionText">
                 <h1>Nossos Produtos</h1>
                 <ul id="imgsArray">
+                    <li> <img src="assets/images/camiseta.png"> Camiseta </li>
                     <li> <img src="assets/images/polo.png"> Polo </li>
+                    <li> <img src="assets/images/hoodie.png"> Agasalho </li>
                     <li> <img src="assets/images/abada.png"> Abadá </li>
                     <li> <img src="assets/images/ecobag.png"> Ecobag </li>
-                    <li> <img src="assets/images/bordado.png"> Bordado </li>
                     <li> <img src="assets/images/mask.png"> Máscara </li>
+                    <li> <img src="assets/images/bordado.png"> Bordado </li>
                     <li> <img src="assets/images/confeccao.png"> Confecção </li>
-                    <li> <img src="assets/images/camiseta.png"> Camiseta </li>
-                    <li> <img src="assets/images/hoodie.png"> Agasalho </li>
                     <li> <img src="assets/images/silkscreen.png"> Silkscreen </li>
                 </ul>
             </div>
@@ -106,7 +106,32 @@
             </p>
         </footer>
     </div>
-    <script src="assets/javascript/script.js">
+    <script src="assets/javascript/script.js"></script>
+        <script>
+        const delay = async (ms = 1000) =>
+                new Promise((resolve) => setTimeout(resolve, ms));
+            async function imageLoop() {
+                let image = document.getElementById("image");
+                let images = [
+                    "assets/images/item-01.jpg",
+                    "assets/images/item-02.jpg",
+                    "assets/images/item-03.jpg",
+                    "assets/images/item-04.jpg",
+                    "assets/images/item-05.jpg",
+                    "assets/images/item-06.jpg",
+                    "assets/images/item-07.jpg",
+                    "assets/images/item-08.jpg",
+                    "assets/images/item-09.jpg",
+                ];
+                for (let i = 0; i < images.length; i++) {
+                    image.src = images[i];
+                    await delay(5000);
+                }
+
+                imageLoop();
+            }
+
+            imageLoop();
     </script>
 </body>
 

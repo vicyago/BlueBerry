@@ -1,28 +1,3 @@
-const delay = async (ms = 1000) =>
-    new Promise((resolve) => setTimeout(resolve, ms));
-async function imageLoop() {
-    let image = document.getElementById("image");
-    let images = [
-        "assets/images/item-01.jpg",
-        "assets/images/item-02.jpg",
-        "assets/images/item-03.jpg",
-        "assets/images/item-04.jpg",
-        "assets/images/item-05.jpg",
-        "assets/images/item-06.jpg",
-        "assets/images/item-07.jpg",
-        "assets/images/item-08.jpg",
-        "assets/images/item-09.jpg",
-    ];
-    for (let i = 0; i < images.length; i++) {
-        image.src = images[i];
-        await delay(5000);
-    }
-
-    imageLoop();
-}
-
-imageLoop();
-
 const btn = document.querySelector("#btn-toggle");
 btn.addEventListener("click", function () {
     document.body.classList.toggle("light-theme");
@@ -45,39 +20,39 @@ function changeImgIcon(toDark) {
     let imgsArray = ulImgs.querySelectorAll("img");
 
     let darkImg = [
+        "assets/images/camisetadark.png",
         "assets/images/polodark.png",
+        "assets/images/hoodiedark.png",
         "assets/images/abadadark.png",
         "assets/images/ecobagdark.png",
-        "assets/images/bordadodark.png",
         "assets/images/maskdark.png",
+        "assets/images/bordadodark.png",
         "assets/images/confeccaodark.png",
-        "assets/images/camisetadark.png",
-        "assets/images/hoodiedark.png",
         "assets/images/silkscreendark.png",
     ];
 
     let lightImg = [
+        "assets/images/camiseta.png",
         "assets/images/polo.png",
+        "assets/images/hoodie.png",
         "assets/images/abada.png",
         "assets/images/ecobag.png",
-        "assets/images/bordado.png",
         "assets/images/mask.png",
+        "assets/images/bordado.png",
         "assets/images/confeccao.png",
-        "assets/images/camiseta.png",
-        "assets/images/hoodie.png",
         "assets/images/silkscreen.png",
     ];
 
     let blueImg = [
-        "assets/images/poloblue.png",
-        "assets/images/abadablue.png",
-        "assets/images/ecobagblue.png",
-        "assets/images/bordadoblue.png",
-        "assets/images/maskblue.png",
-        "assets/images/confeccaoblue.png",
-        "assets/images/camisetablue.png",
-        "assets/images/hoodieblue.png",
-        "assets/images/silkscreenblue.png",
+        "assets/images/camisetaBlue.png",
+        "assets/images/poloBlue.png",
+        "assets/images/hoodieBlue.png",
+        "assets/images/abadaBlue.png",
+        "assets/images/ecobagBlue.png",
+        "assets/images/maskBlue.png",
+        "assets/images/bordadoBlue.png",
+        "assets/images/confeccaoBlue.png",
+        "assets/images/silkscreenBlue.png",
     ];
 
     let chossenArray;

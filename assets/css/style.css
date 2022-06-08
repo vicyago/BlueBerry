@@ -7,22 +7,14 @@
 
 body {
   min-height: 100vh;
-  background: linear-gradient(#2f2b47,
-      hsl(245, 100%, 64%),
-      #6f5de0,
-      #5c44e7,
-      #2f2b47);
+  background: black;
   color: rgb(255, 255, 255);
 }
 
 aside.light-theme {
   border-style: dotted;
   box-shadow: 0px 1px 5px 2px #575757b6;
-  border-color: linear-gradient(#2f2b477a,
-      hsla(245, 100%, 64%, 0.479),
-      #6e5de07e,
-      #5c44e77c,
-      #2f2b4770);
+  border-color: black;
 }
 
 ul {
