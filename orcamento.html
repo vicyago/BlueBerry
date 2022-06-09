@@ -218,6 +218,11 @@
         -ms-transform: translateX(13px);
         transform: translateX(13px);
     }
+
+    .sectionDetalhes {
+        display: none;
+    }
+
 </style>
 
 <body class="light-theme || dark-theme">
@@ -1020,7 +1025,7 @@
         btnChk.addEventListener('click', function () {
             let checkLi = btnChk.closest('li')
             let checkDiv = checkLi.querySelector(".sectionDetalhes");
-            console.log(checkDiv)
+            checkDiv.style.display = "grid";
         });
     });
 
