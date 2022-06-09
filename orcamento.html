@@ -1018,7 +1018,9 @@
 
     checkInput.forEach(function (btnChk) {
         btnChk.addEventListener('click', function () {
-console.log(btnChk)
+            let checkLi = btnChk.closest('li')
+            let checkDiv = checkLi.querySelector(".sectionDetalhes");
+            console.log(checkDiv)
         });
     });
 
