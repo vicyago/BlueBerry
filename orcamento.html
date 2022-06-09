@@ -1014,6 +1014,14 @@
 
     <script>
 
+    let checkInput = document.querySelectorAll(".checkBox");
+
+    checkInput.forEach(function (btnChk) {
+        btnChk.addEventListener('click', function () {
+console.log(btnChk)
+        });
+    });
+
     </script>
 
     <script src="assets/javascript/script.js">
