@@ -40,6 +40,8 @@
     }
 
     .sectionDetalhes {
+        display: grid;
+        grid-gap: 5px;
         list-style-type: none;
         text-align: left;
         font-size: 1em;
@@ -1019,10 +1021,14 @@
         let checkInput = document.querySelectorAll(".checkBox");
 
         checkInput.forEach(function (btnChk) {
-            btnChk.addEventListener('click', function () {
+            btnChk.addEventListener('change', function () {
                 let checkLi = btnChk.closest('li')
                 let checkDiv = checkLi.querySelector(".sectionDetalhes");
-                checkDiv.style.display = "grid";
+                if (btnChk.checked) {
+                    checkDiv.style.display = 'grid';
+                } else {
+                    checkDiv.style.display = 'none';
+                }
             });
         });
 
