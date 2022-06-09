@@ -40,9 +40,6 @@
     }
 
     .sectionDetalhes {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 5px;
         list-style-type: none;
         text-align: left;
         font-size: 1em;
@@ -222,7 +219,6 @@
     .sectionDetalhes {
         display: none;
     }
-
 </style>
 
 <body class="light-theme || dark-theme">
@@ -520,9 +516,10 @@
 
                     <li> <img src="assets/images/hoodie.png">
 
-                        <p name="agasalho" class="input"><label class="switch"><input id="agasalho" class="input"
-                                    type="checkbox"><span class="slider"></span></label>
-                            Agasalho
+
+
+                        <p value="agasalho" name="agasalho" class="input"><label class="switch"><input id="agasalho"
+                                    class="input checkBox" type="checkbox"><span class="slider"></span></label> Agasalho
                         </p>
 
                         <div id="divAgasalho" class="sectionDetalhes">
@@ -1019,15 +1016,15 @@
 
     <script>
 
-    let checkInput = document.querySelectorAll(".checkBox");
+        let checkInput = document.querySelectorAll(".checkBox");
 
-    checkInput.forEach(function (btnChk) {
-        btnChk.addEventListener('click', function () {
-            let checkLi = btnChk.closest('li')
-            let checkDiv = checkLi.querySelector(".sectionDetalhes");
-            checkDiv.style.display = "grid";
+        checkInput.forEach(function (btnChk) {
+            btnChk.addEventListener('click', function () {
+                let checkLi = btnChk.closest('li')
+                let checkDiv = checkLi.querySelector(".sectionDetalhes");
+                checkDiv.style.display = "grid";
+            });
         });
-    });
 
     </script>
 
