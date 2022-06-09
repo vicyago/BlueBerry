@@ -10,10 +10,6 @@ btn.addEventListener("click", function () {
     }
 });
 
-const btnBlue = document.querySelector("#blueImgs");
-btnBlue.addEventListener("click", function () {
-    changeImgIcon("blueYes");
-});
 
 function changeImgIcon(toDark) {
     let ulImgs = document.querySelector("#imgsArray");
@@ -43,27 +39,14 @@ function changeImgIcon(toDark) {
         "assets/images/silkscreen.png",
     ];
 
-    let blueImg = [
-        "assets/images/camisetaBlue.png",
-        "assets/images/poloBlue.png",
-        "assets/images/hoodieBlue.png",
-        "assets/images/abadaBlue.png",
-        "assets/images/ecobagBlue.png",
-        "assets/images/maskBlue.png",
-        "assets/images/bordadoBlue.png",
-        "assets/images/confeccaoBlue.png",
-        "assets/images/silkscreenBlue.png",
-    ];
-
+    
     let chossenArray;
 
     if (toDark === "lightYes") {
         chossenArray = lightImg;
     } else if (toDark === "darkYes") {
         chossenArray = darkImg;
-    } else if (toDark === "blueYes") {
-        chossenArray = blueImg;
-    }
+    } 
 
     imgsArray.forEach(imgToTheme);
 
