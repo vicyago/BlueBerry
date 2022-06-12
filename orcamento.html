@@ -24,13 +24,12 @@
             <div class="logo">
                 <img src="assets/images/Logo.png">
             </div>
-            <div class="empty"></div>
             <nav class="nav">
                 <div class="navRight" id="nav">
                     <ul>
-                        <li><a href="index.html">HOME 🏠</a></li>
-                        <li><a href="about.html">SOBRE 📘</a></li>
-                        <li><a href="orcamento.html">ORÇAMENTO 📝</a></li>
+                        <li><a href="index.html">HOME-PAGE 🏠</a></li>
+                        <li><a href="about.html">SOBRE-NÓS 📘</a></li>
+                        <li><a href="orcamento.html">ORÇAMENTO 📄</a></li>
                     </ul>
                 </div>
             </nav>
@@ -38,13 +37,13 @@
         <main>
             <h1 class="centerFix">Orçamento 📝</h1>
 
-            <h2 class="sectionDados centerFix">Seus Dados</h2>
+            <h2 class="centerFix5">Seus Dados</h2>
             <div class="sectionDados">
 
                 <div class="#">
                     <div><label class="#">◼ Seu Nome ✏️*</label></div>
                     <div>
-                        <input name="Nome" class="input" id="Nome" size="31" maxlength="50" type="text" required />
+                        <input name="Nome" class="inputData" id="Nome" size="31" maxlength="50" type="text" required />
                     </div>
                 </div>
                 <div class="#">
@@ -52,7 +51,8 @@
                         <label class="#">◼ E-mail ✉️*</label>
                     </div>
                     <div>
-                        <input name="Email" class="input" id="Email" size="31" maxlength="50" type="text" required />
+                        <input name="Email" class="inputData" id="Email" size="31" maxlength="50" type="text"
+                            required />
                     </div>
                 </div>
             </div>
@@ -63,8 +63,8 @@
                         <label class="#">◼ Celular 📞</label>
                     </div>
                     <div>
-                        <input name="DDD" class="input" id="DDD" size="4" maxlength="6" type="text" />
-                        <input name="Telefone" class="input" id="Telefone" size="24" maxlength="50" type="text" />
+                        <input name="DDD" class="inputData" id="DDD" size="4" maxlength="6" type="text" />
+                        <input name="Telefone" class="inputData" id="Telefone" size="24" maxlength="50" type="text" />
                     </div>
                 </div>
                 <div class="#">
@@ -72,8 +72,8 @@
                         <label class="#">◼ Telefone ☎️</label>
                     </div>
                     <div>
-                        <input name="DDD2" class="input" id="DDD2" size="4" maxlength="6" type="text" />
-                        <input name="Telefone2" class="input" id="Telefone2" size="24" maxlength="50" type="text" />
+                        <input name="DDD2" class="inputData" id="DDD2" size="4" maxlength="6" type="text" />
+                        <input name="Telefone2" class="inputData" id="Telefone2" size="24" maxlength="50" type="text" />
                     </div>
                 </div>
 
@@ -88,8 +88,6 @@
                 <ul id="imgsArray" class="ulProducts">
 
                     <li> <img src="assets/images/camiseta.png">
-
-
 
                         <p value="camiseta" name="camiseta" class="input">Camiseta<br /><label class="switch"><input
                                     id="camiseta" class="input checkBox" type="checkbox"><span
@@ -119,7 +117,7 @@
 
                             <label for="colorName" class="colorName">Cor da Peça: </label>
                             <input type="colorName" name="colorNome" min="30" size="20" maxlength="30"
-                                placeholder="Digitar a sua Cor" required oninvalid="inputErr()">
+                                placeholder="Digitar Cor" required oninvalid="inputErr()">
                             <label class="#"></label>
                             <select name="Cor_da_peca_camiseta" class="inputDetalhes" id="Cor_da_peca_camiseta"
                                 required>
@@ -165,7 +163,7 @@
                             </select>
                             <label for="qntPecas" class="#">Quantidade:</label>
                             <input type="number" id="amount_camiseta" name="qntPecas" min="30" size="20" maxlength="30"
-                                placeholder="Mínimo de 30 peças" required oninvalid="inputErr()"><br />
+                                placeholder="30 peças" required oninvalid="inputErr()"><br />
                             <label class="personalizarion"><b>Personalização</b></label>
                             <label class="#">Bordado:</label>
                             <select name="Personalização" class="inputDetalhes" id="PersonalizaçãoBordado_camiseta"
@@ -192,7 +190,7 @@
                                     &nbsp;</label>
                             </div>
                             <div class="vetorCon">
-                                <h3>Anexar os Arquivos (se disponível)</h3>
+                                <h3>Anexar os Arquivos <br /> Caso disponível</h3>
                                 <label class="#">📎</label>
                                 <a href="#" class="#" title="Choose date">Escolher Arquivos</a>
                                 <label class="#">Vetorizada:<br /></label>
@@ -207,8 +205,6 @@
                     </li>
 
                     <li> <img src="assets/images/polo.png">
-
-
 
                         <p value="golaPolo" name="golaPolo" class="input">Polo<br /><label class="switch"><input
                                     id="golaPolo" class="input checkBox" type="checkbox"><span
@@ -236,7 +232,7 @@
 
                             <label for="colorName" class="colorName">Cor da Peça: </label>
                             <input type="colorName" name="colorNome" min="30" size="20" maxlength="30"
-                                placeholder="Digitar a sua Cor" required oninvalid="inputErr()">
+                                placeholder="Digitar Cor" required oninvalid="inputErr()">
                             <label class="#"></label>
                             <select name="Cor_da_peca_polo" class="inputDetalhes" id="Cor_da_peca_polo" required>
                                 <option value="" selected="selected">▫️ Selecionar ▫️</option>
@@ -280,7 +276,7 @@
                             </select>
                             <label for="qntPecas" class="#">Quantidade:</label>
                             <input type="number" id="amount_polo" name="qntPecas" min="30" size="20" maxlength="30"
-                                placeholder="Mínimo de 30 peças" required oninvalid="inputErr()"><br />
+                                placeholder="30 peças" required oninvalid="inputErr()"><br />
                             <label class="personalizarion"><b>Personalização</b></label>
                             <label class="#">Bordado:</label>
                             <select name="Personalização" class="inputDetalhes" id="PersonalizaçãoBordado_polo"
@@ -306,7 +302,7 @@
                                     &nbsp;</label>
                             </div>
                             <div class="vetorCon">
-                                <h3>Anexar os Arquivos (se disponível)</h3>
+                                <h3>Anexar os Arquivos <br /> Caso disponível</h3>
                                 <label class="#">📎</label>
                                 <a href="#" class="#" title="Choose date">Escolher Arquivos</a>
                                 <label class="#">Vetorizada:<br /></label>
@@ -350,7 +346,7 @@
 
                             <label for="colorName" class="colorName">Cor da Peça: </label>
                             <input type="colorName" name="colorNome" min="30" size="20" maxlength="30"
-                                placeholder="Digitar a sua Cor" required oninvalid="inputErr()">
+                                placeholder="Digitar Cor" required oninvalid="inputErr()">
                             <label class="#"></label>
                             <select name="Cor_da_peca_agasalho" class="inputDetalhes" id="Cor_da_peca_agasalho"
                                 required>
@@ -396,7 +392,7 @@
                             </select>
                             <label for="qntPecas" class="#">Quantidade:</label>
                             <input type="number" id="amount_agasalho" name="qntPecas" min="30" size="20" maxlength="30"
-                                placeholder="Mínimo de 30 peças" required oninvalid="inputErr()"><br />
+                                placeholder="30 peças" required oninvalid="inputErr()"><br />
                             <label class="personalizarion"><b>Personalização</b></label>
                             <label class="#">Bordado:</label>
                             <select name="Personalização" class="inputDetalhes" id="PersonalizaçãoBordado_agasalho"
@@ -423,7 +419,7 @@
                                     &nbsp;</label>
                             </div>
                             <div class="vetorCon">
-                                <h3>Anexar os Arquivos (se disponível)</h3>
+                                <h3>Anexar os Arquivos <br /> Caso disponível</h3>
                                 <label class="#">📎</label>
                                 <a href="#" class="#" title="Choose date">Escolher Arquivos</a>
                                 <label class="#">Vetorizada:<br /></label>
@@ -439,8 +435,6 @@
                     </li>
 
                     <li> <img src="assets/images/abada.png">
-
-
 
                         <p value="abada" name="abada" class="input">Abadá<br /><label class="switch">
                                 <input id="abada" class="input checkBox" type="checkbox"><span
@@ -469,7 +463,7 @@
 
                             <label for="colorName" class="colorName">Cor da Peça: </label>
                             <input type="colorName" name="colorNome" min="30" size="20" maxlength="30"
-                                placeholder="Digitar a sua Cor" required oninvalid="inputErr()">
+                                placeholder="Digitar Cor" required oninvalid="inputErr()">
                             <label class="#"></label>
                             <select name="Cor_da_peca_abada" class="inputDetalhes" id="Cor_da_peca_abada" required>
                                 <option value="" selected="selected">▫️ Selecionar ▫️</option>
@@ -513,7 +507,7 @@
                             </select>
                             <label for="qntPecas" class="#">Quantidade:</label>
                             <input type="number" id="amount_abada" name="qntPecas" min="30" size="20" maxlength="30"
-                                placeholder="Mínimo de 30 peças" required oninvalid="inputErr()"><br />
+                                placeholder="30 peças" required oninvalid="inputErr()"><br />
                             <label class="personalizarion"><b>Personalização</b></label>
                             <label class="#">Bordado:</label>
                             <select name="Personalização" class="inputDetalhes" id="PersonalizaçãoBordado_abada"
@@ -539,7 +533,7 @@
                                     &nbsp;</label>
                             </div>
                             <div class="vetorCon">
-                                <h3>Anexar os Arquivos (se disponível)</h3>
+                                <h3>Anexar os Arquivos <br /> Caso disponível</h3>
                                 <label class="#">📎</label>
                                 <a href="#" class="#" title="Choose date">Escolher Arquivos</a>
                                 <label class="#">Vetorizada:<br /></label>
@@ -555,8 +549,6 @@
                     </li>
 
                     <li> <img src="assets/images/ecobag.png">
-
-
 
                         <p value="ecobag" name="ecobag" class="input">Ecobag<br /><label class="switch">
                                 <input id="ecobag" class="input checkBox" type="checkbox"><span
@@ -586,7 +578,7 @@
 
                             <label for="colorName" class="colorName">Cor da Peça: </label>
                             <input type="colorName" name="colorNome" min="30" size="20" maxlength="30"
-                                placeholder="Digitar a sua Cor" required oninvalid="inputErr()">
+                                placeholder="Digitar Cor" required oninvalid="inputErr()">
                             <label class="#"></label>
                             <select name="Cor_da_peca_ecobag" class="inputDetalhes" id="Cor_da_peca_ecobag" required>
                                 <option value="" selected="selected">▫️ Selecionar ▫️</option>
@@ -630,7 +622,7 @@
                             </select>
                             <label for="qntPecas" class="#">Quantidade:</label>
                             <input type="number" id="amount_ecobag" name="qntPecas" min="30" size="20" maxlength="30"
-                                placeholder="Mínimo de 30 peças" required oninvalid="inputErr()"><br />
+                                placeholder="30 peças" required oninvalid="inputErr()"><br />
                             <label class="personalizarion"><b>Personalização</b></label>
                             <label class="#">Bordado:</label>
                             <select name="Personalização" class="inputDetalhes" id="PersonalizaçãoBordado_ecobag"
@@ -656,7 +648,7 @@
                                     &nbsp;</label>
                             </div>
                             <div class="vetorCon">
-                                <h3>Anexar os Arquivos (se disponível)</h3>
+                                <h3>Anexar os Arquivos <br /> Caso disponível</h3>
                                 <label class="#">📎</label>
                                 <a href="#" class="#" title="Choose date">Escolher Arquivos</a>
                                 <label class="#">Vetorizada:<br /></label>
@@ -673,9 +665,7 @@
 
                     <li> <img src="assets/images/mask.png">
 
-
-
-                        <p name="mask" class="input">Máscara<br /><label class="switch">
+                        <p value="mask" name="mask" class="input">Máscara<br /><label class="switch">
                                 <input id="mask" class="input checkBox" type="checkbox"><span
                                     class="slider"></span></label></p>
 
@@ -703,7 +693,7 @@
 
                             <label for="colorName" class="colorName">Cor da Peça: </label>
                             <input type="colorName" name="colorNome" min="30" size="20" maxlength="30"
-                                placeholder="Digitar a sua Cor" required oninvalid="inputErr()">
+                                placeholder="Digitar Cor" required oninvalid="inputErr()">
                             <label class="#"></label>
                             <select name="Cor_da_peca_mask" class="inputDetalhes" id="Cor_da_peca_mask" required>
                                 <option value="" selected="selected">▫️ Selecionar ▫️</option>
@@ -747,7 +737,7 @@
                             </select>
                             <label for="qntPecas" class="#">Quantidade:</label>
                             <input type="number" id="amount_mask" name="qntPecas" min="30" size="20" maxlength="30"
-                                placeholder="Mínimo de 30 peças" required oninvalid="inputErr()"><br />
+                                placeholder="30 peças" required oninvalid="inputErr()"><br />
                             <label class="personalizarion"><b>Personalização</b></label>
                             <label class="#">Bordado:</label>
                             <select name="Personalização" class="inputDetalhes" id="PersonalizaçãoBordado_mask"
@@ -773,7 +763,7 @@
                                     &nbsp;</label>
                             </div>
                             <div class="vetorCon">
-                                <h3>Anexar os Arquivos (se disponível)</h3>
+                                <h3>Anexar os Arquivos <br /> Caso disponível</h3>
                                 <label class="#">📎</label>
                                 <a href="#" class="#" title="Choose date">Escolher Arquivos</a>
                                 <label class="#">Vetorizada:<br /></label>
@@ -790,23 +780,20 @@
 
                 </ul>
 
+                 <h2 class="centerFix4"><span class="blue"> Para ver mais opções de produtos arraste a barra ☝️</span></h2>
+
                 <div class="formularioHolder" id="divSubmeter">
 
-                    <h3>Submeter o formulário e enviar suas escolhas</h3>
+                    <h3>Submeter o formulário e enviar suas escolhas<br /></h3>
 
-                    <p>
-                        <strong>ATENÇÃO:<span class="blue"><em>
-                                    Campos com * são de preenchimento obrigatório!</em></span></strong>
-                    </p>
-
+                    <h5><span class="blue"><strong><em>Campos com * são de preenchimento
+                                    obrigatório!</em></strong></span></h5>
+                                    
+                    <div class="centerFix" id="divSubmit">
+                        <button style="color: rgb(255, 255, 255);" class="mainButton" id="mainButton">Enviar
+                            Formulário</button>
+                    </div>
                 </div>
-
-                <div class="centerFix" id="divSubmit">
-                    <button style="color: white;" class="mainButton" id="mainButton">
-                        Enviar Formulário
-                    </button>
-                </div>
-
             </div>
 
         </main>
@@ -821,17 +808,16 @@
                 <img src="assets/images/orc-08.jpg">
                 <img src="assets/images/orc-09.jpg">
             </div>
-            <br />
-            <img src="assets/images/LogoBlue.png" alt="">
+
         </aside>
 
         <footer>
 
-            <h2 class="centerFix4">Você pode formular seu <span class="blue">Orçamento</span> usando os links acima
-                ☝️
+            <h2 class="centerFix4">Você pode formular seu <span class="blue">Orçamento 📄</span> usando os links ACIMA<br />
+
                 <br /> ou enviar um orçamento para <a href="mailto:marildablueberry@uol.com.br" title="email"
                     role="link" tabindex="0" target="blank">📧
-                    marildablueberry@uol.com.br</a>.
+                    marildablueberry@uol.com.br</a>
             </h2>
 
             <p>
@@ -861,21 +847,21 @@
                 }
             });
         });
-      
-        function myFunction() {
-         let checkSalvar = document.querySelectorAll(".inputSalvar");
 
-        checkSalvar.forEach(function (btnChkSalvar) {
-            btnChkSalvar.addEventListener('click', function () {
-                let checkInputSalvar = btnChkSalvar.closest('input')
-                let checkDivSubs = checkInputSalvar.querySelector(".divSubmeter, .divSubmit");
-                if (btnChkSalvar.checked) {
-                    checkDivSubs.style.display = 'grid';
-                } else {
-                    checkDivSubs.style.display = 'none';
-                }
+        function myFunction() {
+            let checkSalvar = document.querySelectorAll(".inputSalvar");
+
+            checkSalvar.forEach(function (btnChkSalvar) {
+                btnChkSalvar.addEventListener('click', function () {
+                    let checkInputSalvar = btnChkSalvar.closest('input')
+                    let checkDivSubs = checkInputSalvar.querySelector(".divSubmeter, .divSubmit");
+                    if (btnChkSalvar.checked) {
+                        checkDivSubs.style.display = 'grid';
+                    } else {
+                        checkDivSubs.style.display = 'none';
+                    }
+                });
             });
-        });   
         }
 
     </script>
