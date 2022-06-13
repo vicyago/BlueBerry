@@ -106,7 +106,7 @@ section {
 }
 .logo {
     grid-area: logo;
-    width: 90%;
+    width: 95%;
 }
 .nav {
     grid-area: nav;
@@ -152,10 +152,11 @@ section {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-top: 5%;
 }
-.imageHolder2 {
-    grid-area: imageHolder;
+.imageHolderForm {
     display: grid;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    list-style-type: none;
+    text-align: center;
 }
 #image {
     object-fit: cover;
@@ -273,36 +274,13 @@ form {
     display: grid;
     justify-content: center;
     align-self: center;
-    font-size: 3em;
-    margin-top: 10%;
 }
-.centerFix2 {
-    margin-bottom: 5%;
-    margin-top: 10%;
-    margin-bottom: 5%;
-    text-align: center;
-    font-size: 2em;
-}
-.centerFix3 {
-    font-size: 1.2em;
-    text-align: center;
-    line-height: 2rem;
-    margin-top: 10%;
-}
-.centerFix4 {
-    font-size: 1.2em;
-    text-align: center;
-    line-height: 2rem;
-    margin-top: 5%;
-    margin-bottom: 10%;
-}
-.centerFix5 {
+.centerFixData{
     display: grid;
     justify-content: center;
     align-self: center;
     font-size: 2em;
-    margin-top: 5%;
-    margin-bottom: -5%;
+    margin: 2% 5%;
 }
 .commentHolder {
     line-height: 2.5em;
@@ -318,42 +296,38 @@ form {
     font-size: 1.5em;
     margin-top: 10%;
 }
-.pNamePrdt {
-    margin-top: 5%;
-}
 .divProducts {
     display: grid;
     align-items: center;
     text-align-last: center;
     justify-content: center;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 .ulProducts {
     display: grid;
-    grid-template-columns: repeat(6, 16%);
+    grid-template-columns: repeat(6, 1fr);
     gap: 1%;
     font-size: 1em;
     font-weight: 300;
     column-gap: 5%;
-    overflow-x: scroll;
-    gap: 10%;
+    gap: 2%;
 }
 .sectionDados {
     display: flex;
     flex-direction: row;
     gap: 2%;
-    margin-top: 10%;
+    margin:  5%;
     line-height: 2rem;
     font-size: 1em;
     justify-content: center;
     align-items: center;
 }
-.sectionDados2 {
-    display: flex;
-    flex-direction: row;
-    gap: 2%;
+.sectionOpcao {
+    display: grid;
     line-height: 2rem;
-    font-size: 1em;
-    margin-bottom: 1%;
+    font-size: 1.5em;
+    margin: 5%;
     justify-content: center;
     align-items: center;
 }
@@ -363,19 +337,18 @@ form {
     list-style-type: none;
     font-size: 1em;
     line-height: 2rem;
-    margin-top: 20%;
+    margin-top: 0%;
     margin-bottom: 1%;
     display: none;
     justify-content: center;
     align-items: center;
-    margin-left: 35%;
 }
 .personalizarion {
-    margin-top: 20%;
+    margin-top: 0%;
 }
 .comentarioHolder {
     line-height: 2em;
-    margin-top: 20%;
+    margin-top: 0%;
     text-align: center;
 }
 .comentarioHolder textarea {
@@ -384,29 +357,31 @@ form {
     margin-bottom: -10%;
 }
 .vetorCon {
-    margin-top: 20%;
     line-height: 1.8em;
     text-align: center;
-    font-size: 0.8em;
-    letter-spacing: -1.3px;
+    font-size: 1em;
 }
 .formularioHolder {
     line-height: 2em;
     font-size: 1.5em;
     text-align: center;
+    margin-top: 5%;
 }
 .mainButton {
-    display: block;
-    width: 100%;
+    display: grid;
+    width: 30%;
     border: none;
     background-color: rgb(0, 75, 160);
     cursor: pointer;
     text-align: center;
     box-shadow: 1px 1px 1px 1px #000000;
-    padding: 10%;
+    padding: 1%;
     font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
-    font-size: large;
-    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    margin-left: 35%;
+    margin-top: 2%;
 }
 .mainButton a {
     text-decoration: none;
@@ -419,16 +394,11 @@ form {
     background-color: orangered;
     box-shadow: 0px 1px 6px rgba(80, 80, 80, 0.64);
 }
-.inputData {
+.input {
     font-size: 1em;
     padding: 0.25em 0.5em;
-    background-color: transparent;
+    background-color: #cfa9897a;;
     border: 2px solid var(--input-border);
-    border-radius: 4px;
-    box-shadow: 0px 1px 6px rgba(80, 80, 80, 0.64);
-}
-.inputData {
-    background-color: transparent;
     border-radius: 4px;
     box-shadow: 0px 1px 6px rgba(80, 80, 80, 0.64);
 }
@@ -513,6 +483,4 @@ input:checked + .slider:before {
 .inputLimpar:hover {
     background-color: #fcb641;
 }
-#imgsArray {
-    width: 99%;
-}
+
