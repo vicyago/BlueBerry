@@ -1,486 +1,486 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
-}
-body {
-    min-height: 100vh;
-    background: black;
-    color: rgb(255, 255, 255);
-}
-aside.light-theme {
-    border-style: dotted;
-    box-shadow: 0px 1px 5px 2px #575757b6;
-    border-color: black;
-}
-ul {
-    list-style: none;
-}
-a {
-    text-decoration: none;
-    color: #ffffff;
-    text-shadow: 2px 2px 3px rgba(90, 90, 90, 0.158);
-}
-img {
-    width: 100%;
-}
-button a {
-    width: 100%;
-    color: white;
-}
-body.light-theme {
-    color: rgb(0, 0, 0);
-    background: #ffffff;
-}
-body.light-theme aside {
-    color: #527dfc;
-}
-body.light-theme span {
-    color: #527dfc;
-}
-body.light-theme button {
-    color: #000000;
-}
-body.light-theme button a {
-    color: #ffffff;
-}
-body.light-theme h3 {
-    color: #000000;
-}
-body.light-theme a {
-    text-decoration: none;
-    color: #4b78ff;
-    text-shadow: 2px 2px 3px rgba(90, 90, 90, 0.158);
-}
-.footer-button {
-    color: white;
-}
-.blue {
-    color: #fcb641;
-    font-size: 1.2em;
-}
-.navRight {
-    border-style: dotted;
-    box-shadow: 0px 1px 5px 2px #575757b6;
-    border-color: #356fef;
-    line-height: 1.8rem;
-    padding: 2% 2%;
-}
-.navRight li {
-    display: inline-block;
-    font-size: 1.2em;
-    font-weight: 500;
-}
-.navRight li:hover {
-    cursor: pointer;
-    color: rgba(0, 0, 0, 0.678);
-}
-.navRight a:hover {
-    background: #3f6df5;
-    color: white;
-    text-shadow: none;
-    padding-top: 3%;
-    padding-bottom: 3%;
-}
-.container {
-    display: grid;
-    grid-template-columns: 60% 35%;
-    justify-content: space-around;
-    padding: 1% 1%;
-    grid-template-areas: "header header" "section section" "main aside" "footer footer";
-}
-header {
-    grid-area: header;
-    text-align: center;
-    padding-top: 1%;
-    font-size: 1.3em;
-    padding-bottom: 3%;
-}
-section {
-    align-items: center;
-    grid-area: section;
-    display: grid;
-    grid-template-columns: 60 35%;
-    grid-template-areas: "logo nav" "sectionText sectionText";
-}
-.logo {
-    grid-area: logo;
-    width: 95%;
-}
-.nav {
-    grid-area: nav;
-    width: auto;
-    margin-left: -6%;
-    margin-right: 0%;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    text-align: center;
-}
-.carousel {
-    grid-area: carousel;
-}
-.sectionText {
-    grid-area: sectionText;
-    text-align: left;
-    line-height: 1rem;
-    margin-top: 1%;
-}
-.sectionText h1 {
-    text-align: center;
-    padding: 3%;
-    margin-bottom: 1%;
-    font-family: cursive;
-    font-size: 2.5em;
-}
-.sectionText li {
-    text-align: center;
-    padding: 3%;
-    font-family: cursive;
-    font-size: 1.5em;
-}
-.sectionText ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    list-style-type: none;
-    text-align: center;
-}
-.imageHolder {
-    grid-area: imageHolder;
-    display: grid;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin-top: 5%;
-}
-.imageHolderForm {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    list-style-type: none;
-    text-align: center;
-}
-#image {
-    object-fit: cover;
-    height: 100%;
-    min-height: 100%;
-}
-.textHolder {
-    grid-area: textHolder;
-    margin-top: 5%;
-    margin-bottom: 1%;
-    margin-right: 5%;
-    text-align: left;
-    font-size: 1.5em;
-    line-height: 2.5rem;
-}
-.sectionAbout {
-    grid-area: sectionAbout;
-    text-align: center;
-    line-height: 1.5rem;
-    font-size: 0.9em;
-    padding-left: 1%;
-    padding-right: 1%;
-}
-.sectionButton {
-    grid-area: sectionButton;
-    text-align: center;
-    line-height: 2rem;
-    font-size: 1em;
-    margin: 5% 0 0;
-    padding-right: 2%;
-    padding-left: 2%;
-}
-.imgBlb {
-    display: block;
-    margin: 5% auto 3%;
-}
-.main-button {
-    display: block;
-    width: 100%;
-    border: none;
-    background-color: rgb(0, 75, 160);
-    cursor: pointer;
-    text-align: center;
-    box-shadow: 2px 1px 2px 3px #0000004b;
-    margin-bottom: 5%;
-    margin-top: -7%;
-    padding: 2%;
-    font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
-    font-size: large;
-}
-.main-button a {
-    text-decoration: none;
-    text-shadow: 2px 2px 3px rgb(80, 80, 80);
-    font-size: 1em;
-    display: inline-block;
-    color: white;
-}
-.main-button:hover {
-    background-color: orangered;
-    box-shadow: 0px 1px 6px rgba(80, 80, 80, 0.64);
-}
-main {
-    grid-area: main;
-    margin-top: 2%;
-}
-aside {
-    grid-area: aside;
-    margin-top: 15%;
-}
-footer {
-    grid-area: footer;
-    text-align: center;
-    font-size: 1.3em;
-    line-height: 1rem;
-    margin-top: 5%;
-}
-form {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 2px;
-    margin-top: 10%;
-    list-style-type: none;
-    text-align: left;
-    font-size: 1.1em;
-    line-height: 1.8rem;
-}
-.sectionDetail {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 5px;
-    list-style-type: none;
-    text-align: left;
-    font-size: 1em;
-    line-height: 2.5rem;
-}
-.footer-button {
-    background-color: transparent;
-    cursor: pointer;
-    text-align: center;
-    font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
-    font-size: 1em;
-    margin-bottom: 1%;
-    padding-left: 1%;
-    padding-right: 1%;
-    font-family: cursive;
-}
-.footer-button:hover {
-    background-color: #527dfc;
-    color: white;
-}
-.formStyle {
-    display: inline-grid;
-}
-.centerFix {
-    display: grid;
-    justify-content: center;
-    align-self: center;
-}
-.centerFixData{
-    display: grid;
-    justify-content: center;
-    align-self: center;
-    font-size: 2em;
-    margin: 2% 5%;
-}
-.commentHolder {
-    line-height: 2.5em;
-    margin-top: 5%;
-}
-.formHolder {
-    line-height: 1.8em;
-    margin-bottom: 5%;
-    margin-top: 2%;
-}
-.aboutText {
-    line-height: 2em;
-    font-size: 1.5em;
-    margin-top: 10%;
-}
-.divProducts {
-    display: grid;
-    align-items: center;
-    text-align-last: center;
-    justify-content: center;
-    margin-right: 5%;
-    margin-left: 5%;
-}
-.ulProducts {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 1%;
-    font-size: 1em;
-    font-weight: 300;
-    column-gap: 5%;
-    gap: 2%;
-}
-.sectionDados {
-    display: flex;
-    flex-direction: row;
-    gap: 2%;
-    margin:  5%;
-    line-height: 2rem;
-    font-size: 1em;
-    justify-content: center;
-    align-items: center;
-}
-.sectionOpcao {
-    display: grid;
-    line-height: 2rem;
-    font-size: 1.5em;
-    margin: 5%;
-    justify-content: center;
-    align-items: center;
-}
-.sectionDetalhes {
-    display: grid;
-    grid-gap: 5px;
-    list-style-type: none;
-    font-size: 1em;
-    line-height: 2rem;
-    margin-top: 0%;
-    margin-bottom: 1%;
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
-.personalizarion {
-    margin-top: 0%;
-}
-.comentarioHolder {
-    line-height: 2em;
-    margin-top: 0%;
-    text-align: center;
-}
-.comentarioHolder textarea {
-    display: block;
-    width: 100%;
-    margin-bottom: -10%;
-}
-.vetorCon {
-    line-height: 1.8em;
-    text-align: center;
-    font-size: 1em;
-}
-.formularioHolder {
-    line-height: 2em;
-    font-size: 1.5em;
-    text-align: center;
-    margin-top: 5%;
-}
-.mainButton {
-    display: grid;
-    width: 30%;
-    border: none;
-    background-color: rgb(0, 75, 160);
-    cursor: pointer;
-    text-align: center;
-    box-shadow: 1px 1px 1px 1px #000000;
-    padding: 1%;
-    font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
-    justify-content: center;
-    align-items: center;
-    font-size: 1em;
-    margin-left: 35%;
-    margin-top: 2%;
-}
-.mainButton a {
-    text-decoration: none;
-    text-shadow: 2px 2px 3px rgb(80, 80, 80);
-    font-size: 1em;
-    display: inline-block;
-    color: white;
-}
-.mainButton:hover {
-    background-color: orangered;
-    box-shadow: 0px 1px 6px rgba(80, 80, 80, 0.64);
-}
-.input {
-    font-size: 1em;
-    padding: 0.25em 0.5em;
-    background-color: #cfa9897a;;
-    border: 2px solid var(--input-border);
-    border-radius: 4px;
-    box-shadow: 0px 1px 6px rgba(80, 80, 80, 0.64);
-}
-.inputDetalhes {
-    border-style: dotted;
-    cursor: pointer;
-    color: rgb(0, 0, 0);
-    font-size: 1em;
-    background-color: transparent;
-    padding: 0.25em 0.5em;
-    border: 2px solid var(--input-border);
-    border-radius: 4px;
-    box-shadow: 0px 1px 6px rgba(80, 80, 80, 0.64);
-}
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 30px;
-    height: 17px;
-}
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-    border-radius: 34px;
-}
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 13px;
-    width: 13px;
-    left: 2px;
-    bottom: 2px;
-    background-color: white;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-    border-radius: 50%;
-}
-input:checked + .slider {
-    background-color: #2196f3;
-}
-input:focus + .slider {
-    box-shadow: 0 0 1px #2196f3;
-}
-input:checked + .slider:before {
-    -webkit-transform: translateX(13px);
-    -ms-transform: translateX(13px);
-    transform: translateX(13px);
-}
-.inputLimpar {
-    font-size: 0.8em;
-    padding: 0.2em 0.4em;
-    color: rgb(0, 0, 0);
-    border: 2px solid var(--input-border);
-    border-radius: 4px;
-    box-shadow: 0px 1px 6px rgba(80, 80, 80, 0.64);
-    margin-top: 10%;
-}
-.inputSalvar {
-    font-size: 0.8em;
-    padding: 0.2em 0.4em;
-    color: rgb(0, 0, 0);
-    border: 2px solid var(--input-border);
-    border-radius: 4px;
-    box-shadow: 0px 1px 6px rgba(80, 80, 80, 0.64);
-    margin-top: 10%;
-}
-.inputSalvar:hover {
-    background-color: #2196f3;
-}
-.inputLimpar:hover {
-    background-color: #fcb641;
-}
-
+     box-sizing: border-box;
+     font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+     margin: 0;
+     padding: 0;
+}
+ body {
+     background: black;
+     color: rgb(255, 255, 255);
+     min-height: 100vh;
+}
+ aside.light-theme {
+     border-color: black;
+     border-style: dotted;
+     box-shadow: 0px 1px 5px 2px #575757b6;
+}
+ ul {
+     list-style: none;
+}
+ a {
+     color: #ffffff;
+     text-decoration: none;
+     text-shadow: 2px 2px 3px rgba(90, 90, 90, 0.158);
+}
+ img {
+     width: 100%;
+}
+ button a {
+     color: white;
+     width: 100%;
+}
+ body.light-theme {
+     background: #ffffff;
+     color: rgb(0, 0, 0);
+}
+ body.light-theme aside {
+     color: #527dfc;
+}
+ body.light-theme span {
+     color: #527dfc;
+}
+ body.light-theme button {
+     color: #000000;
+}
+ body.light-theme button a {
+     color: #ffffff;
+}
+ body.light-theme h3 {
+     color: #000000;
+}
+ body.light-theme a {
+     color: #4b78ff;
+     text-decoration: none;
+     text-shadow: 2px 2px 3px rgba(90, 90, 90, 0.158);
+}
+ .footer-button {
+     color: white;
+}
+ .blue {
+     color: #fcb641;
+     font-size: 1.2em;
+}
+ .navRight {
+     border-color: #356fef;
+     border-style: dotted;
+     box-shadow: 0px 1px 5px 2px #575757b6;
+     line-height: 1.8rem;
+     padding: 2% 2%;
+}
+ .navRight li {
+     display: inline-block;
+     font-size: 1.2em;
+     font-weight: 500;
+}
+ .navRight li:hover {
+     color: rgba(0, 0, 0, 0.678);
+     cursor: pointer;
+}
+ .navRight a:hover {
+     background: #3f6df5;
+     color: white;
+     padding-bottom: 3%;
+     padding-top: 3%;
+     text-shadow: none;
+}
+ .container {
+     display: grid;
+     grid-template-areas: "header header" "section section" "main aside" "footer footer";
+     grid-template-columns: 60% 35%;
+     justify-content: space-around;
+     padding: 1% 1%;
+}
+ header {
+     font-size: 1.3em;
+     grid-area: header;
+     padding-bottom: 3%;
+     padding-top: 1%;
+     text-align: center;
+}
+ section {
+     align-items: center;
+     display: grid;
+     grid-area: section;
+     grid-template-areas: "logo nav" "sectionText sectionText";
+     grid-template-columns: 60 35%;
+}
+ .logo {
+     grid-area: logo;
+     width: 90%;
+}
+ .nav {
+     align-items: center;
+     align-self: center;
+     grid-area: nav;
+     justify-content: center;
+     margin-left: -16%;
+     margin-right: 0%;
+     text-align: center;
+     width: auto;
+}
+ .carousel {
+     grid-area: carousel;
+}
+ .sectionText {
+     grid-area: sectionText;
+     line-height: 1rem;
+     margin-top: 1%;
+     text-align: left;
+}
+ .sectionText h1 {
+     font-family: cursive;
+     font-size: 2.5em;
+     margin-bottom: 1%;
+     padding: 3%;
+     text-align: center;
+}
+ .sectionText li {
+     font-family: cursive;
+     font-size: 1.4em;
+     padding: 3%;
+     text-align: center;
+     line-height: 1.5rem;
+}
+ .sectionText ul {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+     list-style-type: none;
+     text-align: center;
+}
+ .imageHolder {
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     display: grid;
+     grid-area: imageHolder;
+     margin-top: 5%;
+}
+ .imageHolderForm {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+     list-style-type: none;
+     text-align: center;
+}
+ #image {
+     height: 100%;
+     min-height: 100%;
+     object-fit: cover;
+}
+ .textHolder {
+     font-size: 1.5em;
+     grid-area: textHolder;
+     line-height: 2.5rem;
+     margin-bottom: 1%;
+     margin-right: 5%;
+     margin-top: 5%;
+     text-align: left;
+}
+ .sectionAbout {
+     font-size: 0.9em;
+     grid-area: sectionAbout;
+     line-height: 1.5rem;
+     padding-left: 1%;
+     padding-right: 1%;
+     text-align: center;
+}
+ .imgBlb {
+     display: block;
+     margin: 5% auto 3%;
+}
+ main {
+     grid-area: main;
+     margin-top: 2%;
+}
+ aside {
+     grid-area: aside;
+     margin-top: 15%;
+}
+ footer {
+     font-size: 1.3em;
+     grid-area: footer;
+     line-height: 1rem;
+     margin-top: 5%;
+     text-align: center;
+}
+ form {
+     display: grid;
+     font-size: 1.1em;
+     grid-gap: 2px;
+     grid-template-columns: 1fr;
+     line-height: 1.8rem;
+     list-style-type: none;
+     margin-top: 10%;
+     text-align: left;
+}
+ .sectionDetail {
+     display: grid;
+     font-size: 1em;
+     grid-gap: 5px;
+     grid-template-columns: 1fr;
+     line-height: 2.5rem;
+     list-style-type: none;
+     text-align: left;
+}
+ .footer-button {
+     background-color: transparent;
+     cursor: pointer;
+     font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+     font-family: cursive;
+     font-size: 1em;
+     margin-bottom: 1%;
+     padding-left: 1%;
+     padding-right: 1%;
+     text-align: center;
+}
+ .footer-button:hover {
+     background-color: #527dfc;
+     color: white;
+}
+ .formStyle {
+     display: inline-grid;
+}
+ .centerFix {
+     align-self: center;
+     display: grid;
+     justify-content: center;
+}
+ .centerFixData {
+     align-self: center;
+     display: grid;
+     font-size: 2em;
+     justify-content: center;
+     margin: 2% 5%;
+}
+ .commentHolder {
+     line-height: 2.5em;
+     margin-top: 5%;
+}
+ .formHolder {
+     line-height: 1.8em;
+     margin-bottom: 5%;
+     margin-top: 2%;
+}
+ .aboutText {
+     font-size: 1.5em;
+     line-height: 2em;
+     margin-top: 10%;
+}
+ .divProducts {
+     align-items: center;
+     display: grid;
+     justify-content: center;
+     margin-left: 5%;
+     margin-right: 5%;
+     text-align-last: center;
+}
+ .ulProducts {
+     column-gap: 5%;
+     display: grid;
+     font-size: 1em;
+     font-weight: 300;
+     gap: 2%;
+     grid-template-columns: repeat(6, 1fr);
+}
+ .sectionDados {
+     align-items: center;
+     display: flex;
+     flex-direction: row;
+     font-size: 1em;
+     gap: 2%;
+     justify-content: center;
+     line-height: 2rem;
+     margin: 5%;
+}
+ .sectionOpcao {
+     align-items: center;
+     display: grid;
+     font-size: 1.5em;
+     justify-content: center;
+     line-height: 2rem;
+     margin: 5%;
+}
+ .sectionDetalhes {
+     align-items: center;
+     display: grid;
+     display: none;
+     font-size: 1em;
+     grid-gap: 5px;
+     justify-content: center;
+     line-height: 2rem;
+     list-style-type: none;
+     margin-bottom: 1%;
+     margin-top: 0%;
+}
+ .personalizarion {
+     margin-top: 0%;
+}
+ .comentarioHolder {
+     line-height: 2em;
+     margin-top: 0%;
+     text-align: center;
+}
+ .comentarioHolder textarea {
+     display: block;
+     margin-bottom: -10%;
+     width: 100%;
+}
+ .vetorCon {
+     font-size: 0.8em;
+     line-height: 1.8em;
+     text-align: center;
+}
+ .formularioHolder {
+     font-size: 1.5em;
+     line-height: 2em;
+     margin-top: 5%;
+     text-align: center;
+}
+ .switch {
+     display: inline-block;
+     height: 17px;
+     position: relative;
+     width: 30px;
+}
+ .switch input {
+     height: 0;
+     opacity: 0;
+     width: 0;
+}
+ .slider {
+     background-color: #ccc;
+     border-radius: 34px;
+     bottom: 0;
+     cursor: pointer;
+     left: 0;
+     position: absolute;
+     right: 0;
+     top: 0;
+     transition: 0.4s;
+     -webkit-transition: 0.4s;
+}
+ .slider:before {
+     background-color: white;
+     border-radius: 50%;
+     bottom: 2px;
+     content: "";
+     height: 13px;
+     left: 2px;
+     position: absolute;
+     transition: 0.4s;
+     -webkit-transition: 0.4s;
+     width: 13px;
+}
+ input:checked + .slider {
+     background-color: #2196f3;
+}
+ input:focus + .slider {
+     box-shadow: 0 0 1px #2196f3;
+}
+ input:checked + .slider:before {
+     -ms-transform: translateX(13px);
+     transform: translateX(13px);
+     -webkit-transform: translateX(13px);
+}
+ .inputLimpar {
+     border: 2px solid var(--input-border);
+     border-radius: 4px;
+     box-shadow: 0px 1px 6px rgba(80, 80, 80, 0.64);
+     color: rgb(0, 0, 0);
+     font-size: 0.8em;
+     margin-top: 10%;
+     padding: 0.2em 0.4em;
+}
+ .inputSalvar {
+     border: 2px solid var(--input-border);
+     border-radius: 4px;
+     box-shadow: 0px 1px 6px rgba(80, 80, 80, 0.64);
+     color: rgb(0, 0, 0);
+     font-size: 0.8em;
+     margin-top: 10%;
+     padding: 0.2em 0.4em;
+}
+ .inputSalvar:hover {
+     background-color: #2196f3;
+}
+ .inputLimpar:hover {
+     background-color: #fcb641;
+}
+ .input {
+     background-color: #cfa9897a;
+     border: 2px solid var(--input-border);
+     border-radius: 4px;
+     box-shadow: 0px 1px 6px rgba(80, 80, 80, 0.64);
+     font-size: 1em;
+     padding: 0.25em 0.5em;
+}
+ .inputDetalhes {
+     background-color: transparent;
+     border: 2px solid var(--input-border);
+     border-radius: 4px;
+     border-style: dotted;
+     box-shadow: 0px 1px 6px rgba(80, 80, 80, 0.64);
+     color: rgb(0, 0, 0);
+     cursor: pointer;
+     font-size: 1em;
+     padding: 0.25em 0.5em;
+}
+ .mainButton {
+     align-items: center;
+     background-color: rgb(0, 75, 160);
+     border: none;
+     box-shadow: 1px 1px 1px 1px #000000;
+     cursor: pointer;
+     display: grid;
+     font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+     font-size: 1em;
+     justify-content: center;
+     margin-left: 35%;
+     margin-top: 2%;
+     padding: 1%;
+     text-align: center;
+     width: 30%;
+}
+ .mainButton a {
+     color: white;
+     display: inline-block;
+     font-size: 1em;
+     text-decoration: none;
+     text-shadow: 2px 2px 3px rgb(80, 80, 80);
+}
+ .mainButton:hover {
+     background-color: orangered;
+     box-shadow: 0px 1px 6px rgba(80, 80, 80, 0.64);
+}
+ .main-button {
+     background-color: rgb(0, 75, 160);
+     border: none;
+     box-shadow: 2px 1px 2px 3px #0000004b;
+     cursor: pointer;
+     display: block;
+     font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+     font-size: large;
+     margin-bottom: 5%;
+     margin-top: -7%;
+     padding: 2%;
+     text-align: center;
+     width: 100%;
+}
+ .main-button a {
+     color: white;
+     display: inline-block;
+     font-size: 1em;
+     text-decoration: none;
+     text-shadow: 2px 2px 3px rgb(80, 80, 80);
+}
+ .main-button:hover {
+     background-color: orangered;
+     box-shadow: 0px 1px 6px rgba(80, 80, 80, 0.64);
+}
+ .sectionButton {
+     font-size: 1em;
+     grid-area: sectionButton;
+     line-height: 2rem;
+     margin: 5% 0 0;
+     padding-left: 2%;
+     padding-right: 2%;
+     text-align: center;
+}
+ 
