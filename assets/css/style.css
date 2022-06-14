@@ -53,35 +53,9 @@ body.light-theme a {
     text-decoration: none;
     text-shadow: 2px 2px 3px rgba(90, 90, 90, 0.158);
 }
-.footer-button {
-    color: white;
-}
 .blue {
     color: #fcb641;
     font-size: 1.2em;
-}
-.navRight {
-    border-color: #356fef;
-    border-style: dotted;
-    box-shadow: 0px 1px 5px 2px #575757b6;
-    line-height: 1.8rem;
-    padding: 2% 2%;
-}
-.navRight li {
-    display: inline-block;
-    font-size: 1.2em;
-    font-weight: 500;
-}
-.navRight li:hover {
-    color: rgba(0, 0, 0, 0.678);
-    cursor: pointer;
-}
-.navRight a:hover {
-    background: #3f6df5;
-    color: white;
-    padding-bottom: 3%;
-    padding-top: 3%;
-    text-shadow: none;
 }
 .container {
     display: grid;
@@ -118,8 +92,29 @@ section {
     text-align: center;
     width: auto;
 }
-.carousel {
-    grid-area: carousel;
+
+.navRight {
+    border-color: #356fef;
+    border-style: dotted;
+    box-shadow: 0px 1px 5px 2px #575757b6;
+    line-height: 1.8rem;
+    padding: 2% 2%;
+}
+.navRight li {
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.navRight li:hover {
+    color: rgba(0, 0, 0, 0.678);
+    cursor: pointer;
+}
+.navRight a:hover {
+    background: #3f6df5;
+    color: white;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    text-shadow: none;
 }
 .sectionText {
     grid-area: sectionText;
@@ -181,10 +176,6 @@ section {
     padding-right: 1%;
     text-align: center;
 }
-.imgBlb {
-    display: block;
-    margin: 5% auto 3%;
-}
 main {
     grid-area: main;
     margin-top: 2%;
@@ -210,33 +201,6 @@ form {
     margin-top: 10%;
     text-align: left;
 }
-.sectionDetail {
-    display: grid;
-    font-size: 1em;
-    grid-gap: 5px;
-    grid-template-columns: 1fr;
-    line-height: 2.5rem;
-    list-style-type: none;
-    text-align: left;
-}
-.footer-button {
-    background-color: transparent;
-    cursor: pointer;
-    font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
-    font-family: cursive;
-    font-size: 1em;
-    margin-bottom: 1%;
-    padding-left: 1%;
-    padding-right: 1%;
-    text-align: center;
-}
-.footer-button:hover {
-    background-color: #527dfc;
-    color: white;
-}
-.formStyle {
-    display: inline-grid;
-}
 .centerFix {
     align-self: center;
     display: grid;
@@ -248,15 +212,6 @@ form {
     font-size: 2em;
     justify-content: center;
     margin: 2% 5%;
-}
-.commentHolder {
-    line-height: 2.5em;
-    margin-top: 5%;
-}
-.formHolder {
-    line-height: 1.8em;
-    margin-bottom: 5%;
-    margin-top: 2%;
 }
 .aboutText {
     font-size: 1.5em;
@@ -482,4 +437,20 @@ input:checked + .slider:before {
     padding-left: 2%;
     padding-right: 2%;
     text-align: center;
+}
+.footer-button {
+    background-color: transparent;
+    cursor: pointer;
+    font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
+    font-family: cursive;
+    font-size: 1em;
+    margin-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    text-align: center;
+    color: white;
+}
+.footer-button:hover {
+    background-color: #527dfc;
+    color: white;
 }
