@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Orçamento</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body class="light-theme || dark-theme">
     <div class="container">
         <header>
@@ -148,15 +150,6 @@
                         <option value="#">Não</option>
                     </select>
                     <br />
-                    <div class="comentarioHolder">
-                        <h3>Observações 💬 Dúvidas ❓ </h3>
-                        <textarea name="ComentarioCamiseta" cols="50" rows="5" class="inputDetalhes"
-                            id="comentarioCamiseta"></textarea>
-                        <label class="#">
-                            <input name="tituloMensagemCamiseta" id="tituloMensagemCamiseta"
-                                value="Formulário de Orçamento Camiseta" type="hidden" />
-                            &nbsp;</label>
-                    </div>
                     <div class="vetorCon">
                         <h3>Anexar os Arquivos <br /> Caso disponível</h3>
                         <label class="#">📎</label>
@@ -242,15 +235,6 @@
                         <option value="#">Não</option>
                     </select>
                     <br />
-                    <div class="comentarioHolder">
-                        <h3>Observações 💬 Dúvidas ❓ </h3>
-                        <textarea name="ComentarioPolo" cols="50" rows="5" class="inputDetalhes"
-                            id="comentarioPolo"></textarea>
-                        <label class="#">
-                            <input name="tituloMensagemPolo" id="tituloMensagemPolo"
-                                value="Formulário de Orçamento Polo" type="hidden" />
-                            &nbsp;</label>
-                    </div>
                     <div class="vetorCon">
                         <h3>Anexar os Arquivos <br /> Caso disponível</h3>
                         <label class="#">📎</label>
@@ -313,18 +297,27 @@
                         <option value="#ffdb58">Mostarda</option>
                         <option value="#f5f5dc">Beige</option>
                     </select>
-                    <label class="#">Capuz:</label>
-                    <select name="c/s-capuz_agasalho" class="inputDetalhes" id="c/s-capuz_agasalho" required>
-                        <option value="" selected="selected">▫️ Selecionar ▫️</option>
-                        <option value="c/capuz">Com</option>
-                        <option value="s/capuz">Sem</option>
-                    </select>
-                    <label class="#">Bolso:</label>
-                    <select name="c/s-bolso_agasalho" class="inputDetalhes" id="c/s-bolso_agasalho" required>
-                        <option value="" selected="selected">▫️ Selecionar ▫️</option>
-                        <option value="c/bolso">Com</option>
-                        <option value="s/bolso">Sem</option>
-                    </select>
+                    <label class="#">Capuz: / Bolso:</label>
+                    <div class="capuzBolso">
+                        <div class="Item">
+                            <label class="#"></label>
+                            <select name="c/s-capuz_agasalho" class="inputDetalhes" id="c/s-capuz_agasalho"
+                                style="border-color: #2196f3;" required>
+                                <option value="" selected="selected">Capuz</option>
+                                <option value="c/capuz">Com</option>
+                                <option value="s/capuz">Sem</option>
+                            </select>
+                        </div>
+                        <div class="Item">
+                            <label class="#"></label>
+                            <select name="c/s-bolso_agasalho" class="inputDetalhes" id="c/s-bolso_agasalho"
+                                style="border-color: #fcb641;" required>
+                                <option value="" selected="selected">Bolso</option>
+                                <option value="c/bolso">Com</option>
+                                <option value="s/bolso">Sem</option>
+                            </select>
+                        </div>
+                    </div>
                     <label for="qntPecas" class="#">Quantidade:</label>
                     <input type="number" id="amount_agasalho" name="qntPecas" min="30" size="20" maxlength="30"
                         placeholder="30 peças" required oninvalid="inputErr()"><br />
@@ -341,16 +334,7 @@
                         <option value="#">Sim</option>
                         <option value="#">Não</option>
                     </select>
-                    <br />
-                    <div class="comentarioHolder">
-                        <h3>Observações 💬 Dúvidas ❓ </h3>
-                        <textarea name="ComentarioAgasalho" cols="50" rows="5" class="inputDetalhes"
-                            id="comentarioAgasalho" style="height: 49px;"></textarea>
-                        <label class="#">
-                            <input name="tituloMensagemAgasalho" id="tituloMensagem"
-                                value="Formulário de Orçamento Agasalho" type="hidden" />
-                            &nbsp;</label>
-                    </div>
+                    <br />                   
                     <div class="vetorCon">
                         <h3>Anexar os Arquivos <br /> Caso disponível</h3>
                         <label class="#">📎</label>
@@ -438,16 +422,7 @@
                         <option value="#">Sim</option>
                         <option value="#">Não</option>
                     </select>
-                    <br />
-                    <div class="comentarioHolder">
-                        <h3>Observações 💬 Dúvidas ❓ </h3>
-                        <textarea name="ComentarioAbada" cols="50" rows="5" class="inputDetalhes"
-                            id="comentarioAbada"></textarea>
-                        <label class="#">
-                            <input name="tituloMensagemAbada" id="tituloMensagemAbada"
-                                value="Formulário de Orçamento Abada" type="hidden" />
-                            &nbsp;</label>
-                    </div>
+                    <br />                    
                     <div class="vetorCon">
                         <h3>Anexar os Arquivos <br /> Caso disponível</h3>
                         <label class="#">📎</label>
@@ -506,16 +481,7 @@
                         <option value="#">Sim</option>
                         <option value="#">Não</option>
                     </select>
-                    <br />
-                    <div class="comentarioHolder">
-                        <h3>Observações 💬 Dúvidas ❓ </h3>
-                        <textarea name="ComentarioEcobag" cols="50" rows="5" class="inputDetalhes"
-                            id="comentarioEcobag"></textarea>
-                        <label class="#">
-                            <input name="tituloMensagemEcobag" id="tituloMensagemEcobag"
-                                value="Formulário de Orçamento Ecobag" type="hidden" />
-                            &nbsp;</label>
-                    </div>
+                    <br />                    
                     <div class="vetorCon">
                         <h3>Anexar os Arquivos <br /> Caso disponível</h3>
                         <label class="#">📎</label>
@@ -588,22 +554,19 @@
                     <input type="number" id="amount_mask" name="qntPecas" min="30" size="20" maxlength="30"
                         placeholder="30 peças" required oninvalid="inputErr()"><br />
                     <label class="personalizarion"><b>Personalização</b></label>
-                    <label class="#">Silkscreen:</label>
-                    <select name="Personalização" class="inputDetalhes" id="PersonalizaçãoSilk" required>
+                    <label class="#">Bordado:</label>
+                    <select name="Personalização" class="inputDetalhes" id="PersonalizaçãoBordado_mask" required>
+                        <option value="" selected="selected">▫️ Selecionar ▫️</option>
+                        <option value="50">N/disponível</option>
+                        <option value="50">#</option>
+                    </select>
+                    <br /><label class="#">Silkscreen:</label>
+                    <select name="Personalização" class="inputDetalhes" id="PersonalizaçãoSilk_mask" required>
                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                         <option value="#">Sim</option>
                         <option value="#">Não</option>
                     </select>
                     <br />
-                    <div class="comentarioHolder">
-                        <h3>Observações 💬 Dúvidas ❓ </h3>
-                        <textarea name="ComentarioMask" cols="50" rows="5" class="inputDetalhes" id="ComentarioMask"
-                            style="height: 210px;"></textarea>
-                        <label class="#">
-                            <input name="tituloMensagemMask" id="tituloMensagemMask"
-                                value="Formulário de Orçamento mask" type="hidden" />
-                            &nbsp;</label>
-                    </div>
                     <div class="vetorCon">
                         <h3>Anexar os Arquivos <br /> Caso disponível</h3>
                         <label class="#">📎</label>
@@ -622,6 +585,14 @@
             </li>
         </ul>
         <div class="formularioHolder">
+            <div class="comentarioHolder">
+                <h3>Observações 💬 Dúvidas ❓ </h3>
+                <textarea name="ComentarioMask" cols="50" rows="5" class="inputDetalhes" id="ComentarioMask" style="resize: vertical;"></textarea>
+                <label class="#">
+                    <input name="tituloMensagemMask" id="tituloMensagemMask" value="Formulário de Orçamento mask" type="hidden" />
+                    &nbsp;</label>
+            </div>
+            <br />
             <h3 class="centerFix">Submeter o formulário e enviar suas escolhas<br /></h3>
             <h5><span class="blue"><strong><em>Campos com * são de preenchimento
                             obrigatório!</em></strong></span>
@@ -656,4 +627,5 @@
     </footer>
     <script src="assets/javascript/script.js"></script>
 </body>
+
 </html>
