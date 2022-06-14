@@ -35,15 +35,12 @@
             </nav>
         </section>
     </div>
-
     <h1 class="centerFixData">Orçamento 📝</h1>
-
     <h2 class="sectionOpcao">Você pode montar seu Orçamento usando o formulario abaixo <br /> ou enviar um orçamento
-        para marildablueberry@uol.com.br 📧</h2>
-
+        para marildablueberry@uol.com.br 📧
+    </h2>
     <h2 class="centerFixData">Seus Dados</h2>
     <div class="sectionDados">
-
         <div class="#">
             <div><label class="#">◼ Seu Nome ✏️*</label></div>
             <div>
@@ -76,26 +73,16 @@
                 <input name="Telefone2" class="input" id="Telefone2" size="20" maxlength="50" type="text" />
             </div>
         </div>
-
     </div>
-
     <h2 class="centerFixData">Escolha os produtos</h2>
-
     <div class="divProducts">
-
         <ul id="imgsArray" class="ulProducts">
-
-            <li> <img src="assets/images/camiseta.png">
-
+            <li>
+                <img src="assets/images/camiseta.png">
                 <p value="camiseta" name="camiseta" class="input">Camiseta<br /><label class="switch"><input
                             id="camiseta" class="input checkBox" type="checkbox"><span class="slider"></span></label>
                 </p>
-
-                <input class="inputLimpar" type="reset" value="LIMPAR">
-                <input class="inputSalvar" type="submit" value="SALVAR" onclick="myFunction()">
-
                 <div id="divCamiseta" class="sectionDetalhes">
-
                     <br />
                     <b>Detalhes da Peça</b>
                     <label class="#">Malha da Peça:</label>
@@ -108,7 +95,6 @@
                         <option value="Dry_dry_fit_PL">Dry fit Poliéster</option>
                         <option value="Dry_dry_fit_AM">Dry fit Poliamida</option>
                     </select>
-
                     <label for="colorName" class="colorName">Cor da Peça: </label>
                     <input type="colorName" name="colorNome" min="30" size="20" maxlength="30" placeholder="Digitar Cor"
                         required oninvalid="inputErr()">
@@ -141,13 +127,12 @@
                         <option value="#ffdb58">Mostarda</option>
                         <option value="#f5f5dc">Bege</option>
                     </select>
-
                     <label class="#">Tipo de Gola:</label>
                     <select name="Tipo_de_gola_camiseta" class="inputDetalhes" id="Tipo_de_gola_camiseta" required>
                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                         <option value="Redonda">Redonda (Careca)</option>
                         <option value="V">Gola "V"</option>
-                    </select> 
+                    </select>
                     <label for="qntPecas" class="#">Quantidade:</label>
                     <input type="number" id="amount_camiseta" name="qntPecas" min="30" size="20" maxlength="30"
                         placeholder="30 peças" required oninvalid="inputErr()"><br />
@@ -187,15 +172,13 @@
                         Não Sei
                     </div>
                 </div>
-            </li>
-
-            <li> <img src="assets/images/polo.png">
-
-                <p value="golaPolo" name="golaPolo" class="input">Polo<br /><label class="switch"><input id="golaPolo"
-                            class="input checkBox" type="checkbox"><span class="slider"></span></label></p>
-
                 <input class="inputLimpar" type="reset" value="LIMPAR">
                 <input class="inputSalvar" type="submit" value="SALVAR" onclick="myFunction()">
+            </li>
+            <li>
+                <img src="assets/images/polo.png">
+                <p value="golaPolo" name="golaPolo" class="input">Polo<br /><label class="switch"><input id="golaPolo"
+                            class="input checkBox" type="checkbox"><span class="slider"></span></label></p>
                 <div id="divPolo" class="sectionDetalhes">
                     <br />
                     <b>Detalhes da Peça</b>
@@ -207,7 +190,6 @@
                         <option value="Malha_fria_PV">Poliviscose - PV</option>
                         <option value="Algodao_cardada">Piquet</option>
                     </select>
-
                     <label for="colorName" class="colorName">Cor da Peça: </label>
                     <input type="colorName" name="colorNome" min="30" size="20" maxlength="30" placeholder="Digitar Cor"
                         required oninvalid="inputErr()">
@@ -240,13 +222,11 @@
                         <option value="#ffdb58">Mostarda</option>
                         <option value="#f5f5dc">Beige</option>
                     </select>
-
                     <label class="#">Tipo de Gola:</label>
                     <select name="Tipo_de_gola_polo" class="inputDetalhes" id="Tipo_de_gola_polo" required>
                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                         <option value="Redonda">Gola Polo</option>
-
-                    </select> 
+                    </select>
                     <label for="qntPecas" class="#">Quantidade:</label>
                     <input type="number" id="amount_polo" name="qntPecas" min="30" size="20" maxlength="30"
                         placeholder="30 peças" required oninvalid="inputErr()"><br />
@@ -286,17 +266,14 @@
                         Não Sei
                     </div>
                 </div>
+                <input class="inputLimpar" type="reset" value="LIMPAR">
+                <input class="inputSalvar" type="submit" value="SALVAR" onclick="myFunction()">
             </li>
-
-            <li> <img src="assets/images/hoodie.png">
-
+            <li>
+                <img src="assets/images/hoodie.png">
                 <p value="agasalho" name="agasalho" class="input">Agasalho<br /><label class="switch"><input
                             id="agasalho" class="input checkBox" type="checkbox"><span class="slider"></span></label>
                 </p>
-
-                <input class="inputLimpar" type="reset" value="LIMPAR">
-                <input class="inputSalvar" type="submit" value="SALVAR" onclick="myFunction()">
-
                 <div id="divAgasalho" class="sectionDetalhes">
                     <br />
                     <b>Detalhes da Peça</b>
@@ -305,9 +282,7 @@
                         required>
                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                         <option value="Algodao_cardada">Moleton Flanelado</option>
-
                     </select>
-
                     <label for="colorName" class="colorName">Cor da Peça: </label>
                     <input type="colorName" name="colorNome" min="30" size="20" maxlength="30" placeholder="Digitar Cor"
                         required oninvalid="inputErr()">
@@ -340,21 +315,18 @@
                         <option value="#ffdb58">Mostarda</option>
                         <option value="#f5f5dc">Beige</option>
                     </select>
-
                     <label class="#">Capuz:</label>
                     <select name="c/s-capuz_agasalho" class="inputDetalhes" id="c/s-capuz_agasalho" required>
                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                         <option value="c/capuz">Com</option>
                         <option value="s/capuz">Sem</option>
                     </select>
-
                     <label class="#">Bolso:</label>
                     <select name="c/s-bolso_agasalho" class="inputDetalhes" id="c/s-bolso_agasalho" required>
                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                         <option value="c/bolso">Com</option>
                         <option value="s/bolso">Sem</option>
                     </select>
-
                     <label for="qntPecas" class="#">Quantidade:</label>
                     <input type="number" id="amount_agasalho" name="qntPecas" min="30" size="20" maxlength="30"
                         placeholder="30 peças" required oninvalid="inputErr()"><br />
@@ -394,18 +366,14 @@
                         Não Sei
                     </div>
                 </div>
-
+                <input class="inputLimpar" type="reset" value="LIMPAR">
+                <input class="inputSalvar" type="submit" value="SALVAR" onclick="myFunction()">
             </li>
-
-            <li> <img src="assets/images/abada.png">
-
+            <li>
+                <img src="assets/images/abada.png">
                 <p value="abada" name="abada" class="input">Abadá<br /><label class="switch">
                         <input id="abada" class="input checkBox" type="checkbox"><span class="slider"></span></label>
                 </p>
-
-                <input class="inputLimpar" type="reset" value="LIMPAR">
-                <input class="inputSalvar" type="submit" value="SALVAR" onclick="myFunction()">
-
                 <div id="divAbada" class="sectionDetalhes">
                     <br />
                     <b>Detalhes da Peça</b>
@@ -418,7 +386,6 @@
                         <option value="Dry_dry_fit_PL">Dry fit Poliéster</option>
                         <option value="Dry_dry_fit_AM">Dry fit Poliamida</option>
                     </select>
-
                     <label for="colorName" class="colorName">Cor da Peça: </label>
                     <input type="colorName" name="colorNome" min="30" size="20" maxlength="30" placeholder="Digitar Cor"
                         required oninvalid="inputErr()">
@@ -451,14 +418,12 @@
                         <option value="#ffdb58">Mostarda</option>
                         <option value="#f5f5dc">Beige</option>
                     </select>
-
                     <label class="#">Abertura Lateral:</label>
                     <select name="Tipo_de_abertura_abada" class="inputDetalhes" id="Tipo_de_abertura_abada" required>
                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                         <option value="Fechado">Fechado</option>
                         <option value="Elastico">Elastico</option>
-                        
-                    </select> 
+                    </select>
                     <label for="qntPecas" class="#">Quantidade:</label>
                     <input type="number" id="amount_abada" name="qntPecas" min="30" size="20" maxlength="30"
                         placeholder="30 peças" required oninvalid="inputErr()"><br />
@@ -498,20 +463,15 @@
                         Não Sei
                     </div>
                 </div>
-
+                <input class="inputLimpar" type="reset" value="LIMPAR">
+                <input class="inputSalvar" type="submit" value="SALVAR" onclick="myFunction()">
             </li>
-
-            <li> <img src="assets/images/ecobag.png">
-
+            <li>
+                <img src="assets/images/ecobag.png">
                 <p value="ecobag" name="ecobag" class="input">Ecobag<br /><label class="switch">
                         <input id="ecobag" class="input checkBox" type="checkbox"><span class="slider"></span></label>
                 </p>
-
-                <input class="inputLimpar" type="reset" value="LIMPAR">
-                <input class="inputSalvar" type="submit" value="SALVAR" onclick="myFunction()">
-
                 <div id="divEcobag" class="sectionDetalhes">
-
                     <br />
                     <b>Detalhes da Peça</b>
                     <label class="#">Malha da Peça:</label>
@@ -519,21 +479,19 @@
                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                         <option value="Algodao_cru">Algodão Cru</option>
                     </select>
-
                     <label for="colorName" class="colorName">Cor da Peça: </label>
                     <input type="colorName" name="colorNome" min="30" size="20" maxlength="30" placeholder="Digitar Cor"
                         required oninvalid="inputErr()">
                     <label class="#"></label>
                     <select name="Cor_da_peca_ecobag" class="inputDetalhes" id="Cor_da_peca_ecobag" required>
                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
-                        <option value="#C7A975">Algodão Cru</option>                        
+                        <option value="#C7A975">Algodão Cru</option>
                     </select>
-
                     <label class="#">Tipo de Alça:</label>
                     <select name="Tipo_de_alça_ecobag" class="inputDetalhes" id="Tipo_de_alça_ecobag" required>
                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                         <option value="Redonda">Algodao Trançado</option>
-                    </select> 
+                    </select>
                     <label for="qntPecas" class="#">Quantidade:</label>
                     <input type="number" id="amount_ecobag" name="qntPecas" min="30" size="20" maxlength="30"
                         placeholder="30 peças" required oninvalid="inputErr()"><br />
@@ -573,19 +531,15 @@
                         Não Sei
                     </div>
                 </div>
-
-            </li>
-
-            <li> <img src="assets/images/mask.png">
-
-                <p value="mask" name="mask" class="input">Máscara<br /><label class="switch">
-                        <input id="mask" class="input checkBox" type="checkbox"><span class="slider"></span></label></p>
-
                 <input class="inputLimpar" type="reset" value="LIMPAR">
                 <input class="inputSalvar" type="submit" value="SALVAR" onclick="myFunction()">
-
+            </li>
+            <li>
+                <img src="assets/images/mask.png">
+                <p value="mask" name="mask" class="input">Máscara<br /><label class="switch">
+                        <input id="mask" class="input checkBox" type="checkbox"><span class="slider"></span></label>
+                </p>
                 <div id="divMask" class="sectionDetalhes">
-
                     <br />
                     <b>Detalhes da Peça</b>
                     <label class="#">Malha da Peça:</label>
@@ -595,7 +549,6 @@
                         <option value="Algodao_penteada">Algodão Penteada</option>
                         <option value="Malha_fria_PV">Poliviscose - PV</option>
                     </select>
-
                     <label for="colorName" class="colorName">Cor da Peça: </label>
                     <input type="colorName" name="colorNome" min="30" size="20" maxlength="30" placeholder="Digitar Cor"
                         required oninvalid="inputErr()">
@@ -628,12 +581,11 @@
                         <option value="#ffdb58">Mostarda</option>
                         <option value="#f5f5dc">Beige</option>
                     </select>
-
                     <label class="#">Tipo de Forma:</label>
                     <select name="Tipo_de_forma_mask" class="inputDetalhes" id="Tipo_de_forma_mask" required>
                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                         <option value="Bico_pato">Bico de Pato</option>
-                    </select> 
+                    </select>
                     <label for="qntPecas" class="#">Quantidade:</label>
                     <input type="number" id="amount_mask" name="qntPecas" min="30" size="20" maxlength="30"
                         placeholder="30 peças" required oninvalid="inputErr()"><br />
@@ -647,8 +599,8 @@
                     <br />
                     <div class="comentarioHolder">
                         <h3>Observações 💬 Dúvidas ❓ </h3>
-                        <textarea name="ComentarioMask" cols="50" rows="5" class="inputDetalhes"
-                            id="ComentarioMask" style="height: 210px;"></textarea>
+                        <textarea name="ComentarioMask" cols="50" rows="5" class="inputDetalhes" id="ComentarioMask"
+                            style="height: 210px;"></textarea>
                         <label class="#">
                             <input name="tituloMensagemMask" id="tituloMensagemMask"
                                 value="Formulário de Orçamento mask" type="hidden" />
@@ -667,21 +619,17 @@
                         Não Sei
                     </div>
                 </div>
-
+                <input class="inputLimpar" type="reset" value="LIMPAR">
+                <input class="inputSalvar" type="submit" value="SALVAR" onclick="myFunction()">
             </li>
-
         </ul>
-
         <div class="formularioHolder">
-
             <h3 class="centerFix">Submeter o formulário e enviar suas escolhas<br /></h3>
-
             <h5><span class="blue"><strong><em>Campos com * são de preenchimento
-                            obrigatório!</em></strong></span></h5>
-
+                            obrigatório!</em></strong></span>
+            </h5>
             <button style="color: rgb(255, 255, 255);" class="mainButton" id="mainButton">Enviar
                 Formulário</button>
-
             <div class="imageHolderForm" style="margin-top: 5%;">
                 <img src="assets/images/orc-01.jpg">
                 <img src="assets/images/orc-02.jpg">
@@ -691,17 +639,12 @@
                 <img src="assets/images/orc-08.jpg">
                 <img src="assets/images/orc-09.jpg">
             </div>
-
         </div>
     </div>
-
     <main style="display: none;">
     </main>
-
     <aside style="display: none;">
-
     </aside>
-
     <footer>
         <p>
             Copyright ©️ 2022 📅 Facebook:
@@ -714,28 +657,7 @@
         <br />
     </footer>
 
-
-    <script>
-
-        let checkInput = document.querySelectorAll(".checkBox");
-
-        checkInput.forEach(function (btnChk) {
-            btnChk.addEventListener('change', function () {
-                let checkLi = btnChk.closest('li')
-                let checkDiv = checkLi.querySelector(".sectionDetalhes");
-                if (btnChk.checked) {
-                    checkDiv.style.display = 'grid';
-                } else {
-                    checkDiv.style.display = 'none';
-                }
-            });
-        });
-
-    </script>
-
-    <script src="assets/javascript/script.js">
-    </script>
-
+    <script src="assets/javascript/script.js"></script>
 </body>
 
 </html>
