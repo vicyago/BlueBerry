@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>BlueBerryCamisetas</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body class="light-theme || dark-theme">
     <div class="container">
         <header>
@@ -120,30 +122,8 @@
             </p>
         </footer>
     </div>
+    <script src="assets/javascript/scriptInd.js"></script>
     <script src="assets/javascript/script.js"></script>
-    <script>
-        const delay = async (ms = 1000) =>
-            new Promise((resolve) => setTimeout(resolve, ms));
-        async function imageLoop() {
-            let image = document.getElementById("image");
-            let images = [
-                "assets/images/item-01.jpg",
-                "assets/images/item-02.jpg",
-                "assets/images/item-03.jpg",
-                "assets/images/item-04.jpg",
-                "assets/images/item-05.jpg",
-                "assets/images/item-06.jpg",
-                "assets/images/item-07.jpg",
-                "assets/images/item-08.jpg",
-                "assets/images/item-09.jpg",
-            ];
-            for (let i = 0; i < images.length; i++) {
-                image.src = images[i];
-                await delay(5000);
-            }
-            imageLoop();
-        }
-        imageLoop();
-    </script>
 </body>
+
 </html>

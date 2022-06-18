@@ -40,7 +40,7 @@
         para marildablueberry@uol.com.br 📧
     </h2>
     <h2 class="centerFixData">Seus Dados</h2>
-    <div class="sectionDados">
+    <form><div class="sectionDados">
         <div class="#">
             <div><label class="#">◼ Seu Nome ✏️*</label></div>
             <div>
@@ -99,7 +99,7 @@
                     <input type="colorName" name="colorNome" min="30" size="20" maxlength="30" placeholder="Digitar Cor"
                         required oninvalid="inputErr()">
                     <label class="#"></label>
-                    <select name="Cor_da_peca_camiseta" class="inputDetalhes" id="Cor_da_peca_camiseta" required>
+                    <select name="Cor_da_peca_camiseta" class="inputDetalhes corPeca" id="Cor_da_peca_camiseta" required>
                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                         <option value="#fff">Branco</option>
                         <option value="#808080">Cinza</option>
@@ -163,8 +163,6 @@
                         Não Sei
                     </div>
                 </div>
-                <input class="inputLimpar" type="reset" value="LIMPAR">
-                <input class="inputSalvar" type="submit" value="SALVAR" onclick="myFunction()">
             </li>
             <li>
                 <img src="assets/images/polo.png">
@@ -185,7 +183,7 @@
                     <input type="colorName" name="colorNome" min="30" size="20" maxlength="30" placeholder="Digitar Cor"
                         required oninvalid="inputErr()">
                     <label class="#"></label>
-                    <select name="Cor_da_peca_polo" class="inputDetalhes" id="Cor_da_peca_polo" required>
+                    <select name="Cor_da_peca_polo" class="inputDetalhes corPeca" id="Cor_da_peca_polo" required>
                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                         <option value="#fff">Branco</option>
                         <option value="#808080">Cinza</option>
@@ -248,8 +246,6 @@
                         Não Sei
                     </div>
                 </div>
-                <input class="inputLimpar" type="reset" value="LIMPAR">
-                <input class="inputSalvar" type="submit" value="SALVAR" onclick="myFunction()">
             </li>
             <li>
                 <img src="assets/images/hoodie.png">
@@ -269,7 +265,7 @@
                     <input type="colorName" name="colorNome" min="30" size="20" maxlength="30" placeholder="Digitar Cor"
                         required oninvalid="inputErr()">
                     <label class="#"></label>
-                    <select name="Cor_da_peca_agasalho" class="inputDetalhes" id="Cor_da_peca_agasalho" required>
+                    <select name="Cor_da_peca_agasalho" class="inputDetalhes corPeca" id="Cor_da_peca_agasalho" required>
                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                         <option value="#fff">Branco</option>
                         <option value="#808080">Cinza</option>
@@ -334,7 +330,7 @@
                         <option value="#">Sim</option>
                         <option value="#">Não</option>
                     </select>
-                    <br />                   
+                    <br />
                     <div class="vetorCon">
                         <h3>Anexar os Arquivos <br /> Caso disponível</h3>
                         <label class="#">📎</label>
@@ -348,8 +344,6 @@
                         Não Sei
                     </div>
                 </div>
-                <input class="inputLimpar" type="reset" value="LIMPAR">
-                <input class="inputSalvar" type="submit" value="SALVAR" onclick="myFunction()">
             </li>
             <li>
                 <img src="assets/images/abada.png">
@@ -372,7 +366,7 @@
                     <input type="colorName" name="colorNome" min="30" size="20" maxlength="30" placeholder="Digitar Cor"
                         required oninvalid="inputErr()">
                     <label class="#"></label>
-                    <select name="Cor_da_peca_abada" class="inputDetalhes" id="Cor_da_peca_abada" required>
+                    <select name="Cor_da_peca_abada" class="inputDetalhes corPeca" id="Cor_da_peca_abada" required>
                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                         <option value="#fff">Branco</option>
                         <option value="#808080">Cinza</option>
@@ -422,7 +416,7 @@
                         <option value="#">Sim</option>
                         <option value="#">Não</option>
                     </select>
-                    <br />                    
+                    <br />
                     <div class="vetorCon">
                         <h3>Anexar os Arquivos <br /> Caso disponível</h3>
                         <label class="#">📎</label>
@@ -436,8 +430,6 @@
                         Não Sei
                     </div>
                 </div>
-                <input class="inputLimpar" type="reset" value="LIMPAR">
-                <input class="inputSalvar" type="submit" value="SALVAR" onclick="myFunction()">
             </li>
             <li>
                 <img src="assets/images/ecobag.png">
@@ -456,7 +448,7 @@
                     <input type="colorName" name="colorNome" min="30" size="20" maxlength="30" placeholder="Digitar Cor"
                         required oninvalid="inputErr()">
                     <label class="#"></label>
-                    <select name="Cor_da_peca_ecobag" class="inputDetalhes" id="Cor_da_peca_ecobag" required>
+                    <select name="Cor_da_peca_ecobag" class="inputDetalhes corPeca" id="Cor_da_peca_ecobag" required>
                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                         <option value="#C7A975">Algodão Cru</option>
                     </select>
@@ -481,7 +473,7 @@
                         <option value="#">Sim</option>
                         <option value="#">Não</option>
                     </select>
-                    <br />                    
+                    <br />
                     <div class="vetorCon">
                         <h3>Anexar os Arquivos <br /> Caso disponível</h3>
                         <label class="#">📎</label>
@@ -495,8 +487,6 @@
                         Não Sei
                     </div>
                 </div>
-                <input class="inputLimpar" type="reset" value="LIMPAR">
-                <input class="inputSalvar" type="submit" value="SALVAR" onclick="myFunction()">
             </li>
             <li>
                 <img src="assets/images/mask.png">
@@ -517,7 +507,7 @@
                     <input type="colorName" name="colorNome" min="30" size="20" maxlength="30" placeholder="Digitar Cor"
                         required oninvalid="inputErr()">
                     <label class="#"></label>
-                    <select name="Cor_da_peca_mask" class="inputDetalhes" id="Cor_da_peca_mask" required>
+                    <select name="Cor_da_peca_mask" class="inputDetalhes corPeca" id="Cor_da_peca_mask" required>
                         <option value="" selected="selected">▫️ Selecionar ▫️</option>
                         <option value="#fff">Branco</option>
                         <option value="#808080">Cinza</option>
@@ -580,36 +570,35 @@
                         Não Sei
                     </div>
                 </div>
-                <input class="inputLimpar" type="reset" value="LIMPAR">
-                <input class="inputSalvar" type="submit" value="SALVAR" onclick="myFunction()">
             </li>
         </ul>
         <div class="formularioHolder">
             <div class="comentarioHolder">
                 <h3>Observações 💬 Dúvidas ❓ </h3>
-                <textarea name="ComentarioMask" cols="50" rows="5" class="inputDetalhes" id="ComentarioMask" style="resize: vertical;"></textarea>
+                <textarea name="Comentario" cols="50" rows="5" class="inputDetalhes" id="Comentario"
+                    style="resize: vertical;"></textarea>
                 <label class="#">
-                    <input name="tituloMensagemMask" id="tituloMensagemMask" value="Formulário de Orçamento mask" type="hidden" />
+                    <input name="tituloMensagem" id="tituloMensagem" value="Formulário de Orçamento" type="hidden" />
                     &nbsp;</label>
             </div>
             <br />
-            <h3 class="centerFix">Submeter o formulário e enviar suas escolhas<br /></h3>
             <h5><span class="blue"><strong><em>Campos com * são de preenchimento
                             obrigatório!</em></strong></span>
             </h5>
             <button style="color: rgb(255, 255, 255);" class="mainButton" id="mainButton">Enviar
                 Formulário</button>
-            <div class="imageHolderForm" style="margin-top: 5%;">
-                <img src="assets/images/orc-01.jpg">
-                <img src="assets/images/orc-02.jpg">
-                <img src="assets/images/orc-05.jpg">
-                <img src="assets/images/orc-06.jpg">
-                <img src="assets/images/orc-07.jpg">
-                <img src="assets/images/orc-08.jpg">
-                <img src="assets/images/orc-09.jpg">
-            </div>
         </div>
     </div>
+    <div class="imageHolderForm" style="margin-top: 5%;">
+        <img src="assets/images/orc-01.jpg">
+        <img src="assets/images/orc-02.jpg">
+        <img src="assets/images/orc-05.jpg">
+        <img src="assets/images/orc-06.jpg">
+        <img src="assets/images/orc-07.jpg">
+        <img src="assets/images/orc-08.jpg">
+        <img src="assets/images/orc-09.jpg">
+    </div>
+    </form>
     <main style="display: none;">
     </main>
     <aside style="display: none;">
@@ -625,6 +614,7 @@
         </p>
         <br />
     </footer>
+    <script src="assets/javascript/scriptOrc.js"></script>
     <script src="assets/javascript/script.js"></script>
 </body>
 

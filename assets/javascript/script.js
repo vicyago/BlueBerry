@@ -7,15 +7,4 @@ btn.addEventListener("click", function () {
         btn.innerText = "Dark 🌙";
     }
 });
-let checkInput = document.querySelectorAll(".checkBox");
-checkInput.forEach(function (btnChk) {
-    btnChk.addEventListener("change", function () {
-        let checkLi = btnChk.closest("li");
-        let checkDiv = checkLi.querySelector(".sectionDetalhes");
-        if (btnChk.checked) {
-            checkDiv.style.display = "grid";
-        } else {
-            checkDiv.style.display = "none";
-        }
-    });
-});
+
