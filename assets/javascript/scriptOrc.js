@@ -19,10 +19,10 @@ function displayDetail() {
 function hideDivForm() {
     let grabDivForm = document.querySelector(".formularioHolder");
     let showHideDivForm = document.querySelector("#imgsArray");
-    let checkLenght = showHideDivForm.querySelectorAll(
+    let checkLength = showHideDivForm.querySelectorAll(
         "input[type=checkbox]:checked"
     ).length;
-    if (checkLenght > 0) {
+    if (checkLength > 0) {
         grabDivForm.style.display = "block";
     } else {
         grabDivForm.style.display = "none";
