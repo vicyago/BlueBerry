@@ -8,6 +8,7 @@ body {
     background: #000000;
     color: rgb(255, 255, 255);
     min-height: 100vh;
+    padding: 0 1px;
 }
 aside.light-theme {
     border-color: #527dfc;
@@ -38,17 +39,15 @@ body.light-theme span {
     color: #527dfc;
 }
 body.light-theme button,
-body.light-theme h3 {
+body.light-theme h3,
+body.light-theme section a {
     color: #000000;
 }
 body.light-theme button a {
     color: #ffffff;
 }
-body.light-theme button a {
-    color: #ffffff;
-}
 body.light-theme a {
-    color: #4b78ff;
+    color: #ffffff;
     text-decoration: none;
     text-shadow: 2px 2px 3px rgba(90, 90, 90, 0.158);
 }
@@ -67,7 +66,6 @@ header {
     font-size: 1.1em;
     grid-area: header;
     padding-bottom: 3%;
-    padding-top: 1%;
     text-align: center;
 }
 section {
@@ -79,7 +77,7 @@ section {
 }
 .logo {
     grid-area: logo;
-    width: 90%;
+    width: 85%;
 }
 .nav {
     align-items: center;
@@ -91,6 +89,13 @@ section {
     text-align: center;
     width: auto;
 }
+.navFixed {
+    position: fixed;
+    right: 31px;
+    top: 50%;
+    width: 462px;
+    margin-top: -15em;
+}
 .navRight {
     border-color: #356fef;
     border-style: dotted;
@@ -100,7 +105,7 @@ section {
 }
 .navRight li {
     display: inline-block;
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: 500;
 }
 .navRight li:hover {
@@ -108,7 +113,7 @@ section {
     cursor: pointer;
 }
 .navRight a:hover {
-    background: #3f6df5;
+    background: #356fef;
     color: #ffffff;
     padding-bottom: 3%;
     padding-top: 3%;
@@ -118,17 +123,16 @@ section {
     grid-area: sectionText;
     line-height: 1rem;
     margin-top: 1%;
+    margin-bottom: 1%;
     text-align: left;
 }
 .sectionText h1 {
-    font-family: cursive;
     font-size: 2em;
     margin-bottom: 1%;
     margin-top: 3%;
     text-align: center;
 }
 .sectionText li {
-    font-family: cursive;
     font-size: 1.4em;
     padding: 3%;
     text-align: center;
@@ -139,6 +143,13 @@ section {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     list-style-type: none;
     text-align: center;
+}
+.sectionProductsImg ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+    text-align: center;
+    gap: 1%;
 }
 .imageHolder {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -162,9 +173,15 @@ section {
     grid-area: textHolder;
     line-height: 2.5rem;
     margin-bottom: 1%;
-    margin-right: 5%;
-    margin-top: 2%;
     text-align: left;
+}
+.textHolder h3,
+h5 {
+    margin-left: 12px;
+}
+.textHolder a {
+    width: 100%;
+    height: 100%;
 }
 .sectionAbout {
     font-size: 0.9em;
@@ -176,12 +193,12 @@ section {
 }
 main {
     grid-area: main;
-    margin-top: 2%;
     position: relative;
+    margin-top: 5%;
 }
 aside {
     grid-area: aside;
-    margin-top: 8%;
+    margin-top: 5%;
 }
 footer {
     font-size: 1.1em;
@@ -205,7 +222,6 @@ footer {
 .aboutText {
     font-size: 1.5em;
     line-height: 2em;
-    margin-top: 6%;
 }
 .divProducts {
     align-items: center;
@@ -406,28 +422,21 @@ input:checked + .slider:before {
     box-shadow: 0px 1px 6px rgba(80, 80, 80, 0.64);
 }
 .main-button {
-    background-color: rgb(0, 75, 160);
-    border: none;
-    box-shadow: 2px 1px 2px 3px #0000004b;
+    align-items: center;
+    background-color: transparent;
+    border-color: transparent;
+    border-style: none;
     cursor: pointer;
-    display: block;
+    display: grid;
     font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
-    font-size: large;
-    margin-bottom: 5%;
-    margin-top: -7%;
-    padding: 2%;
+    font-size: 1.8em;
+    justify-content: center;
     text-align: center;
-    width: 100%;
-}
-.main-button a {
-    color: #ffffff;
-    font-size: 1em;
-    text-decoration: none;
-    text-shadow: 2px 2px 3px rgb(80, 80, 80);
+    width: 65%;
 }
 .main-button:hover {
-    background-color: #ffa500;
-    box-shadow: 0px 1px 6px rgba(80, 80, 80, 0.64);
+    background-color: #ffffff57;
+    box-shadow: 0px 1px 6px rgba(103, 111, 110, 0.64);
 }
 .sectionButton {
     font-size: 1em;
@@ -442,7 +451,6 @@ input:checked + .slider:before {
     background-color: transparent;
     cursor: pointer;
     font-family: “monaco”, “Consolas”, "Lucida Console", monospace;
-    font-family: cursive;
     font-size: 1em;
     margin-bottom: 1%;
     padding-left: 1%;
@@ -461,4 +469,206 @@ input:checked + .slider:before {
 }
 .Item {
     font-size: 0.9em;
+}
+.cont {
+    position: relative;
+    width: 16vw;
+    height: 8vw;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px black;
+    margin: 0 0 0 8vw;
+}
+.button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #2be741;
+    position: relative;
+    border: 1px dashed rgb(9, 48, 203);
+    border-radius: 10px;
+    outline: none;
+    transition: box-shadow 0.3s linear;
+    box-shadow: inset 0px 0px 5px black, inset 0px 0px 0px #2f1da3a7;
+}
+.button:active {
+    box-shadow: inset 0px 0px 0px black, inset 0px 0px 105px #2f1da3a7;
+}
+.button:active .blob {
+    animation: none;
+}
+.blob {
+    position: relative;
+    top: 10%;
+    left: 0%;
+    width: 10vw;
+    height: 10vw;
+    fill: #137bdc;
+    transform-origin: 50% 50%;
+    filter: drop-shadow(4px 4px 0 black);
+    animation: bump 5.5s ease infinite;
+}
+@keyframes bump {
+    0% {
+        transform: scale(1, 1) translateX(0px);
+    }
+
+    9% {
+        transform: scale(1.1, 0.9) translateY(20px);
+    }
+
+    28% {
+        transform: scale(0.7, 1.3) translateY(-100px) translateX(55px);
+    }
+
+    35% {
+        transform: scale(1, 1) translateY(20px);
+    }
+
+    50% {
+        transform: scale(1, 1.1);
+    }
+
+    60% {
+        transform: scale(1.1, 0.9) translateY(20px);
+    }
+
+    80% {
+        transform: scale(0.7, 1.3) translateY(-100px) translateX(-55px);
+    }
+
+    88% {
+        transform: scale(1, 1) translateY(20px);
+    }
+
+    100% {
+        transform: scale(1, 1) translateX(0px);
+    }
+}
+.text {
+    display: flex;
+    position: absolute;
+    top: 35%;
+    font-size: 4vw;
+    text-shadow: 1px 1px rgb(53, 53, 53);
+    font-family: "Anton", sans-serif;
+    color: #ffffff;
+}
+.ag-format-container {
+    width: 1142px;
+    margin: 0 auto;
+}
+.ag-parallax_item {
+    height: 180px;
+    max-width: 800px;
+    width: 100%;
+    margin: 30px auto;
+
+    overflow: hidden;
+
+    -webkit-clip-path: polygon(
+        100% 0,
+        100% calc(100% - 65px),
+        calc(100% - 65px) 100%,
+        0 100%,
+        0 0
+    );
+    clip-path: polygon(
+        100% 0,
+        100% -moz-calc(100% - 65px),
+        -moz-calc(100% - 65px) 100%,
+        0 100%,
+        0 0
+    );
+    clip-path: polygon(
+        100% 0,
+        100% calc(100% - 65px),
+        calc(100% - 65px) 100%,
+        0 100%,
+        0 0
+    );
+
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+
+    position: relative;
+}
+.ag-parallax_box {
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+
+    z-index: 1;
+    position: relative;
+}
+.ag-parallax_img-box {
+    height: 180px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    will-change: transform;
+}
+.ag-parallax_img-box img {
+    display: block;
+    height: 100%;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+#box1,
+#box2,
+#box3,
+#box4,
+#box5,
+#box6,
+#box7,
+#box8,
+#box9 {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 70%;
+    height: 100%;
+    margin-left: 15%;
+    line-height: 1.5rem;
+}
+#btn1,
+#btn2,
+#btn3,
+#btn4,
+#btn5,
+#btn6,
+#btn7,
+#btn8,
+#btn9 {
+    border: 15px solid transparent;
+    background: linear-gradient(#ffffff 0 0) top,
+        linear-gradient(#ffffff 0 0) left, linear-gradient(#ffffff 0 0) bottom,
+        linear-gradient(#ffffff 0 0) right;
+    background-size: 200% 4px, 4px 200%;
+    background-origin: padding-box;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 1.5em;
+    width: 25%;
+    height: 100%;
+    margin-top: 8%;
+    margin-left: 67%;
+    font-size: 1.5em;
+    line-height: 2rem;
+}
+.caixaProdutos {
+    margin-left: -22%;
 }
