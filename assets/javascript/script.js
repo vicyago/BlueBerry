@@ -7,4 +7,3 @@ btn.addEventListener("click", function () {
         btn.innerText = "Dark 🌙";
     }
 });
-
